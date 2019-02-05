@@ -1,11 +1,9 @@
 package io.javacafe.client.rest;
 
-import static java.util.Collections.singletonMap;
 import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
 
 import java.io.IOException;
 import java.util.Date;
-import java.util.Map;
 
 import org.apache.http.HttpHost;
 import org.elasticsearch.ElasticsearchException;
@@ -17,10 +15,8 @@ import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.rest.RestStatus;
-import org.elasticsearch.script.Script;
-import org.elasticsearch.script.ScriptType;
 
-public class Example08 {
+public class Example08C {
     /**
      * UPSERT API
      * */
@@ -38,52 +34,6 @@ public class Example08 {
         
         // 문서 키값
         String _id = "1";
-
-        
-        /**
-         * [업데이트 요청1]
-         * 
-         * 스크립트를 이용한 업데이트 방식
-         */
-        UpdateRequest request1 = new UpdateRequest(INDEX_NAME, TYPE_NAME, _id);
-
-        Map<String, Object> parameters = singletonMap("count", 10);
-        Script inline = 
-        		new Script(ScriptType.INLINE, "painless", "ctx._source.prdtYear += params.count", parameters);
-        
-        request1.script(inline);
-
-        try {
-            UpdateResponse updateResponse = client.update(request1, RequestOptions.DEFAULT);        
-        } catch (ElasticsearchException e) {
-            if (e.status() == RestStatus.NOT_FOUND) {
-            	System.out.println("업데이트 대상이 존재하지 않습니다.");
-            }
-        }
-
-        
-        /**
-         * [업데이트 요청2]
-         * 
-         * 문서의 부분을 업데이트 방식
-         */
-        XContentBuilder builder = jsonBuilder();
-        builder.startObject();
-        builder.field("createdAt", new Date());
-        builder.field("prdtYear", "2019");
-        builder.field("typeNm", "장편");
-        builder.endObject();
-        
-        UpdateRequest request2 = new UpdateRequest(INDEX_NAME, TYPE_NAME, _id).doc(builder);
-
-        try {
-            UpdateResponse updateResponse = client.update(request2, RequestOptions.DEFAULT);        
-        } catch (ElasticsearchException e) {
-            if (e.status() == RestStatus.NOT_FOUND) {
-            	System.out.println("업데이트 대상이 존재하지 않습니다.");
-            }
-        }
-
 
 
         /**

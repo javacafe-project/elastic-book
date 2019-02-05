@@ -29,6 +29,7 @@ public class Example08 {
                 new PreBuiltTransportClient(settings)
                         .addTransportAddress(new TransportAddress(
                                 InetAddress.getByName("127.0.0.1"), 9300));
+
         //Index명
         String INDEX_NAME="movie_auto_java";
 
