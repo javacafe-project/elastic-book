@@ -1,18 +1,18 @@
 package io.javacafe.client.rest;
 
 import org.apache.http.HttpHost;
+import org.elasticsearch.action.delete.DeleteRequest;
+import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.action.get.GetRequest;
-import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 
 import java.io.IOException;
-import java.util.Map;
 
-public class Example_006 {
+public class Example07 {
     /**
-     * Exists API
+     * DELETE API
      * */
     public static void main(String[] args) throws IOException {
         
@@ -29,8 +29,8 @@ public class Example_006 {
         //문서 키값
         String _id = "1";
 
-        GetRequest getRequest = new GetRequest( INDEX_NAME, TYPE_NAME, _id);
-        boolean exists = client.exists(getRequest, RequestOptions.DEFAULT);
+        DeleteRequest request = new DeleteRequest(INDEX_NAME, TYPE_NAME, _id);
+        DeleteResponse deleteResponse = client.delete(request, RequestOptions.DEFAULT);
 
         client.close();
     }

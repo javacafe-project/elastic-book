@@ -13,7 +13,7 @@ import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.rest.RestStatus;
 
-public class Example_004 {
+public class Example04 {
     /**
      * 인덱스 데이터 추가
      * */

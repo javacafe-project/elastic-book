@@ -20,7 +20,7 @@ import org.elasticsearch.rest.RestStatus;
 import org.elasticsearch.script.Script;
 import org.elasticsearch.script.ScriptType;
 
-public class Example_008 {
+public class Example08 {
     /**
      * UPSERT API
      * */

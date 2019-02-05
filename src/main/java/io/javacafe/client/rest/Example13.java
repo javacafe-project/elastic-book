@@ -17,7 +17,7 @@ import static org.elasticsearch.index.query.QueryBuilders.matchQuery;
 /**
  * CLEAR SCROLL API
  * */
-public class Example_013 {
+public class Example13 {
     public static void main(String[] args) throws IOException {
         
     	RestHighLevelClient client = new RestHighLevelClient(

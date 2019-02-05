@@ -15,7 +15,7 @@ import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 
-public class Example_015 {
+public class Example15 {
     public static void main(String[] args) throws IOException {
         
     	RestHighLevelClient client = new RestHighLevelClient(

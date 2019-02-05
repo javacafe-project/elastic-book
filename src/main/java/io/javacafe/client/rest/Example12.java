@@ -18,7 +18,7 @@ import org.elasticsearch.search.builder.SearchSourceBuilder;
 /**
  * SCROLL API
  * */
-public class Example_012 {
+public class Example12 {
     public static void main(String[] args) throws IOException {
         
     	RestHighLevelClient client = new RestHighLevelClient(

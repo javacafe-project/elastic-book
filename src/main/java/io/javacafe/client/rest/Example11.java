@@ -16,7 +16,7 @@ import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.sort.FieldSortBuilder;
 import org.elasticsearch.search.sort.SortOrder;
 
-public class Example_011 {
+public class Example11 {
     /**
      * Match ALL API
      * */

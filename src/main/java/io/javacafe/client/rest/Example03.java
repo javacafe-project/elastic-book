@@ -11,7 +11,7 @@ import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 
-public class Example_003 {
+public class Example03 {
     /**
      * 인덱스 오픈 및 종료
      * */

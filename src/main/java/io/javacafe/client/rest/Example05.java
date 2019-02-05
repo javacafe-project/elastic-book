@@ -16,7 +16,7 @@ import java.util.Map;
 
 import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
 
-public class Example_005 {
+public class Example05 {
     /**
      * GET API
      * */

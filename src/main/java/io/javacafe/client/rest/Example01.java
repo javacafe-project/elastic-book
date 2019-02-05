@@ -13,7 +13,7 @@ import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 
-public class Example_001 {
+public class Example01 {
     /**
      * 인덱스 생성 및 매핑생성
      * */

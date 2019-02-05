@@ -18,7 +18,7 @@ import org.elasticsearch.script.mustache.SearchTemplateResponse;
 /**
  * Search Template API
  * */
-public class Example_014 {
+public class Example14 {
     public static void main(String[] args) throws IOException {
         
     	RestHighLevelClient client = new RestHighLevelClient(

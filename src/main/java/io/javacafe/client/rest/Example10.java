@@ -21,7 +21,7 @@ import org.elasticsearch.common.xcontent.XContentType;
 
 import java.io.IOException;
 
-public class Example_010 {
+public class Example10 {
     /**
      * Bulk API
      * */
