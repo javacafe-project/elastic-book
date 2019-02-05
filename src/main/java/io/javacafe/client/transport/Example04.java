@@ -50,7 +50,7 @@ public class Example04 {
                 .get();
 
 
-        
+        client.close();
 
     }
 }

@@ -72,7 +72,7 @@ public class Example05 {
         BulkResponse bulkResponse = bulkRequest.get();
 
 
-
+        client.close();
 
     }
 }

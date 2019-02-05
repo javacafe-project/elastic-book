@@ -37,5 +37,6 @@ public class Example06 {
         
         GetResponse response = client.prepareGet(INDEX_NAME, TYPE_NAME, _id).get();
 
+        client.close();
     }
 }
