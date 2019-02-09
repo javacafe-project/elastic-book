@@ -1,0 +1,56 @@
+POST movie/_search?size=0
+{
+ "aggs": {
+  "genre": {
+   "terms": {
+    "field": "genreAlt"
+   },
+   "aggs": {
+    "nation": {
+     "terms": {
+      "field": "nationAlt"
+     }
+    }
+   }
+  }
+ }
+}
+
+
+{
+  "took" : 5,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 3,
+    "successful" : 3,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 0.0,
+    "hits" : [ ]
+  },
+  "aggregations" : {
+    "genre" : {
+      "doc_count_error_upper_bound" : 0,
+      "sum_other_doc_count" : 0,
+      "buckets" : [
+        {
+          "key" : "드라마,가족",
+          "doc_count" : 1,
+          "nation" : {
+            "doc_count_error_upper_bound" : 0,
+            "sum_other_doc_count" : 0,
+            "buckets" : [
+              {
+                "key" : "한국",
+                "doc_count" : 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

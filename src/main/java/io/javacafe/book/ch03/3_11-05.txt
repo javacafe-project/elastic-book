@@ -1,0 +1,23 @@
+PUT movie_dynamic/_doc/1?timeout=5m
+{
+  "movieCd": "20173732",
+  "movieNm": "살아남은 아이",
+  "movieNmEn": "Last Child",
+  "typeNm": "장편"
+}
+
+
+{
+  "_index" : "movie_dynamic",
+  "_type" : "_doc",
+  "_id" : "1",
+  "_version" : 2,
+  "result" : "updated",
+  "_shards" : {
+    "total" : 2,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "_seq_no" : 1,
+  "_primary_term" : 1
+}

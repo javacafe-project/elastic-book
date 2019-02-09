@@ -1,0 +1,57 @@
+POST movie_search/_search
+{
+  "query" : {
+    "query_string": {
+      "default_field": "movieNm",
+      "query": "(그대) AND (가제)"
+    }
+  }
+}
+
+
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 1.8267174,
+    "hits" : [
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "5",
+        "_score" : 1.8267174,
+        "_source" : {
+          "movieCd" : "20166602",
+          "movieNm" : "그대 이름은 장미(가제)",
+          "movieNmEn" : "",
+          "prdtYear" : "2016",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "코미디",
+          "repNationNm" : "한국",
+          "repGenreNm" : "코미디",
+          "directors" : [
+            {
+              "peopleNm" : "조석현"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20124237",
+              "companyNm" : "(주)엠씨엠씨"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

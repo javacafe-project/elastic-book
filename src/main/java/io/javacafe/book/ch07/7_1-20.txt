@@ -1,0 +1,130 @@
+POST movie_auto/_analyze
+{
+  "analyzer": "autocomplete_analyzer_middle",
+  "text": "그대 이름은 장미"
+}
+
+
+{
+  "tokens" : [
+    {
+      "token" : "ᄀ",
+      "start_offset" : 0,
+      "end_offset" : 2,
+      "type" : "<HANGUL>",
+      "position" : 0
+    },
+    {
+      "token" : "그",
+      "start_offset" : 0,
+      "end_offset" : 2,
+      "type" : "<HANGUL>",
+      "position" : 0
+    },
+    {
+      "token" : "그ᄃ",
+      "start_offset" : 0,
+      "end_offset" : 2,
+      "type" : "<HANGUL>",
+      "position" : 0
+    },
+    {
+      "token" : "그대",
+      "start_offset" : 0,
+      "end_offset" : 2,
+      "type" : "<HANGUL>",
+      "position" : 0
+    },
+    {
+      "token" : "ᄋ",
+      "start_offset" : 3,
+      "end_offset" : 6,
+      "type" : "<HANGUL>",
+      "position" : 1
+    },
+    {
+      "token" : "이",
+      "start_offset" : 3,
+      "end_offset" : 6,
+      "type" : "<HANGUL>",
+      "position" : 1
+    },
+    {
+      "token" : "이ᄅ",
+      "start_offset" : 3,
+      "end_offset" : 6,
+      "type" : "<HANGUL>",
+      "position" : 1
+    },
+    {
+      "token" : "이르",
+      "start_offset" : 3,
+      "end_offset" : 6,
+      "type" : "<HANGUL>",
+      "position" : 1
+    },
+    {
+      "token" : "이름",
+      "start_offset" : 3,
+      "end_offset" : 6,
+      "type" : "<HANGUL>",
+      "position" : 1
+    },
+    {
+      "token" : "이름ᄋ",
+      "start_offset" : 3,
+      "end_offset" : 6,
+      "type" : "<HANGUL>",
+      "position" : 1
+    },
+    {
+      "token" : "이름으",
+      "start_offset" : 3,
+      "end_offset" : 6,
+      "type" : "<HANGUL>",
+      "position" : 1
+    },
+    {
+      "token" : "이름은",
+      "start_offset" : 3,
+      "end_offset" : 6,
+      "type" : "<HANGUL>",
+      "position" : 1
+    },
+    {
+      "token" : "ᄌ",
+      "start_offset" : 7,
+      "end_offset" : 9,
+      "type" : "<HANGUL>",
+      "position" : 2
+    },
+    {
+      "token" : "자",
+      "start_offset" : 7,
+      "end_offset" : 9,
+      "type" : "<HANGUL>",
+      "position" : 2
+    },
+    {
+      "token" : "장",
+      "start_offset" : 7,
+      "end_offset" : 9,
+      "type" : "<HANGUL>",
+      "position" : 2
+    },
+    {
+      "token" : "장ᄆ",
+      "start_offset" : 7,
+      "end_offset" : 9,
+      "type" : "<HANGUL>",
+      "position" : 2
+    },
+    {
+      "token" : "장미",
+      "start_offset" : 7,
+      "end_offset" : 9,
+      "type" : "<HANGUL>",
+      "position" : 2
+    }
+  ]
+}

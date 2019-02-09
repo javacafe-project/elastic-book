@@ -1,0 +1,78 @@
+DELETE movie_analyzer
+PUT movie_analyzer
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "uppercase_analyzer": {
+          "tokenizer": "standard",
+          "filter": [
+            "uppercase"
+          ]
+        }
+      }
+    }
+  }
+}
+
+
+#분석기 테스트
+POST movie_analyzer/_analyze
+{
+  "analyzer": "uppercase_analyzer",
+   "text": "Harry Potter and the Chamber of Secrets"
+}
+
+{
+  "tokens" : [
+    {
+      "token" : "HARRY",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "POTTER",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "AND",
+      "start_offset" : 13,
+      "end_offset" : 16,
+      "type" : "<ALPHANUM>",
+      "position" : 2
+    },
+    {
+      "token" : "THE",
+      "start_offset" : 17,
+      "end_offset" : 20,
+      "type" : "<ALPHANUM>",
+      "position" : 3
+    },
+    {
+      "token" : "CHAMBER",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "OF",
+      "start_offset" : 29,
+      "end_offset" : 31,
+      "type" : "<ALPHANUM>",
+      "position" : 5
+    },
+    {
+      "token" : "SECRETS",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    }
+  ]
+}

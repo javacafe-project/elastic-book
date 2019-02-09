@@ -1,0 +1,120 @@
+POST movie_search/_search
+{
+  "query": {
+    "query_string": {
+      "default_field": "movieNmEn",
+      "query": "movieNmEn:* OR prdtYear:2017"
+    }
+  },
+  "from": 0,
+  "size": 5,
+  "sort": [
+    {
+      "_score": {
+        "order": "desc"
+      },
+      "movieCd": {
+        "order": "asc"
+      }
+    }
+  ],
+  "_source": [
+    "movieCd",
+    "movieNm",
+    "mvoieNmEn",
+    "typeNm"
+  ]
+}
+
+
+{
+  "took" : 5,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 10,
+    "max_score" : null,
+    "hits" : [
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "2",
+        "_score" : 2.0,
+        "_source" : {
+          "movieCd" : "20174244",
+          "typeNm" : "장편",
+          "movieNm" : "버블 패밀리"
+        },
+        "sort" : [
+          2.0,
+          "20174244"
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "9",
+        "_score" : 2.0,
+        "_source" : {
+          "movieCd" : "20176442",
+          "typeNm" : "장편",
+          "movieNm" : "자전차왕 엄복동"
+        },
+        "sort" : [
+          2.0,
+          "20176442"
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "8",
+        "_score" : 2.0,
+        "_source" : {
+          "movieCd" : "20178401",
+          "typeNm" : "장편",
+          "movieNm" : "검객"
+        },
+        "sort" : [
+          2.0,
+          "20178401"
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "7",
+        "_score" : 2.0,
+        "_source" : {
+          "movieCd" : "20178501",
+          "typeNm" : "장편",
+          "movieNm" : "니 부모 얼굴이 보고 싶다"
+        },
+        "sort" : [
+          2.0,
+          "20178501"
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "4",
+        "_score" : 1.0,
+        "_source" : {
+          "movieCd" : "20143501",
+          "typeNm" : "장편",
+          "movieNm" : "플라이 하이"
+        },
+        "sort" : [
+          1.0,
+          "20143501"
+        ]
+      }
+    ]
+  }
+}

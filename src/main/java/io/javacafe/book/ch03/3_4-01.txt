@@ -1,0 +1,87 @@
+GET movie_search/_mapping
+
+
+{
+  "movie_search" : {
+    "mappings" : {
+      "_doc" : {
+        "properties" : {
+          "companies" : {
+            "properties" : {
+              "companyCd" : {
+                "type" : "keyword"
+              },
+              "companyNm" : {
+                "type" : "keyword"
+              }
+            }
+          },
+          "directors" : {
+            "properties" : {
+              "peopleNm" : {
+                "type" : "keyword"
+              }
+            }
+          },
+          "genreAlt" : {
+            "type" : "keyword"
+          },
+          "movieCd" : {
+            "type" : "keyword"
+          },
+          "movieNm" : {
+            "type" : "text",
+            "analyzer" : "standard"
+          },
+          "movieNmEn" : {
+            "type" : "text",
+            "analyzer" : "standard"
+          },
+          "nationAlt" : {
+            "type" : "keyword"
+          },
+          "openDt" : {
+            "type" : "integer"
+          },
+          "prdtStatNm" : {
+            "type" : "keyword"
+          },
+          "prdtYear" : {
+            "type" : "integer"
+          },
+          "repGenreNm" : {
+            "type" : "keyword"
+          },
+          "repNationNm" : {
+            "type" : "keyword"
+          },
+          "typeNm" : {
+            "type" : "keyword"
+          }
+        }
+      }
+    }
+  }
+}
+
+
+PUT movie_search/_doc/1
+{
+  "movieCd": "20173732",
+  "movieNm": "살아남은 아이",
+  "movieNmEn": "Last Child",
+  "prdtYear": "2017",
+  "openDt": "",
+  "typeNm": "장편",
+  "prdtStatNm": "기타",
+  "nationAlt": "한국",
+  "genreAlt": "드라마,가족",
+  "repNationNm": "한국",
+  "repGenreNm": "드라마",
+  "directors": [
+    {
+      "peopleNm": "신동석"
+    }
+  ],
+  "companies": []
+}

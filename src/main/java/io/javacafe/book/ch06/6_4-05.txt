@@ -1,0 +1,57 @@
+POST nori_analyzer/_close
+
+PUT nori_analyzer/_settings
+{
+  "index": {
+    "analysis": {
+      "analyzer": {
+        "nori_stoptags_analyzer": {
+          "tokenizer": "nori_tokenizer",
+          "filter": [
+            "nori_posfilter"
+          ]
+        }
+      },
+      "filter": {
+        "nori_posfilter": {
+          "type": "nori_part_of_speech",
+          "stoptags": [
+            "E",
+            "IC",
+            "J",
+            "MAG",
+            "MAJ",
+            "MM",
+            "NA",
+            "NR",
+            "SC",
+            "SE",
+            "SF",
+            "SH",
+            "SL",
+            "SN",
+            "SP",
+            "SSC",
+            "SSO",
+            "SY",
+            "UNA",
+            "UNKNOWN",
+            "VA",
+            "VCN",
+            "VCP",
+            "VSV",
+            "VV",
+            "VX",
+            "XPN",
+            "XR",
+            "XSA",
+            "XSN",
+            "XSV"
+          ]
+        }
+      }
+    }
+  }
+}
+
+POST nori_analyzer/_open

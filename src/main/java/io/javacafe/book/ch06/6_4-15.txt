@@ -1,0 +1,150 @@
+#인덱스 삭제
+DELETE movie_search
+
+#인덱스 생성 및 매핑/세팅 추가
+PUT movie_search
+{
+  "settings": {
+    "number_of_shards": 5,
+    "number_of_replicas": 1,
+    "index": {
+      "analysis": {
+        "analyzer": {
+          "korean_analyzer_index": {
+            "filter": [
+              "lowercase",
+              "pos_filter_speech",
+              "nori_readingform",
+              "edge_ngram_filter"
+            ],
+            "tokenizer": "nori_tokenizer"
+          },
+          "korean_analyzer_search": {
+            "filter": [
+              "lowercase",
+              "pos_filter_speech",
+              "nori_readingform"
+            ],
+            "tokenizer": "nori_tokenizer"
+          }
+        },
+        "filter": {
+          "edge_ngram_filter": {
+            "type": "edge_ngram",
+            "min_gram": 1,
+            "max_gram": 50
+          },
+          "pos_filter_speech": {
+            "type": "nori_part_of_speech",
+            "stoptags": [
+              "E",
+              "IC",
+              "J",
+              "MAG",
+              "MAJ",
+              "MM",
+              "NA",
+              "NR",
+              "SC",
+              "SE",
+              "SF",
+              "SP",
+              "SSC",
+              "SSO",
+              "SY",
+              "UNA",
+              "UNKNOWN",
+              "VA",
+              "VCN",
+              "VCP",
+              "VSV",
+              "VV",
+              "VX",
+              "XPN",
+              "XR",
+              "XSA",
+              "XSN",
+              "XSV"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "movieCd": {
+          "type": "keyword"
+        },
+        "movieNm": {
+          "type": "text",
+          "analyzer": "standard",
+          "copy_to": [
+            "movieNmKoAnal"
+          ]
+        },
+        "movieNmKoAnal": {
+          "type": "text",
+          "analyzer": "korean_analyzer_index",
+          "search_analyzer": "korean_analyzer_search"
+        },
+        "movieNmEn": {
+          "type": "text",
+          "analyzer": "standard"
+        },
+        "prdtYear": {
+          "type": "integer"
+        },
+        "openDt": {
+          "type": "integer"
+        },
+        "typeNm": {
+          "type": "keyword"
+        },
+        "prdtStatNm": {
+          "type": "keyword"
+        },
+        "nationAlt": {
+          "type": "keyword"
+        },
+        "genreAlt": {
+          "type": "keyword"
+        },
+        "repNationNm": {
+          "type": "keyword"
+        },
+        "repGenreNm": {
+          "type": "keyword"
+        },
+        "companies": {
+          "properties": {
+            "companyCd": {
+              "type": "keyword"
+            },
+            "companyNm": {
+              "type": "keyword"
+            }
+          }
+        },
+        "directors": {
+          "properties": {
+            "peopleNm": {
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "movie_search"
+}
+

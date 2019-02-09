@@ -1,0 +1,168 @@
+DELETE movie_analyzer
+PUT movie_analyzer
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "ngram_analyzer": {
+          "tokenizer": "ngram_tokenizer"
+        }
+      },
+      "tokenizer": {
+        "ngram_tokenizer": {
+          "type": "ngram",
+          "min_gram": 3,
+          "max_gram": 3,
+          "token_chars": [
+            "letter"
+          ]
+        }
+      }
+    }
+  }
+}
+
+POST movie_analyzer/_analyze
+{
+  "tokenizer": "ngram_tokenizer",
+  "text": "Harry Potter and the Chamber of Secrets"
+}
+
+
+{
+  "tokens" : [
+    {
+      "token" : "Har",
+      "start_offset" : 0,
+      "end_offset" : 3,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "arr",
+      "start_offset" : 1,
+      "end_offset" : 4,
+      "type" : "word",
+      "position" : 1
+    },
+    {
+      "token" : "rry",
+      "start_offset" : 2,
+      "end_offset" : 5,
+      "type" : "word",
+      "position" : 2
+    },
+    {
+      "token" : "Pot",
+      "start_offset" : 6,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 3
+    },
+    {
+      "token" : "ott",
+      "start_offset" : 7,
+      "end_offset" : 10,
+      "type" : "word",
+      "position" : 4
+    },
+    {
+      "token" : "tte",
+      "start_offset" : 8,
+      "end_offset" : 11,
+      "type" : "word",
+      "position" : 5
+    },
+    {
+      "token" : "ter",
+      "start_offset" : 9,
+      "end_offset" : 12,
+      "type" : "word",
+      "position" : 6
+    },
+    {
+      "token" : "and",
+      "start_offset" : 13,
+      "end_offset" : 16,
+      "type" : "word",
+      "position" : 7
+    },
+    {
+      "token" : "the",
+      "start_offset" : 17,
+      "end_offset" : 20,
+      "type" : "word",
+      "position" : 8
+    },
+    {
+      "token" : "Cha",
+      "start_offset" : 21,
+      "end_offset" : 24,
+      "type" : "word",
+      "position" : 9
+    },
+    {
+      "token" : "ham",
+      "start_offset" : 22,
+      "end_offset" : 25,
+      "type" : "word",
+      "position" : 10
+    },
+    {
+      "token" : "amb",
+      "start_offset" : 23,
+      "end_offset" : 26,
+      "type" : "word",
+      "position" : 11
+    },
+    {
+      "token" : "mbe",
+      "start_offset" : 24,
+      "end_offset" : 27,
+      "type" : "word",
+      "position" : 12
+    },
+    {
+      "token" : "ber",
+      "start_offset" : 25,
+      "end_offset" : 28,
+      "type" : "word",
+      "position" : 13
+    },
+    {
+      "token" : "Sec",
+      "start_offset" : 32,
+      "end_offset" : 35,
+      "type" : "word",
+      "position" : 14
+    },
+    {
+      "token" : "ecr",
+      "start_offset" : 33,
+      "end_offset" : 36,
+      "type" : "word",
+      "position" : 15
+    },
+    {
+      "token" : "cre",
+      "start_offset" : 34,
+      "end_offset" : 37,
+      "type" : "word",
+      "position" : 16
+    },
+    {
+      "token" : "ret",
+      "start_offset" : 35,
+      "end_offset" : 38,
+      "type" : "word",
+      "position" : 17
+    },
+    {
+      "token" : "ets",
+      "start_offset" : 36,
+      "end_offset" : 39,
+      "type" : "word",
+      "position" : 18
+    }
+  ]
+}

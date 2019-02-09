@@ -1,0 +1,31 @@
+PUT movie_auto/_mapping/_doc
+{
+  "properties": {
+    "movieCd": {
+      "type": "keyword"
+    },
+    "movieNm": {
+      "type": "text",
+      "analyzer": "autocomplte_analyzer",
+      "search_analyzer": "standard",
+      "copy_to": [
+        "movieNmKoAnal"
+      ]
+    },
+    "movieNmEn": {
+      "type": "text",
+      "analyzer": "autocomplte_analyzer",
+      "search_analyzer": "standard"
+    },
+    "movieNmKoAnal": {
+      "type": "text",
+      "analyzer": "korean_analyzer_index",
+      "search_analyzer": "korean_analyzer_search"
+    }
+  }
+}
+
+
+{
+  "acknowledged" : true
+}

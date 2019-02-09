@@ -1,0 +1,8 @@
+
+POST _aliases
+{
+  "actions" : [
+    { "delete" : { "index" : "moive_search_1544054400라는", "alias" : "movie" } },
+    { "add" : { "index" : "movie_search_1544140800", "alias" : "movie" } }
+  ]
+}

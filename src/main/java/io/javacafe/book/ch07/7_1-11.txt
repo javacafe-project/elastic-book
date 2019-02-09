@@ -1,0 +1,14 @@
+
+DELETE movie_term_suggest
+PUT movie_term_completion
+{
+     "mappings": {
+     "_doc": {
+       "properties": {
+         "movieNmEnComple": {
+           "type": "completion"
+         }
+       }
+     }
+   }
+}

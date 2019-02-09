@@ -1,0 +1,31 @@
+PUT movie_analyzer
+{
+  "settings": {
+    "index" : {
+      "number_of_shards": 5,
+      "number_of_replicas" : 1
+    }
+  }
+}
+
+POST movie_analyzer/_close
+
+PUT movie_analyzer/_settings
+{
+  "analysis": {
+    "analyzer": {
+      "custom_movie_analyzer": {
+        "type": "custom",
+        "char_filter": [
+          "html_strip"
+        ],
+        "tokenizer": "standard",
+        "filter": [
+          "lowercase"
+        ]
+      }
+    }
+  }
+}
+
+POST movie_analyzer/_open

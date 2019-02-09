@@ -1,0 +1,453 @@
+DELETE movie_analyzer
+
+#Index 상태 변경
+PUT movie_analyzer
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "ngram_fileter_analyzer": {
+          "tokenizer": "standard",
+          "filter": [
+            "standard",
+            "ngram_filter"
+          ]
+        }
+      },
+      "filter": {
+        "ngram_filter": {
+          "type": "nGram",
+          "min_gram": 1,
+          "max_gram": 2
+        }
+      }
+    }
+  }
+}
+
+
+#분석기 테스트
+POST movie_analyzer/_analyze
+{
+  "analyzer": "ngram_fileter_analyzer",
+   "text": "Harry Potter and the Chamber of Secrets"
+}
+
+
+{
+  "tokens" : [
+    {
+      "token" : "H",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "Ha",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "a",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "ar",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "r",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "rr",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "r",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "ry",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "y",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "P",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "Po",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "o",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "ot",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "t",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "tt",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "t",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "te",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "e",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "er",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "r",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "a",
+      "start_offset" : 13,
+      "end_offset" : 16,
+      "type" : "<ALPHANUM>",
+      "position" : 2
+    },
+    {
+      "token" : "an",
+      "start_offset" : 13,
+      "end_offset" : 16,
+      "type" : "<ALPHANUM>",
+      "position" : 2
+    },
+    {
+      "token" : "n",
+      "start_offset" : 13,
+      "end_offset" : 16,
+      "type" : "<ALPHANUM>",
+      "position" : 2
+    },
+    {
+      "token" : "nd",
+      "start_offset" : 13,
+      "end_offset" : 16,
+      "type" : "<ALPHANUM>",
+      "position" : 2
+    },
+    {
+      "token" : "d",
+      "start_offset" : 13,
+      "end_offset" : 16,
+      "type" : "<ALPHANUM>",
+      "position" : 2
+    },
+    {
+      "token" : "t",
+      "start_offset" : 17,
+      "end_offset" : 20,
+      "type" : "<ALPHANUM>",
+      "position" : 3
+    },
+    {
+      "token" : "th",
+      "start_offset" : 17,
+      "end_offset" : 20,
+      "type" : "<ALPHANUM>",
+      "position" : 3
+    },
+    {
+      "token" : "h",
+      "start_offset" : 17,
+      "end_offset" : 20,
+      "type" : "<ALPHANUM>",
+      "position" : 3
+    },
+    {
+      "token" : "he",
+      "start_offset" : 17,
+      "end_offset" : 20,
+      "type" : "<ALPHANUM>",
+      "position" : 3
+    },
+    {
+      "token" : "e",
+      "start_offset" : 17,
+      "end_offset" : 20,
+      "type" : "<ALPHANUM>",
+      "position" : 3
+    },
+    {
+      "token" : "C",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "Ch",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "h",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "ha",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "a",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "am",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "m",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "mb",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "b",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "be",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "e",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "er",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "r",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "o",
+      "start_offset" : 29,
+      "end_offset" : 31,
+      "type" : "<ALPHANUM>",
+      "position" : 5
+    },
+    {
+      "token" : "of",
+      "start_offset" : 29,
+      "end_offset" : 31,
+      "type" : "<ALPHANUM>",
+      "position" : 5
+    },
+    {
+      "token" : "f",
+      "start_offset" : 29,
+      "end_offset" : 31,
+      "type" : "<ALPHANUM>",
+      "position" : 5
+    },
+    {
+      "token" : "S",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "Se",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "e",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "ec",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "c",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "cr",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "r",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "re",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "e",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "et",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "t",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "ts",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "s",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    }
+  ]
+}

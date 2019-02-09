@@ -1,0 +1,15 @@
+
+PUT movie_search_mapping/_mapping/_doc
+{
+  "properties": {
+    "nationAltEn": {
+      "type":     "text",
+      "fielddata": true
+    }
+  }
+}
+
+
+{
+  "acknowledged" : true
+}

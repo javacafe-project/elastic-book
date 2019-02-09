@@ -1,0 +1,75 @@
+POST movie_search/_search?q=movieNmEn:* AND prdtYear:2017&analyze_wildcard=true&from=0&size=5&sort=_score:desc,movieCd:asc&_source_includes=movieCd, movieNm,mvoieNmEn,typeNm&pretty
+
+
+{
+  "took" : 12,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 4,
+    "max_score" : null,
+    "hits" : [
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "2",
+        "_score" : 2.0,
+        "_source" : {
+          "movieCd" : "20174244",
+          "typeNm" : "장편"
+        },
+        "sort" : [
+          2.0,
+          "20174244"
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "9",
+        "_score" : 2.0,
+        "_source" : {
+          "movieCd" : "20176442",
+          "typeNm" : "장편"
+        },
+        "sort" : [
+          2.0,
+          "20176442"
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "8",
+        "_score" : 2.0,
+        "_source" : {
+          "movieCd" : "20178401",
+          "typeNm" : "장편"
+        },
+        "sort" : [
+          2.0,
+          "20178401"
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "7",
+        "_score" : 2.0,
+        "_source" : {
+          "movieCd" : "20178501",
+          "typeNm" : "장편"
+        },
+        "sort" : [
+          2.0,
+          "20178501"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+POST movie_search/_search
+{
+  "query" : {
+    "multi_match": {
+      "query": "Fly",
+      "fields": ["movieNm^3","movieNmEn"]
+    }
+  }
+}
+
+
+{
+  "took" : 3,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 0.80259144,
+    "hits" : [
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "4",
+        "_score" : 0.80259144,
+        "_source" : {
+          "movieCd" : "20143501",
+          "movieNm" : "플라이 하이",
+          "movieNmEn" : "Fly High",
+          "prdtYear" : "2016",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "드라마",
+          "repNationNm" : "한국",
+          "repGenreNm" : "드라마",
+          "directors" : [
+            {
+              "peopleNm" : "한경탁"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20138416",
+              "companyNm" : "(주)분홍돌고래"
+            },
+            {
+              "companyCd" : "20100385",
+              "companyNm" : "(주)다세포클럽"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

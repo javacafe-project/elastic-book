@@ -1,0 +1,19 @@
+#요청
+POST movie_auto/_analyze
+{
+  "analyzer": "autocomplete_analyzer_prefix_search",
+  "text": "검객"
+}
+
+
+{
+  "tokens" : [
+    {
+      "token" : "geomgaeg",
+      "start_offset" : 0,
+      "end_offset" : 2,
+      "type" : "word",
+      "position" : 0
+    }
+  ]
+}

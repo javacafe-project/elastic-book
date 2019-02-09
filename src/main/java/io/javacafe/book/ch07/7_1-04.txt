@@ -1,0 +1,16 @@
+PUT movie_term_suggest/_doc/1
+{
+  "movieNm": "삼성"
+}
+PUT movie_term_suggest/_doc/2
+{
+  "movieNm": "삼장"
+}
+PUT movie_term_suggest/_doc/3
+{
+  "movieNm": "사장"
+}
+PUT movie_term_suggest/_doc/4
+{
+  "movieNm": "사성"
+}

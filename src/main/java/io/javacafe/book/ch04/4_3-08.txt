@@ -1,0 +1,119 @@
+POST movie_search/_search
+{
+   "_source": [
+     "movieNm"
+   ],
+   "query": {
+     "term": {
+       "repNationNm" : "한국"
+     }
+ }
+}
+
+
+{
+  "took" : 0,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 10,
+    "max_score" : 0.2876821,
+    "hits" : [
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "3",
+        "_score" : 0.2876821,
+        "_source" : {
+          "movieNm" : "지하주차장"
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_score" : 0.18232156,
+        "_source" : {
+          "movieNm" : "바람난 아내들2"
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "7",
+        "_score" : 0.18232156,
+        "_source" : {
+          "movieNm" : "니 부모 얼굴이 보고 싶다"
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "2",
+        "_score" : 0.13353139,
+        "_source" : {
+          "movieNm" : "버블 패밀리"
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "4",
+        "_score" : 0.13353139,
+        "_source" : {
+          "movieNm" : "플라이 하이"
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "6",
+        "_score" : 0.13353139,
+        "_source" : {
+          "movieNm" : "컨트롤"
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "5",
+        "_score" : 0.105360515,
+        "_source" : {
+          "movieNm" : "그대 이름은 장미(가제)"
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "8",
+        "_score" : 0.105360515,
+        "_source" : {
+          "movieNm" : "검객"
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "9",
+        "_score" : 0.105360515,
+        "_source" : {
+          "movieNm" : "자전차왕 엄복동"
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "10",
+        "_score" : 0.105360515,
+        "_source" : {
+          "movieNm" : "기묘한 가족"
+        }
+      }
+    ]
+  }
+}

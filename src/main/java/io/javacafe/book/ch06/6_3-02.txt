@@ -1,0 +1,15 @@
+
+GET _scripts/movie_search_example_teamplate
+
+
+{
+  "_id" : "movie_search_example_teamplate",
+  "found" : true,
+  "script" : {
+    "lang" : "mustache",
+    "source" : """{"query":{"match":{"movieNm":"{{ movie_name }}"}}}""",
+    "options" : {
+      "content_type" : "application/json; charset=UTF-8"
+    }
+  }
+}

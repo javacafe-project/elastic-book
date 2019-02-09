@@ -1,0 +1,54 @@
+PUT movie_auto
+{
+  "settings": {
+    "number_of_shards": 5,
+    "number_of_replicas": 1,
+    "analysis": {
+      "analyzer": {
+        "autocomplte_analyzer": {
+          "tokenizer": "ngram_tokenizer",
+          "filter": [
+            "lowercase"
+          ]
+        }
+      },
+      "tokenizer": {
+        "ngram_tokenizer": {
+          "type": "edge_ngram",
+          "min_gram": 2,
+          "max_gram": 10,
+          "token_chars": [
+            "letter",
+            "digit"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "movieCd": {
+          "type": "keyword"
+        },
+        "movieNm": {
+          "type": "text",
+          "analyzer": "autocomplte_analyzer",
+          "search_analyzer": "standard"
+        },
+        "movieNmEn": {
+          "type": "text",
+          "analyzer": "autocomplte_analyzer",
+          "search_analyzer": "standard"
+        }
+      }
+    }
+  }
+}
+
+
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "movie_auto"
+}

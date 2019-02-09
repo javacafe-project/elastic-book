@@ -1,0 +1,39 @@
+POST _analyze
+{
+  "analyzer" : "standard",
+  "text" : "우리나라가 좋은나라, 대한민국 화이팅"
+}
+
+
+{
+  "tokens" : [
+    {
+      "token" : "우리나라가",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<HANGUL>",
+      "position" : 0
+    },
+    {
+      "token" : "좋은나라",
+      "start_offset" : 6,
+      "end_offset" : 10,
+      "type" : "<HANGUL>",
+      "position" : 1
+    },
+    {
+      "token" : "대한민국",
+      "start_offset" : 12,
+      "end_offset" : 16,
+      "type" : "<HANGUL>",
+      "position" : 2
+    },
+    {
+      "token" : "화이팅",
+      "start_offset" : 17,
+      "end_offset" : 20,
+      "type" : "<HANGUL>",
+      "position" : 3
+    }
+  ]
+}

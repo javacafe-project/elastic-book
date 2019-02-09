@@ -1,0 +1,102 @@
+DELETE movie_analyzer
+
+PUT movie_analyzer
+{
+  "settings": {
+    "index": {
+      "analysis": {
+        "analyzer": {
+          "synonym_analyzer": {
+            "tokenizer": "standard",
+            "filter": [
+              "lowercase",
+              "synonym_filter"
+            ]
+          }
+        },
+        "filter": {
+          "synonym_filter": {
+            "type": "synonym",
+            "ignore_case": true,
+            "synonyms_path": "analysis/synonyms.txt"
+          }
+        }
+      }
+    }
+  },
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "name": {
+          "type": "text",
+          "analyzer": "synonym_analyzer"
+        },
+        "type": {
+          "type": "text",
+          "analyzer": "synonym_analyzer"
+        }
+      }
+    }
+  }
+}
+
+POST movie_analyzer/_analyze
+{
+  "analyzer": "synonym_analyzer",
+   "text": "Harry Potter and the Chamber of Secrets"
+}
+
+
+{
+  "tokens" : [
+    {
+      "token" : "해리",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "SYNONYM",
+      "position" : 0
+    },
+    {
+      "token" : "potter",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "and",
+      "start_offset" : 13,
+      "end_offset" : 16,
+      "type" : "<ALPHANUM>",
+      "position" : 2
+    },
+    {
+      "token" : "the",
+      "start_offset" : 17,
+      "end_offset" : 20,
+      "type" : "<ALPHANUM>",
+      "position" : 3
+    },
+    {
+      "token" : "chamber",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "of",
+      "start_offset" : 29,
+      "end_offset" : 31,
+      "type" : "<ALPHANUM>",
+      "position" : 5
+    },
+    {
+      "token" : "secrets",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    }
+  ]
+}

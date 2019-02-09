@@ -1,0 +1,117 @@
+GET movie_dynamic_templates/_mapping
+
+
+{
+  "movie_dynamic_templates" : {
+    "mappings" : {
+      "_doc" : {
+        "dynamic_templates" : [
+          {
+            "movie_template" : {
+              "match" : "*Alt",
+              "mapping" : {
+                "type" : "keyword"
+              }
+            }
+          }
+        ],
+        "properties" : {
+          "directors" : {
+            "properties" : {
+              "peopleNm" : {
+                "type" : "text",
+                "fields" : {
+                  "keyword" : {
+                    "type" : "keyword",
+                    "ignore_above" : 256
+                  }
+                }
+              }
+            }
+          },
+          "genreAlt" : {
+            "type" : "keyword"
+          },
+          "movieCd" : {
+            "type" : "integer"
+          },
+          "movieNm" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "movieNmEn" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "nationAlt" : {
+            "type" : "keyword"
+          },
+          "openDt" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "prdtStatNm" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "prdtYear" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "repGenreNm" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "repNationNm" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "typeNm" : {
+            "type" : "text",
+            "fields" : {
+              "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

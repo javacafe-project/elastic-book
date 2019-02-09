@@ -1,0 +1,13 @@
+
+DELETE movie_routing
+
+POST /_snapshot/movie_data_backup/movie_snapshot_part1/_restore
+{
+  "indices": "movie_routing"
+}
+
+
+
+{
+  "accepted" : true
+}

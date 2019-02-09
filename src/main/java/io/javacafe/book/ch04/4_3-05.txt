@@ -1,0 +1,359 @@
+POST movie_search/_search
+{
+   "query": {
+     "term": {
+       "repNationNm" : "한국"
+     }
+   },
+   "sort" :{
+     "prdtYear": {
+        "order": "asc"
+      }
+   }
+ }
+
+
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 10,
+    "max_score" : null,
+    "hits" : [
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "5",
+        "_score" : null,
+        "_source" : {
+          "movieCd" : "20166602",
+          "movieNm" : "그대 이름은 장미(가제)",
+          "movieNmEn" : "",
+          "prdtYear" : "2016",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "코미디",
+          "repNationNm" : "한국",
+          "repGenreNm" : "코미디",
+          "directors" : [
+            {
+              "peopleNm" : "조석현"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20124237",
+              "companyNm" : "(주)엠씨엠씨"
+            }
+          ]
+        },
+        "sort" : [
+          2016
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "4",
+        "_score" : null,
+        "_source" : {
+          "movieCd" : "20143501",
+          "movieNm" : "플라이 하이",
+          "movieNmEn" : "Fly High",
+          "prdtYear" : "2016",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "드라마",
+          "repNationNm" : "한국",
+          "repGenreNm" : "드라마",
+          "directors" : [
+            {
+              "peopleNm" : "한경탁"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20138416",
+              "companyNm" : "(주)분홍돌고래"
+            },
+            {
+              "companyCd" : "20100385",
+              "companyNm" : "(주)다세포클럽"
+            }
+          ]
+        },
+        "sort" : [
+          2016
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "6",
+        "_score" : null,
+        "_source" : {
+          "movieCd" : "20161181",
+          "movieNm" : "컨트롤",
+          "movieNmEn" : "",
+          "prdtYear" : "2016",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "스릴러",
+          "repNationNm" : "한국",
+          "repGenreNm" : "스릴러",
+          "directors" : [
+            {
+              "peopleNm" : "한장혁"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20140492",
+              "companyNm" : "(주)위드인픽쳐스"
+            }
+          ]
+        },
+        "sort" : [
+          2016
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "8",
+        "_score" : null,
+        "_source" : {
+          "movieCd" : "20178401",
+          "movieNm" : "검객",
+          "movieNmEn" : "",
+          "prdtYear" : "2017",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "사극,액션",
+          "repNationNm" : "한국",
+          "repGenreNm" : "사극",
+          "directors" : [
+            {
+              "peopleNm" : "최재훈"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20100410",
+              "companyNm" : "오퍼스픽쳐스"
+            }
+          ]
+        },
+        "sort" : [
+          2017
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "9",
+        "_score" : null,
+        "_source" : {
+          "movieCd" : "20176442",
+          "movieNm" : "자전차왕 엄복동",
+          "movieNmEn" : "",
+          "prdtYear" : "2017",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "드라마",
+          "repNationNm" : "한국",
+          "repGenreNm" : "드라마",
+          "directors" : [ ],
+          "companys" : [ ]
+        },
+        "sort" : [
+          2017
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "2",
+        "_score" : null,
+        "_source" : {
+          "movieCd" : "20174244",
+          "movieNm" : "버블 패밀리",
+          "movieNmEn" : "Family in the Bubble",
+          "prdtYear" : "2017",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "개봉예정",
+          "nationAlt" : "한국",
+          "genreAlt" : "다큐멘터리,가족",
+          "repNationNm" : "한국",
+          "repGenreNm" : "다큐멘터리",
+          "directors" : [
+            {
+              "peopleNm" : "마민지"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20188342",
+              "companyNm" : "쌍마픽처스"
+            }
+          ]
+        },
+        "sort" : [
+          2017
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "7",
+        "_score" : null,
+        "_source" : {
+          "movieCd" : "20178501",
+          "movieNm" : "니 부모 얼굴이 보고 싶다",
+          "movieNmEn" : "",
+          "prdtYear" : "2017",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "드라마",
+          "repNationNm" : "한국",
+          "repGenreNm" : "드라마",
+          "directors" : [
+            {
+              "peopleNm" : "김지훈"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20063209",
+              "companyNm" : "(주)더타워픽쳐스"
+            },
+            {
+              "companyCd" : "20124236",
+              "companyNm" : "이십세기폭스 인터내셔널 프로덕션"
+            },
+            {
+              "companyCd" : "20173642",
+              "companyNm" : "(주)리버픽쳐스"
+            }
+          ]
+        },
+        "sort" : [
+          2017
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "10",
+        "_score" : null,
+        "_source" : {
+          "movieCd" : "20174169",
+          "movieNm" : "기묘한 가족",
+          "movieNmEn" : "",
+          "prdtYear" : "2018",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "코미디",
+          "repNationNm" : "한국",
+          "repGenreNm" : "코미디",
+          "directors" : [
+            {
+              "peopleNm" : "이민재"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20142551",
+              "companyNm" : "씨네주 유한회사"
+            }
+          ]
+        },
+        "sort" : [
+          2018
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_score" : null,
+        "_source" : {
+          "movieCd" : "20184623",
+          "movieNm" : "바람난 아내들2",
+          "movieNmEn" : "",
+          "prdtYear" : "2018",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "개봉예정",
+          "nationAlt" : "한국",
+          "genreAlt" : "멜로/로맨스",
+          "repNationNm" : "한국",
+          "repGenreNm" : "멜로/로맨스",
+          "directors" : [
+            {
+              "peopleNm" : "장두만"
+            }
+          ],
+          "companies" : [
+            {
+              "companyCd" : "20173401",
+              "companyNm" : "(주)케이피에이기획"
+            }
+          ]
+        },
+        "sort" : [
+          2018
+        ]
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "3",
+        "_score" : null,
+        "_source" : {
+          "movieCd" : "20182501",
+          "movieNm" : "지하주차장",
+          "movieNmEn" : "",
+          "prdtYear" : "2018",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "촬영진행",
+          "nationAlt" : "한국",
+          "genreAlt" : "공포(호러),스릴러",
+          "repNationNm" : "한국",
+          "repGenreNm" : "공포(호러)",
+          "directors" : [
+            {
+              "peopleNm" : "김성기"
+            }
+          ],
+          "companys" : [ ]
+        },
+        "sort" : [
+          2018
+        ]
+      }
+    ]
+  }
+}

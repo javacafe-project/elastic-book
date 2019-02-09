@@ -1,0 +1,55 @@
+#7_1-18.txt
+POST movie_auto/_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "term": {
+            "movieCd": "[q]"
+          }
+        },
+        {
+          "match": {
+            "movieNm": {
+              "query": "[q]",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmMid": {
+              "query": "[q]",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmEn": {
+              "query": "[q]",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmEnMid": {
+              "query": "[q]",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmKoAnal": {
+              "query": "[q]",
+              "operator": "and"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

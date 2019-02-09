@@ -1,0 +1,21 @@
+
+POST  movie_search/_doc/8/_explain
+{
+  "query" : {
+    "term": {
+      "prdtYear": 2017
+    }
+  }
+}
+
+{
+  "_index" : "movie_search",
+  "_type" : "_doc",
+  "_id" : "8",
+  "matched" : true,
+  "explanation" : {
+    "value" : 1.0,
+    "description" : "prdtYear:[2017 TO 2017]",
+    "details" : [ ]
+  }
+}

@@ -1,0 +1,20 @@
+POST movie_search/_validate/query?q=prdtYear:2017
+
+POST movie_search/_validate/query
+{
+  "query" : {
+    "match": {
+      "prdtYear": 2017
+    }
+  }
+}
+
+
+{
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "valid" : true
+}

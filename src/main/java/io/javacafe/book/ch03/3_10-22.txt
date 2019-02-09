@@ -1,0 +1,37 @@
+DELETE movie_analyzer
+PUT movie_analyzer
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "trim_analyzer": {
+          "tokenizer": "keyword",
+          "filter": [
+            "lowercase",
+            "trim"
+          ]
+        }
+      }
+    }
+  }
+}
+
+
+POST movie_analyzer/_analyze
+{
+  "analyzer": "trim_analyzer",
+  "text": " Harry Potter and the Chamber of Secrets "
+}
+
+
+{
+  "tokens" : [
+    {
+      "token" : "harry potter and the chamber of secrets",
+      "start_offset" : 0,
+      "end_offset" : 41,
+      "type" : "word",
+      "position" : 0
+    }
+  ]
+}

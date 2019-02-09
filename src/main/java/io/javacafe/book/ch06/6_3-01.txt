@@ -1,0 +1,13 @@
+POST _scripts/movie_search_example_teamplate
+{
+    "script": {
+        "lang": "mustache",
+        "source": {
+            "query": {
+                "match": {
+                    "movieNm": "{{ movie_name }}"
+                }
+            }
+        }
+    }
+}

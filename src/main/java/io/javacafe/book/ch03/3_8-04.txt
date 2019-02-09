@@ -1,0 +1,18 @@
+PUT movie_search_datatype/_doc/6
+{
+  "title": "Harry potter and the philosopher's stone",
+  "filmLocation": {
+    "lat" : 55.4155828,
+    "lon" : -1.7081091
+  },
+  "companies": [
+    {
+      "companyCd": "1",
+      "companyName": "Warner Bros"
+    },
+    {
+      "companyCd": "2",
+      "companyName": "Heyday Films"
+    }
+  ]
+}

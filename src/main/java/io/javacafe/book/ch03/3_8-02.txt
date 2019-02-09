@@ -1,0 +1,13 @@
+PUT movie_search_datatype/_mapping/_doc
+{
+  "properties": {
+    "ipAddr": {
+      "type": "ip"
+    }
+  }
+}
+
+PUT movie_search_datatype/_doc/4
+{
+  "ipAddr" : "127.0.0.1"
+}

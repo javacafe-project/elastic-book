@@ -1,0 +1,24 @@
+#요청
+PUT movie_script/_doc/1
+{
+ "movieList": {
+  "Death_Wish": 5.5,
+  "About_Time": 7,
+  "Suits": 3.5
+ }
+}
+
+{
+  "_index" : "movie_script",
+  "_type" : "_doc",
+  "_id" : "1",
+  "_version" : 1,
+  "result" : "created",
+  "_shards" : {
+    "total" : 2,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "_seq_no" : 0,
+  "_primary_term" : 1
+}

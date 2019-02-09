@@ -1,0 +1,18 @@
+PUT _cluster/settings
+{
+	"transient": {
+                  "cluster.routing.use_adaptive_replica_selection": true
+	}
+}
+
+{
+  "acknowledged" : true,
+  "persistent" : { },
+  "transient" : {
+    "cluster" : {
+      "routing" : {
+        "use_adaptive_replica_selection" : "true"
+      }
+    }
+  }
+}

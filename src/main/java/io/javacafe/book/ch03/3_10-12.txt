@@ -1,0 +1,219 @@
+DELETE movie_analyzer
+
+PUT movie_analyzer
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "edge_ngram_analyzer": {
+          "tokenizer": "edge_ngram_tokenizer"
+        }
+      },
+      "tokenizer": {
+        "edge_ngram_tokenizer": {
+          "type": "edge_ngram",
+          "min_gram": 2,
+          "max_gram": 10,
+          "token_chars": [
+            "letter"
+          ]
+        }
+      }
+    }
+  }
+}
+
+
+#분석기 테스트
+POST movie_analyzer/_analyze
+{
+  "tokenizer": "edge_ngram_tokenizer",
+  "text": "Harry Potter and the Chamber of Secrets"
+}
+
+{
+  "tokens" : [
+    {
+      "token" : "Ha",
+      "start_offset" : 0,
+      "end_offset" : 2,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "Har",
+      "start_offset" : 0,
+      "end_offset" : 3,
+      "type" : "word",
+      "position" : 1
+    },
+    {
+      "token" : "Harr",
+      "start_offset" : 0,
+      "end_offset" : 4,
+      "type" : "word",
+      "position" : 2
+    },
+    {
+      "token" : "Harry",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "word",
+      "position" : 3
+    },
+    {
+      "token" : "Po",
+      "start_offset" : 6,
+      "end_offset" : 8,
+      "type" : "word",
+      "position" : 4
+    },
+    {
+      "token" : "Pot",
+      "start_offset" : 6,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 5
+    },
+    {
+      "token" : "Pott",
+      "start_offset" : 6,
+      "end_offset" : 10,
+      "type" : "word",
+      "position" : 6
+    },
+    {
+      "token" : "Potte",
+      "start_offset" : 6,
+      "end_offset" : 11,
+      "type" : "word",
+      "position" : 7
+    },
+    {
+      "token" : "Potter",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "word",
+      "position" : 8
+    },
+    {
+      "token" : "an",
+      "start_offset" : 13,
+      "end_offset" : 15,
+      "type" : "word",
+      "position" : 9
+    },
+    {
+      "token" : "and",
+      "start_offset" : 13,
+      "end_offset" : 16,
+      "type" : "word",
+      "position" : 10
+    },
+    {
+      "token" : "th",
+      "start_offset" : 17,
+      "end_offset" : 19,
+      "type" : "word",
+      "position" : 11
+    },
+    {
+      "token" : "the",
+      "start_offset" : 17,
+      "end_offset" : 20,
+      "type" : "word",
+      "position" : 12
+    },
+    {
+      "token" : "Ch",
+      "start_offset" : 21,
+      "end_offset" : 23,
+      "type" : "word",
+      "position" : 13
+    },
+    {
+      "token" : "Cha",
+      "start_offset" : 21,
+      "end_offset" : 24,
+      "type" : "word",
+      "position" : 14
+    },
+    {
+      "token" : "Cham",
+      "start_offset" : 21,
+      "end_offset" : 25,
+      "type" : "word",
+      "position" : 15
+    },
+    {
+      "token" : "Chamb",
+      "start_offset" : 21,
+      "end_offset" : 26,
+      "type" : "word",
+      "position" : 16
+    },
+    {
+      "token" : "Chambe",
+      "start_offset" : 21,
+      "end_offset" : 27,
+      "type" : "word",
+      "position" : 17
+    },
+    {
+      "token" : "Chamber",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "word",
+      "position" : 18
+    },
+    {
+      "token" : "of",
+      "start_offset" : 29,
+      "end_offset" : 31,
+      "type" : "word",
+      "position" : 19
+    },
+    {
+      "token" : "Se",
+      "start_offset" : 32,
+      "end_offset" : 34,
+      "type" : "word",
+      "position" : 20
+    },
+    {
+      "token" : "Sec",
+      "start_offset" : 32,
+      "end_offset" : 35,
+      "type" : "word",
+      "position" : 21
+    },
+    {
+      "token" : "Secr",
+      "start_offset" : 32,
+      "end_offset" : 36,
+      "type" : "word",
+      "position" : 22
+    },
+    {
+      "token" : "Secre",
+      "start_offset" : 32,
+      "end_offset" : 37,
+      "type" : "word",
+      "position" : 23
+    },
+    {
+      "token" : "Secret",
+      "start_offset" : 32,
+      "end_offset" : 38,
+      "type" : "word",
+      "position" : 24
+    },
+    {
+      "token" : "Secrets",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "word",
+      "position" : 25
+    }
+  ]
+}

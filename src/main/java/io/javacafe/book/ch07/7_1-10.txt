@@ -1,0 +1,46 @@
+#요청
+POST movie_auto/_search
+{
+ "suggest": {
+  "spell-suggestion": {
+   "text": "콘트롤",
+   "term": {
+    "field": "movieNmKoSpell"
+   }
+  }
+ }
+}
+
+
+
+{
+  "took" : 12,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 0,
+    "max_score" : 0.0,
+    "hits" : [ ]
+  },
+  "suggest" : {
+    "spell-suggestion" : [
+      {
+        "text" : "콘트롤",
+        "offset" : 0,
+        "length" : 3,
+        "options" : [
+          {
+            "text" : "컨트롤",
+            "score" : 0.875,
+            "freq" : 1
+          }
+        ]
+      }
+    ]
+  }
+}

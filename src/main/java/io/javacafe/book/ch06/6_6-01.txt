@@ -1,0 +1,43 @@
+
+PUT _snapshot/movie_data_backup
+{
+  "type": "fs",
+  "settings": {
+     "location": "/home/snapshot/elastic/backup",
+     "compress": true
+  }
+}
+
+
+
+PUT _snapshot/movie_data_backup/movie_snapshot_part1?wait_for_completion=true
+
+
+
+{
+  "snapshot" : {
+    "snapshot" : "movie_snapshot_part1",
+    "uuid" : "6lu_iEKTRw-wlap4nzzCiA",
+    "version_id" : 6050199,
+    "version" : "6.5.1",
+    "indices" : [
+      "moive_search_mapping",
+      "movie_routing",
+      "movie_search",
+      ...중략...
+    ],
+    "include_global_state" : true,
+    "state" : "SUCCESS",
+    "start_time" : "2018-12-06T07:54:53.106Z",
+    "start_time_in_millis" : 1544082893106,
+    "end_time" : "2018-12-06T07:54:53.494Z",
+    "end_time_in_millis" : 1544082893494,
+    "duration_in_millis" : 388,
+    "failures" : [ ],
+    "shards" : {
+      "total" : 121,
+      "failed" : 0,
+      "successful" : 121
+    }
+  }
+}

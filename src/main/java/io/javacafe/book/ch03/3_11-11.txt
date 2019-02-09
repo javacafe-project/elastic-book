@@ -1,0 +1,51 @@
+#문서생성
+DELETE movie_dynamic
+
+PUT movie_dynamic/_doc/1
+{
+    "counter" : 1,
+    "movieNmEn" : "Last Child"
+}
+
+POST movie_dynamic/_doc/1/_update
+{
+    "script" : {
+        "source": "ctx._source.counter += params.count",
+        "lang": "painless",
+        "params" : {
+            "count" : 1
+        }
+    }
+}
+
+POST movie_dynamic/_search
+{
+}
+
+
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "movie_dynamic",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_score" : 1.0,
+        "_source" : {
+          "counter" : 2,
+          "movieNmEn" : "Last Child"
+        }
+      }
+    ]
+  }
+}

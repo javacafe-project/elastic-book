@@ -1,0 +1,40 @@
+POST movie/_search?q=장편
+
+
+
+{
+  "took": 1403,
+  "timed_out": false,
+  "_shards": {
+    "total": 3,
+    "successful": 3,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 1,
+    "max_score": 0.18232156,
+    "hits": [
+      {
+        "_index": "movie",
+        "_type": "_doc",
+        "_id": "HZuX6mEB06UMLL9exnak",
+        "_score": 0.18232156,
+        "_source": {
+          "movieCd": "1",
+          "movieNm": "살아남은 아이",
+          "movieNmEn": "Last Child",
+          "prdtYear": "2017",
+          "openDt": "2017-10-20",
+          "typeNm": "장편",
+          "prdtStatNm": "기타",
+          "nationAlt": "한국",
+          "genreAlt": "드라마,가족",
+          "repNationNm": "한국",
+          "repGenreNm": "드라마"
+        }
+      }
+    ]
+  }
+}
+

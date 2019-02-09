@@ -1,0 +1,81 @@
+POST movie_search/_search
+{
+  "_source": ["movieCd","movieNm","movieNmEn","typeNm","repNationNm","repGenreNm"],
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "term": {
+            "movieCd": "그대 이름은 장미"
+          }
+        },
+        {
+          "match": {
+            "movieNm": {
+              "query": "그대 이름은 장미",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmEn": {
+              "query": "그대 이름은 장미",
+              "operator": "and"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "highlight": {
+    "pre_tags": [
+      "<strong>"
+    ],
+    "post_tags": [
+      "</strong>"
+    ],
+    "fields": {
+      "movieNm": {},
+      "movieNmEn": {}
+    }
+  }
+}
+
+
+
+{
+  "took" : 4,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 2.740076,
+    "hits" : [
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "5",
+        "_score" : 2.740076,
+        "_source" : {
+          "movieCd" : "20166602",
+          "repNationNm" : "한국",
+          "typeNm" : "장편",
+          "repGenreNm" : "코미디",
+          "movieNm" : "그대 이름은 장미(가제)",
+          "movieNmEn" : ""
+        },
+        "highlight" : {
+          "movieNm" : [
+            "<strong>그대</strong> <strong>이름은</strong> <strong>장미</strong>(가제)"
+          ]
+        }
+      }
+    ]
+  }
+}

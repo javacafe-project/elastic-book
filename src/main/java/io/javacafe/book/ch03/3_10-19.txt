@@ -1,0 +1,75 @@
+DELETE movie_analyzer
+PUT movie_analyzer
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "stop_filter_analyzer": {
+          "tokenizer": "standard",
+          "filter": [
+            "standard",
+            "stop_filter"
+          ]
+        }
+      },
+      "filter": {
+        "stop_filter": {
+          "type": "stop",
+          "stopwords": [
+            "and",
+            "is",
+            "the"
+          ]
+        }
+      }
+    }
+  }
+}
+
+
+#분석기 테스트
+POST movie_analyzer/_analyze
+{
+  "analyzer": "stop_filter_analyzer",
+   "text": "Harry Potter and the Chamber of Secrets"
+}
+
+{
+  "tokens" : [
+    {
+      "token" : "Harry",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "Potter",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "Chamber",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "of",
+      "start_offset" : 29,
+      "end_offset" : 31,
+      "type" : "<ALPHANUM>",
+      "position" : 5
+    },
+    {
+      "token" : "Secrets",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    }
+  ]
+}

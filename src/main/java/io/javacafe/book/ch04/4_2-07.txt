@@ -1,0 +1,22 @@
+POST movie_search/_count?q=prdtYear:2017
+
+POST movie_search/_count
+{
+  "query": {
+    "query_string": {
+      "default_field": "prdtYear",
+      "query": "2017"
+    }
+  }
+}
+
+
+{
+  "count" : 4,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  }
+}

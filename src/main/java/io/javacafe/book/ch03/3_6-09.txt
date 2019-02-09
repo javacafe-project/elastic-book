@@ -1,0 +1,17 @@
+PUT moive_index_meta_fields_field_names
+{
+  "mappings": {
+    "_doc": {
+      "_field_names": {
+        "enabled": false
+      }
+    }
+  }
+}
+
+
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "moive_index_meta_fields_field_names"
+}

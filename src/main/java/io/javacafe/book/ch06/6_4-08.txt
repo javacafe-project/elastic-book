@@ -1,0 +1,18 @@
+#요청
+POST  nori_readingform/_analyze
+{
+  "analyzer": "nori_readingform_analyzer",
+  "text": "中國"      
+}
+
+{
+  "tokens" : [
+    {
+      "token" : "중국",
+      "start_offset" : 0,
+      "end_offset" : 2,
+      "type" : "word",
+      "position" : 0
+    }
+  ]
+}

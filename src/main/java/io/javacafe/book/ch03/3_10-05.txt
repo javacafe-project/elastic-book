@@ -1,0 +1,92 @@
+DELETE movie_analyzer
+
+PUT movie_analyzer
+{
+   "settings":{
+      "index": {
+        "number_of_shards": 5,
+        "number_of_replicas": 1
+      },
+      "analysis":{
+         "analyzer":{
+            "movie_lower_test_analyzer":{
+               "type":"custom",
+               "tokenizer":"standard",
+               "filter":[
+                  "lowercase"
+               ]
+            },
+            "movie_stop_test_analyzer":{
+               "type":"custom",
+               "tokenizer":"standard",
+               "filter":[
+                  "lowercase",
+                  "english_stop"
+               ]
+            }
+         },
+         "filter":{
+            "english_stop":{
+               "type":"stop",
+               "stopwords":"_english_"
+            }
+         }
+      }
+   },
+   "mappings":{
+      "_doc":{
+         "properties":{
+            "title": {
+               "type":"text",
+               "analyzer":"movie_lower_test_analyzer",
+               "search_analyzer":"movie_stop_test_analyzer",
+               "search_quote_analyzer":"movie_lower_test_analyzer"
+            }
+         }
+      }
+   }
+}
+
+PUT movie_analyzer/_doc/1
+{
+  "title": "Harry Potter and the Chamber of Secrets"
+}
+
+
+POST movie_analyzer/_search
+{
+  "query": {
+    "query_string": {
+      "default_operator": "AND",
+      "query": "Harry Potter"
+    }
+  }
+}
+
+
+{
+  "took" : 2,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 0.5753642,
+    "hits" : [
+      {
+        "_index" : "movie_analyzer",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_score" : 0.5753642,
+        "_source" : {
+          "title" : "Harry Potter and the Chamber of Secrets"
+        }
+      }
+    ]
+  }
+}
+

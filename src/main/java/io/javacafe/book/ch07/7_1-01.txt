@@ -1,0 +1,16 @@
+PUT movie_term_suggest/_doc/1
+{
+  "movieNm": "lover"
+}
+PUT movie_term_suggest/_doc/2
+{
+  "movieNm": "Fall love"
+}
+PUT movie_term_suggest/_doc/3
+{
+  "movieNm": "lovely"
+}
+PUT movie_term_suggest/_doc/4
+{
+  "movieNm": "lovestory"
+}

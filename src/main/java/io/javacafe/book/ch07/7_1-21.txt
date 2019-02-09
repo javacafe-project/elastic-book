@@ -1,0 +1,72 @@
+POST movie_auto/_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "term": {
+            "movieCd": "ㄱ"
+          }
+        },
+        {
+          "match": {
+            "movieNm": {
+              "query": "ㄱ",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmMid": {
+              "query": "ㄱ",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmEn": {
+              "query": "ㄱ",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmEnMid": {
+              "query": "ㄱ",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmKoAnal": {
+              "query": "ㄱ",
+              "operator": "and"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+
+
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 0,
+    "max_score" : null,
+    "hits" : [ ]
+  }
+}
+

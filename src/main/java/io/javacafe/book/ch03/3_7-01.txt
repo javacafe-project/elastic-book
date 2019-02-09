@@ -1,0 +1,12 @@
+PUT movie_search_datatype
+{}
+
+PUT movie_search_datatype/_mapping/_doc
+{
+  "properties": {
+    "multiMovieYn": {
+      "type": "keyword"
+    }
+  }
+}
+

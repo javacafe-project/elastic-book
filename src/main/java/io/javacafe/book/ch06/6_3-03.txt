@@ -1,0 +1,57 @@
+PUT movie_template_test/_doc/1
+{
+   "movieNm": "titanic"
+ }
+
+
+{
+  "_index" : "movie_template_test",
+  "_type" : "_doc",
+  "_id" : "1",
+  "_version" : 1,
+  "result" : "created",
+  "_shards" : {
+    "total" : 2,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "_seq_no" : 0,
+  "_primary_term" : 1
+}
+
+
+#검색
+POST movie_template_test/_doc/_search/template
+{
+  "id": "movie_search_example_teamplate",
+  "params": {
+    "movie_name": "titanic"
+  }
+}
+
+
+{
+  "took" : 0,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 0.2876821,
+    "hits" : [
+      {
+        "_index" : "movie_template_test",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_score" : 0.2876821,
+        "_source" : {
+          "movieNm" : "titanic"
+        }
+      }
+    ]
+  }
+}

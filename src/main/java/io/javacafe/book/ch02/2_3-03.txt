@@ -1,0 +1,31 @@
+curl -XPUT http://localhost:9200/movie
+{
+  "settings": {
+    "number_of_shards": 3,
+    "number_of_replicas": 2
+  },
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "movieCd": { "type" : "integer" },
+        "movieNm": { "type" : "text" },
+        "movieNmEn": { "type" : "text" },
+        "prdtYear": { "type" : "integer" },
+        "openDt": { "type" : "date" },
+        "typeNm": { "type" : "keyword" },
+        "prdtStatNm": { "type" : "keyword" },
+        "nationAlt":{ "type" : "keyword" },
+        "genreAlt": { "type" : "keyword" },
+        "repNationNm": { "type" : "keyword" },
+        "repGenreNm": { "type" : "keyword" }
+      }
+    }
+  }
+}
+
+
+{
+  "acknowledged": true,
+  "shards_acknowledged": true,
+  "index": "movie"
+}

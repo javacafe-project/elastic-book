@@ -1,0 +1,16 @@
+PUT movie_search_mapping/_mapping/_doc
+{
+  "properties": {
+    "audiCnt": {
+          "type":       "integer",
+          "null_value": "0"
+    }
+  }
+}
+
+
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "moive_search_mapping"
+}

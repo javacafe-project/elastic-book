@@ -1,0 +1,19 @@
+PUT movie_search_example/_doc/1?routing=user1
+{
+  "movieNm": "다시 판문점으로 가는 미국 협상단"
+}
+
+{
+  "_index" : "movie_search_example",
+  "_type" : "_doc",
+  "_id" : "1",
+  "_version" : 1,
+  "result" : "created",
+  "_shards" : {
+    "total" : 2,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "_seq_no" : 0,
+  "_primary_term" : 1
+}

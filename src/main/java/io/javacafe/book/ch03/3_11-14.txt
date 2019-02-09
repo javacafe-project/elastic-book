@@ -1,0 +1,84 @@
+POST _bulk
+{ "index" : { "_index" : "movie_dynamic", "_type" : "_doc", "_id" : "1" } }
+{ "title" : "살아남은 아이" }
+{ "delete" : { "_index" : "movie_dynamic", "_type" : "_doc", "_id" : "2" } }
+{ "create" : { "_index" : "movie_dynamic", "_type" : "_doc", "_id" : "3" } }
+{ "title" : "프렌즈: 몬스터섬의비밀" }
+{ "update" : {"_id" : "1", "_type" : "_doc", "_index" : "movie_dynamic"} }
+{ "doc" : {"movieNmEn" : "Last Child"} }
+
+
+{
+  "took" : 28,
+  "errors" : false,
+  "items" : [
+    {
+      "index" : {
+        "_index" : "movie_dynamic",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_version" : 4,
+        "result" : "updated",
+        "_shards" : {
+          "total" : 2,
+          "successful" : 1,
+          "failed" : 0
+        },
+        "_seq_no" : 3,
+        "_primary_term" : 1,
+        "status" : 200
+      }
+    },
+    {
+      "delete" : {
+        "_index" : "movie_dynamic",
+        "_type" : "_doc",
+        "_id" : "2",
+        "_version" : 1,
+        "result" : "not_found",
+        "_shards" : {
+          "total" : 2,
+          "successful" : 1,
+          "failed" : 0
+        },
+        "_seq_no" : 0,
+        "_primary_term" : 1,
+        "status" : 404
+      }
+    },
+    {
+      "create" : {
+        "_index" : "movie_dynamic",
+        "_type" : "_doc",
+        "_id" : "3",
+        "_version" : 1,
+        "result" : "created",
+        "_shards" : {
+          "total" : 2,
+          "successful" : 1,
+          "failed" : 0
+        },
+        "_seq_no" : 0,
+        "_primary_term" : 1,
+        "status" : 201
+      }
+    },
+    {
+      "update" : {
+        "_index" : "movie_dynamic",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_version" : 5,
+        "result" : "updated",
+        "_shards" : {
+          "total" : 2,
+          "successful" : 1,
+          "failed" : 0
+        },
+        "_seq_no" : 4,
+        "_primary_term" : 1,
+        "status" : 200
+      }
+    }
+  ]
+}

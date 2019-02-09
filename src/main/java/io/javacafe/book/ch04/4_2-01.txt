@@ -1,0 +1,49 @@
+POST movie_search/_search?q=movieNmEn:Family
+
+
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 0.6099695,
+    "hits" : [
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "2",
+        "_score" : 0.6099695,
+        "_source" : {
+          "movieCd" : "20174244",
+          "movieNm" : "버블 패밀리",
+          "movieNmEn" : "Family in the Bubble",
+          "prdtYear" : "2017",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "개봉예정",
+          "nationAlt" : "한국",
+          "genreAlt" : "다큐멘터리,가족",
+          "repNationNm" : "한국",
+          "repGenreNm" : "다큐멘터리",
+          "directors" : [
+            {
+              "peopleNm" : "마민지"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20188342",
+              "companyNm" : "쌍마픽처스"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

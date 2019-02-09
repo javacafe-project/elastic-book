@@ -1,0 +1,19 @@
+
+PUT movie_routing/_mapping/_doc
+ {
+ "_routing": {
+     "required": true
+   },
+   "properties": {
+     "movieNm": {
+       "type": "text"
+     },
+     "repGenreNm": {
+       "type": "keyword"
+     }
+   }
+ }
+
+{
+  "acknowledged" : true
+}

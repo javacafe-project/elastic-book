@@ -1,0 +1,16 @@
+PUT movie_search_datatype/_mapping/_doc
+{
+  "properties": {
+    "showRange": {
+      "type": "date_range"
+    }
+  }
+}
+
+PUT movie_search_datatype/_doc/2
+{
+  "showRange": {
+      "gte": "2001-01-01",
+      "lte": "2001-12-31"
+  }
+}

@@ -1,0 +1,50 @@
+#요청
+POST movie_term_suggest/_search
+{
+ "suggest": {
+  "spell-suggestion": {
+   "text": "심성",
+   "term": {
+    "field": "movieNm"
+   }
+  }
+ }
+}
+
+
+{
+  "took" : 8,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 0,
+    "max_score" : 0.0,
+    "hits" : [ ]
+  },
+  "suggest" : {
+    "spell-suggestion" : [
+      {
+        "text" : "심성",
+        "offset" : 0,
+        "length" : 2,
+        "options" : [
+          {
+            "text" : "삼성",
+            "score" : 0.8333333,
+            "freq" : 1
+          },
+          {
+            "text" : "사성",
+            "score" : 0.6,
+            "freq" : 1
+          }
+        ]
+      }
+    ]
+  }
+}

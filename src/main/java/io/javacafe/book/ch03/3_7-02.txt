@@ -1,0 +1,12 @@
+PUT movie_text
+{
+}
+
+PUT movie_text/_mapping/_doc
+{
+  "properties": {
+    "moiveComment": {
+      "type": "text"
+    }
+  }
+}

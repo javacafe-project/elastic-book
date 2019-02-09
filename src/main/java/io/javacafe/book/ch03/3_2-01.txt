@@ -1,0 +1,15 @@
+PUT movie_dynamic_date
+{
+  "settings": {
+    "number_of_shards": 5,
+    "number_of_replicas": 1
+  },
+  "mappings": {
+    "_doc": { }
+  }
+}
+
+PUT movie_dynamic_date/_doc/1
+{
+  "create_date": "2015/09/02"
+}

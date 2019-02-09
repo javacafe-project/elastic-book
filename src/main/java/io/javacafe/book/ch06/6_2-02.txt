@@ -1,0 +1,62 @@
+#요청
+POST movie_script/_doc/1/_update
+{
+ "script": "ctx._source.movieList.Black_Panther = 3.7"
+}
+
+
+{
+  "_index" : "movie_script",
+  "_type" : "_doc",
+  "_id" : "1",
+  "_version" : 2,
+  "result" : "updated",
+  "_shards" : {
+    "total" : 2,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "_seq_no" : 1,
+  "_primary_term" : 1
+}
+
+
+
+
+#요청
+POST movie_script/_doc/_search
+{
+}
+
+
+
+{
+  "took" : 2,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "movie_script",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_score" : 1.0,
+        "_source" : {
+          "movieList" : {
+            "Death_Wish" : 5.5,
+            "About_Time" : 7,
+            "Suits" : 3.5,
+            "Black_Panther" : 3.7
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,547 @@
+POST  movie_search/_search
+{
+  "profile": true,
+  "query": {
+    "match_all": {}
+  }
+}
+
+
+{
+  "took" : 8,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 10,
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "5",
+        "_score" : 1.0,
+        "_source" : {
+          "movieCd" : "20166602",
+          "movieNm" : "그대 이름은 장미(가제)",
+          "movieNmEn" : "",
+          "prdtYear" : "2016",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "코미디",
+          "repNationNm" : "한국",
+          "repGenreNm" : "코미디",
+          "directors" : [
+            {
+              "peopleNm" : "조석현"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20124237",
+              "companyNm" : "(주)엠씨엠씨"
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "8",
+        "_score" : 1.0,
+        "_source" : {
+          "movieCd" : "20178401",
+          "movieNm" : "검객",
+          "movieNmEn" : "",
+          "prdtYear" : "2017",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "사극,액션",
+          "repNationNm" : "한국",
+          "repGenreNm" : "사극",
+          "directors" : [
+            {
+              "peopleNm" : "최재훈"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20100410",
+              "companyNm" : "오퍼스픽쳐스"
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "9",
+        "_score" : 1.0,
+        "_source" : {
+          "movieCd" : "20176442",
+          "movieNm" : "자전차왕 엄복동",
+          "movieNmEn" : "",
+          "prdtYear" : "2017",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "드라마",
+          "repNationNm" : "한국",
+          "repGenreNm" : "드라마",
+          "directors" : [ ],
+          "companys" : [ ]
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "10",
+        "_score" : 1.0,
+        "_source" : {
+          "movieCd" : "20174169",
+          "movieNm" : "기묘한 가족",
+          "movieNmEn" : "",
+          "prdtYear" : "2018",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "코미디",
+          "repNationNm" : "한국",
+          "repGenreNm" : "코미디",
+          "directors" : [
+            {
+              "peopleNm" : "이민재"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20142551",
+              "companyNm" : "씨네주 유한회사"
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "2",
+        "_score" : 1.0,
+        "_source" : {
+          "movieCd" : "20174244",
+          "movieNm" : "버블 패밀리",
+          "movieNmEn" : "Family in the Bubble",
+          "prdtYear" : "2017",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "개봉예정",
+          "nationAlt" : "한국",
+          "genreAlt" : "다큐멘터리,가족",
+          "repNationNm" : "한국",
+          "repGenreNm" : "다큐멘터리",
+          "directors" : [
+            {
+              "peopleNm" : "마민지"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20188342",
+              "companyNm" : "쌍마픽처스"
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "4",
+        "_score" : 1.0,
+        "_source" : {
+          "movieCd" : "20143501",
+          "movieNm" : "플라이 하이",
+          "movieNmEn" : "Fly High",
+          "prdtYear" : "2016",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "드라마",
+          "repNationNm" : "한국",
+          "repGenreNm" : "드라마",
+          "directors" : [
+            {
+              "peopleNm" : "한경탁"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20138416",
+              "companyNm" : "(주)분홍돌고래"
+            },
+            {
+              "companyCd" : "20100385",
+              "companyNm" : "(주)다세포클럽"
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "6",
+        "_score" : 1.0,
+        "_source" : {
+          "movieCd" : "20161181",
+          "movieNm" : "컨트롤",
+          "movieNmEn" : "",
+          "prdtYear" : "2016",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "스릴러",
+          "repNationNm" : "한국",
+          "repGenreNm" : "스릴러",
+          "directors" : [
+            {
+              "peopleNm" : "한장혁"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20140492",
+              "companyNm" : "(주)위드인픽쳐스"
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_score" : 1.0,
+        "_source" : {
+          "movieCd" : "20184623",
+          "movieNm" : "바람난 아내들2",
+          "movieNmEn" : "",
+          "prdtYear" : "2018",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "개봉예정",
+          "nationAlt" : "한국",
+          "genreAlt" : "멜로/로맨스",
+          "repNationNm" : "한국",
+          "repGenreNm" : "멜로/로맨스",
+          "directors" : [
+            {
+              "peopleNm" : "장두만"
+            }
+          ],
+          "companies" : [
+            {
+              "companyCd" : "20173401",
+              "companyNm" : "(주)케이피에이기획"
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "7",
+        "_score" : 1.0,
+        "_source" : {
+          "movieCd" : "20178501",
+          "movieNm" : "니 부모 얼굴이 보고 싶다",
+          "movieNmEn" : "",
+          "prdtYear" : "2017",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "드라마",
+          "repNationNm" : "한국",
+          "repGenreNm" : "드라마",
+          "directors" : [
+            {
+              "peopleNm" : "김지훈"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20063209",
+              "companyNm" : "(주)더타워픽쳐스"
+            },
+            {
+              "companyCd" : "20124236",
+              "companyNm" : "이십세기폭스 인터내셔널 프로덕션"
+            },
+            {
+              "companyCd" : "20173642",
+              "companyNm" : "(주)리버픽쳐스"
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "3",
+        "_score" : 1.0,
+        "_source" : {
+          "movieCd" : "20182501",
+          "movieNm" : "지하주차장",
+          "movieNmEn" : "",
+          "prdtYear" : "2018",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "촬영진행",
+          "nationAlt" : "한국",
+          "genreAlt" : "공포(호러),스릴러",
+          "repNationNm" : "한국",
+          "repGenreNm" : "공포(호러)",
+          "directors" : [
+            {
+              "peopleNm" : "김성기"
+            }
+          ],
+          "companys" : [ ]
+        }
+      }
+    ]
+  },
+  "profile" : {
+    "shards" : [
+      {
+        "id" : "[ZQWpb3B8QRupZSxFAogeXQ][movie_search][0]",
+        "searches" : [
+          {
+            "query" : [
+              {
+                "type" : "MatchAllDocsQuery",
+                "description" : "*:*",
+                "time_in_nanos" : 6456,
+                "breakdown" : {
+                  "score" : 0,
+                  "build_scorer_count" : 0,
+                  "match_count" : 0,
+                  "create_weight" : 6455,
+                  "next_doc" : 0,
+                  "match" : 0,
+                  "create_weight_count" : 1,
+                  "next_doc_count" : 0,
+                  "score_count" : 0,
+                  "build_scorer" : 0,
+                  "advance" : 0,
+                  "advance_count" : 0
+                }
+              }
+            ],
+            "rewrite_time" : 2959,
+            "collector" : [
+              {
+                "name" : "CancellableCollector",
+                "reason" : "search_cancelled",
+                "time_in_nanos" : 1038,
+                "children" : [
+                  {
+                    "name" : "SimpleTopScoreDocCollector",
+                    "reason" : "search_top_hits",
+                    "time_in_nanos" : 219
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "aggregations" : [ ]
+      },
+      {
+        "id" : "[ZQWpb3B8QRupZSxFAogeXQ][movie_search][1]",
+        "searches" : [
+          {
+            "query" : [
+              {
+                "type" : "MatchAllDocsQuery",
+                "description" : "*:*",
+                "time_in_nanos" : 602745,
+                "breakdown" : {
+                  "score" : 4449,
+                  "build_scorer_count" : 8,
+                  "match_count" : 0,
+                  "create_weight" : 7080,
+                  "next_doc" : 6117,
+                  "match" : 0,
+                  "create_weight_count" : 1,
+                  "next_doc_count" : 8,
+                  "score_count" : 4,
+                  "build_scorer" : 585078,
+                  "advance" : 0,
+                  "advance_count" : 0
+                }
+              }
+            ],
+            "rewrite_time" : 3118,
+            "collector" : [
+              {
+                "name" : "CancellableCollector",
+                "reason" : "search_cancelled",
+                "time_in_nanos" : 318432,
+                "children" : [
+                  {
+                    "name" : "SimpleTopScoreDocCollector",
+                    "reason" : "search_top_hits",
+                    "time_in_nanos" : 24872
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "aggregations" : [ ]
+      },
+      {
+        "id" : "[ZQWpb3B8QRupZSxFAogeXQ][movie_search][2]",
+        "searches" : [
+          {
+            "query" : [
+              {
+                "type" : "MatchAllDocsQuery",
+                "description" : "*:*",
+                "time_in_nanos" : 604882,
+                "breakdown" : {
+                  "score" : 1466,
+                  "build_scorer_count" : 6,
+                  "match_count" : 0,
+                  "create_weight" : 6364,
+                  "next_doc" : 4533,
+                  "match" : 0,
+                  "create_weight_count" : 1,
+                  "next_doc_count" : 6,
+                  "score_count" : 3,
+                  "build_scorer" : 592503,
+                  "advance" : 0,
+                  "advance_count" : 0
+                }
+              }
+            ],
+            "rewrite_time" : 4739,
+            "collector" : [
+              {
+                "name" : "CancellableCollector",
+                "reason" : "search_cancelled",
+                "time_in_nanos" : 321789,
+                "children" : [
+                  {
+                    "name" : "SimpleTopScoreDocCollector",
+                    "reason" : "search_top_hits",
+                    "time_in_nanos" : 25270
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "aggregations" : [ ]
+      },
+      {
+        "id" : "[ZQWpb3B8QRupZSxFAogeXQ][movie_search][3]",
+        "searches" : [
+          {
+            "query" : [
+              {
+                "type" : "MatchAllDocsQuery",
+                "description" : "*:*",
+                "time_in_nanos" : 565618,
+                "breakdown" : {
+                  "score" : 1288,
+                  "build_scorer_count" : 4,
+                  "match_count" : 0,
+                  "create_weight" : 6008,
+                  "next_doc" : 6467,
+                  "match" : 0,
+                  "create_weight_count" : 1,
+                  "next_doc_count" : 4,
+                  "score_count" : 2,
+                  "build_scorer" : 551844,
+                  "advance" : 0,
+                  "advance_count" : 0
+                }
+              }
+            ],
+            "rewrite_time" : 6313,
+            "collector" : [
+              {
+                "name" : "CancellableCollector",
+                "reason" : "search_cancelled",
+                "time_in_nanos" : 270959,
+                "children" : [
+                  {
+                    "name" : "SimpleTopScoreDocCollector",
+                    "reason" : "search_top_hits",
+                    "time_in_nanos" : 28250
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "aggregations" : [ ]
+      },
+      {
+        "id" : "[ZQWpb3B8QRupZSxFAogeXQ][movie_search][4]",
+        "searches" : [
+          {
+            "query" : [
+              {
+                "type" : "MatchAllDocsQuery",
+                "description" : "*:*",
+                "time_in_nanos" : 575816,
+                "breakdown" : {
+                  "score" : 2706,
+                  "build_scorer_count" : 2,
+                  "match_count" : 0,
+                  "create_weight" : 7018,
+                  "next_doc" : 3452,
+                  "match" : 0,
+                  "create_weight_count" : 1,
+                  "next_doc_count" : 2,
+                  "score_count" : 1,
+                  "build_scorer" : 562634,
+                  "advance" : 0,
+                  "advance_count" : 0
+                }
+              }
+            ],
+            "rewrite_time" : 8266,
+            "collector" : [
+              {
+                "name" : "CancellableCollector",
+                "reason" : "search_cancelled",
+                "time_in_nanos" : 279246,
+                "children" : [
+                  {
+                    "name" : "SimpleTopScoreDocCollector",
+                    "reason" : "search_top_hits",
+                    "time_in_nanos" : 17659
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "aggregations" : [ ]
+      }
+    ]
+  }
+}

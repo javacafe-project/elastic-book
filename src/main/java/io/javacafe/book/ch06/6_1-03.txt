@@ -1,0 +1,43 @@
+POST movie_search/_search
+{
+  "_source": ["movieCd","movieNm","movieNmEn","typeNm","repNationNm","repGenreNm"],
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "term": {
+            "movieCd": "그대 이름은 장미"
+          }
+        },
+        {
+          "match": {
+            "movieNm": {
+              "query": "그대 이름은 장미",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmEn": {
+              "query": "그대 이름은 장미",
+              "operator": "and"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "highlight": {
+    "pre_tags": [
+      "<strong>"
+    ],
+    "post_tags": [
+      "</strong>"
+    ],
+    "fields": {
+      "movieNm": {},
+      "movieNmEn": {}
+    }
+  }
+}

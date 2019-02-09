@@ -1,0 +1,135 @@
+#인덱스 닫기
+POST movie_auto/_close
+
+#세팅 추가
+PUT movie_auto/_settings
+{
+  "index": {
+    "analysis": {
+      "analyzer": {
+        "autocomplte_analyzer": {
+          "filter": [
+            "lowercase"
+          ],
+          "tokenizer": "ngram_tokenizer"
+        },
+        "korean_analyzer_index": {
+          "filter": [
+            "lowercase",
+            "pos_filter_speech",
+            "nori_readingform",
+            "edge_ngram_filter"
+          ],
+          "tokenizer": "nori_tokenizer"
+        },
+        "korean_analyzer_search": {
+          "filter": [
+            "lowercase",
+            "pos_filter_speech",
+            "nori_readingform"
+          ],
+          "tokenizer": "nori_tokenizer"
+        }
+      },
+      "tokenizer": {
+        "ngram_tokenizer": {
+          "token_chars": [
+            "letter",
+            "digit"
+          ],
+          "min_gram": "1",
+          "type": "edge_ngram",
+          "max_gram": "10"
+        }
+      },
+      "filter": {
+        "edge_ngram_filter": {
+          "type": "edge_ngram",
+          "min_gram": 1,
+          "max_gram": 50
+        },
+        "pos_filter_speech": {
+          "type": "nori_part_of_speech",
+          "stoptags": [
+            "E",
+            "IC",
+            "J",
+            "MAG",
+            "MAJ",
+            "MM",
+            "NA",
+            "NR",
+            "SC",
+            "SE",
+            "SF",
+             "SP",
+            "SSC",
+            "SSO",
+            "SY",
+            "UNA",
+            "UNKNOWN",
+            "VA",
+            "VCN",
+            "VCP",
+            "VSV",
+            "VV",
+            "VX",
+            "XPN",
+            "XR",
+            "XSA",
+            "XSN",
+            "XSV"
+          ]
+        }
+      }
+    }
+  }
+}
+
+
+{
+  "tokens" : [
+    {
+      "token" : "그",
+      "start_offset" : 0,
+      "end_offset" : 2,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대",
+      "start_offset" : 0,
+      "end_offset" : 2,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "이",
+      "start_offset" : 3,
+      "end_offset" : 5,
+      "type" : "word",
+      "position" : 1
+    },
+    {
+      "token" : "이름",
+      "start_offset" : 3,
+      "end_offset" : 5,
+      "type" : "word",
+      "position" : 1
+    },
+    {
+      "token" : "장",
+      "start_offset" : 7,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 3
+    },
+    {
+      "token" : "장미",
+      "start_offset" : 7,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 3
+    }
+  ]
+}

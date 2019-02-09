@@ -1,0 +1,122 @@
+PUT movie_nested
+{
+  "settings": {
+    "number_of_replicas": 1,
+    "number_of_shards": 5
+  },
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "repGenreNm":{
+            "type" : "keyword"
+          },
+        "companies": {
+          "type": "nested",
+          "properties": {
+            "companyCd":    { "type": "keyword"  },
+            "companyNm": { "type": "keyword"  }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+PUT movie_nested/_doc/1
+{
+  "movieCd": "20184623",
+  "movieNm": "바람난 아내들2",
+  "movieNmEn": "",
+  "prdtYear": "2018",
+  "openDt": "",
+  "typeNm": "장편",
+  "prdtStatNm": "개봉예정",
+  "nationAlt": "한국",
+  "genreAlt": "멜로/로맨스",
+  "repNationNm": "한국",
+  "repGenreNm": "멜로/로맨스",
+  "companies": [
+    {
+      "companyCd": "20173401",
+      "companyNm": "(주)케이피에이기획"
+    }
+  ]
+}
+
+
+#쿼리문
+GET movie_nested/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "repGenreNm": "멜로/로맨스"
+          }
+        },
+        {
+          "nested": {
+            "path": "companies",
+            "query": {
+              "bool": {
+                "must": [
+                  {
+                    "term": {
+                      "companies.companyCd": "20173401"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+
+
+{
+  "took" : 2,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 0.5753642,
+    "hits" : [
+      {
+        "_index" : "movie_nested",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_score" : 0.5753642,
+        "_source" : {
+          "movieCd" : "20184623",
+          "movieNm" : "바람난 아내들2",
+          "movieNmEn" : "",
+          "prdtYear" : "2018",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "개봉예정",
+          "nationAlt" : "한국",
+          "genreAlt" : "멜로/로맨스",
+          "repNationNm" : "한국",
+          "repGenreNm" : "멜로/로맨스",
+          "companies" : [
+            {
+              "companyCd" : "20173401",
+              "companyNm" : "(주)케이피에이기획"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+

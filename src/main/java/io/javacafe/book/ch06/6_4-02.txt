@@ -1,0 +1,33 @@
+PUT /seunjeon_with_dic_analyzer
+{
+  "settings": {
+    "index": {
+      "analysis": {
+        "tokenizer": {
+          "seunjeon_default_tokenizer": {
+            "index_eojeol": "false",
+            "pos_tagging": "false",
+            "user_dict_path": "dic/user_dic.csv",
+            "type": "seunjeon_tokenizer"
+          }
+        },
+        "analyzer": {
+          "korean": {
+            "filter": [
+              "lowercase"
+            ],
+            "tokenizer": "seunjeon_default_tokenizer",
+            "type": "custom"
+          }
+        }
+      }
+    }
+  }
+}
+
+
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "seunjeon_with_dic_analyzer"
+}

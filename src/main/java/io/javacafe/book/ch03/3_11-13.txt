@@ -1,0 +1,29 @@
+#요청
+POST movie_dynamic/_update_by_query?conflicts=proceed
+{
+  "query": {
+    "term": {
+      "movieNmEn": "Last Child"
+    }
+  }
+}
+
+
+{
+  "took" : 1,
+  "timed_out" : false,
+  "total" : 0,
+  "updated" : 0,
+  "deleted" : 0,
+  "batches" : 0,
+  "version_conflicts" : 0,
+  "noops" : 0,
+  "retries" : {
+    "bulk" : 0,
+    "search" : 0
+  },
+  "throttled_millis" : 0,
+  "requests_per_second" : -1.0,
+  "throttled_until_millis" : 0,
+  "failures" : [ ]
+}

@@ -1,0 +1,157 @@
+DELETE movie_analyzer
+PUT movie_analyzer
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "edge_ngram_fileter_analyzer": {
+          "tokenizer": "standard",
+          "filter": [
+            "standard",
+            "edge_ngram_filter"
+          ]
+        }
+      },
+      "filter": {
+        "edge_ngram_filter": {
+          "type": "edgeNGram",
+          "min_gram": 2,
+          "max_gram": 4
+        }
+      }
+    }
+  }
+}
+
+
+#분석기 테스트
+POST movie_analyzer/_analyze
+{
+  "analyzer": "edge_ngram_fileter_analyzer",
+   "text": "Harry Potter and the Chamber of Secrets"
+}
+
+
+{
+  "tokens" : [
+    {
+      "token" : "Ha",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "Har",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "Harr",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "Po",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "Pot",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "Pott",
+      "start_offset" : 6,
+      "end_offset" : 12,
+      "type" : "<ALPHANUM>",
+      "position" : 1
+    },
+    {
+      "token" : "an",
+      "start_offset" : 13,
+      "end_offset" : 16,
+      "type" : "<ALPHANUM>",
+      "position" : 2
+    },
+    {
+      "token" : "and",
+      "start_offset" : 13,
+      "end_offset" : 16,
+      "type" : "<ALPHANUM>",
+      "position" : 2
+    },
+    {
+      "token" : "th",
+      "start_offset" : 17,
+      "end_offset" : 20,
+      "type" : "<ALPHANUM>",
+      "position" : 3
+    },
+    {
+      "token" : "the",
+      "start_offset" : 17,
+      "end_offset" : 20,
+      "type" : "<ALPHANUM>",
+      "position" : 3
+    },
+    {
+      "token" : "Ch",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "Cha",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "Cham",
+      "start_offset" : 21,
+      "end_offset" : 28,
+      "type" : "<ALPHANUM>",
+      "position" : 4
+    },
+    {
+      "token" : "of",
+      "start_offset" : 29,
+      "end_offset" : 31,
+      "type" : "<ALPHANUM>",
+      "position" : 5
+    },
+    {
+      "token" : "Se",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "Sec",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    },
+    {
+      "token" : "Secr",
+      "start_offset" : 32,
+      "end_offset" : 39,
+      "type" : "<ALPHANUM>",
+      "position" : 6
+    }
+  ]
+}

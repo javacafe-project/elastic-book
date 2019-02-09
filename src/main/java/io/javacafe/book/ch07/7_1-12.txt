@@ -1,0 +1,11 @@
+
+PUT movie_term_completion/_doc/1
+{"movieNmEnComple": "After Love"}
+PUT movie_term_completion/_doc/2
+{"movieNmEnComple": "Lover"}
+PUT movie_term_completion/_doc/3
+{"movieNmEnComple": "Love for a mother"}
+PUT movie_term_completion/_doc/4
+{"movieNmEnComple": "Fall love"}
+PUT movie_term_completion/_doc/5
+{"movieNmEnComple": "My lovely wife"}

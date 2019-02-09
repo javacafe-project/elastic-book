@@ -1,0 +1,24 @@
+POST movie_term_suggest/_analyze
+{
+  "analyzer": "korean_spell_analyzer",
+  "text": "삼성의 전자"
+}
+
+{
+  "tokens" : [
+    {
+      "token" : "삼성",
+      "start_offset" : 0,
+      "end_offset" : 2,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "전자",
+      "start_offset" : 4,
+      "end_offset" : 6,
+      "type" : "word",
+      "position" : 2
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+DELETE _snapshot/movie_data_backup/movie_snapshot_part1
+
+
+{
+  "accepted" : true
+}

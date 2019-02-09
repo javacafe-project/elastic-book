@@ -1,0 +1,29 @@
+PUT reindex_movie
+{
+}
+
+#결과
+{
+  "acknowledged": true,
+  "shards_acknowledged": true,
+  "index": "reindex_movie"
+}
+
+
+POST _reindex
+{
+  "source": {
+    "index": "movie_search",
+    "query": {
+      "match": {
+        "movieCd": "20173732"
+      }
+    }
+  },
+  "dest": {
+    "index": "reindex_movie"
+  },
+  "script": {
+    "source": "ctx._source.movieCd++"
+  }
+}

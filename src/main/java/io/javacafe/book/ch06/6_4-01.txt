@@ -1,0 +1,36 @@
+#인덱스 세팅
+PUT /seunjeon_default_analyzer
+{
+  "settings": {
+    "number_of_shards": 5,
+    "number_of_replicas": 1,
+    "index": {
+      "analysis": {
+        "analyzer": {
+          "korean": {
+            "type": "custom",
+            "tokenizer": "seunjeon_default_tokenizer"
+          }
+        },
+        "tokenizer": {
+          "seunjeon_default_tokenizer": {
+            "type": "seunjeon_tokenizer",
+            "index_eojeol": false,
+            "user_words": [
+              "낄끼+빠빠,-100", "c\\+\\+", "어그로", "버카충", "abc마트"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "seunjeon_default_analyzer"
+}

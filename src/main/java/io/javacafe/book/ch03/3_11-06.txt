@@ -1,0 +1,46 @@
+DELETE movie_dynamic
+PUT movie_dynamic
+{
+  "mappings": {
+    "_doc": {
+      "_source": {
+        "enabled": "false"
+      },
+      "properties": {
+        "movieCd": {
+          "type": "text",
+          "store": true
+        },
+        "movieNm": {
+          "type": "text",
+          "store": true
+        },
+        "movieNmEn": {
+          "type": "text"
+        }
+      }
+    }
+  }
+}
+
+PUT movie_dynamic/_doc/1
+{
+  "movieCd": "20173732",
+  "movieNm": "살아남은 아이",
+  "movieNmEn": "Last Child"
+}
+
+{
+  "_index" : "movie_dynamic",
+  "_type" : "_doc",
+  "_id" : "1",
+  "_version" : 1,
+  "result" : "created",
+  "_shards" : {
+    "total" : 2,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "_seq_no" : 0,
+  "_primary_term" : 1
+}

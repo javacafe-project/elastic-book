@@ -1,0 +1,51 @@
+POST reindex_movie/_search
+{
+  "query": {
+    "term": {
+      "movieCd": "201737321"
+    }
+  }
+}
+
+
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 0.2876821,
+    "hits" : [
+      {
+        "_index" : "reindex_movie",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_score" : 0.2876821,
+        "_source" : {
+          "repNationNm" : "한국",
+          "directors" : [
+            {
+              "peopleNm" : "신동석"
+            }
+          ],
+          "nationAlt" : "한국",
+          "repGenreNm" : "드라마",
+          "movieNm" : "살아남은 아이",
+          "movieCd" : "201737321",
+          "companies" : [ ],
+          "prdtStatNm" : "기타",
+          "prdtYear" : "2017",
+          "typeNm" : "장편",
+          "openDt" : "",
+          "movieNmEn" : "Last Child",
+          "genreAlt" : "드라마,가족"
+        }
+      }
+    ]
+  }
+}

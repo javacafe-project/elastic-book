@@ -1,0 +1,73 @@
+
+#7_1-17.txt
+#문서 추가
+PUT movie_auto/_doc/1
+{
+  "movieCd": "20184623",
+  "movieNm": "바람난 아내들2",
+  "movieNmEn": ""
+}
+
+PUT movie_auto/_doc/2
+{
+  "movieCd": "20174244",
+  "movieNm": "버블 패밀리",
+  "movieNmEn": "Family in the Bubble"
+}
+
+PUT movie_auto/_doc/3
+{
+  "movieCd": "20182501",
+  "movieNm": "지하주차장",
+  "movieNmEn": ""
+}
+
+PUT movie_auto/_doc/4
+{
+  "movieCd": "20143501",
+  "movieNm": "플라이 하이",
+  "movieNmEn": "Fly High"
+}
+
+PUT movie_auto/_doc/5
+{
+  "movieCd": "20166602",
+  "movieNm": "그대 이름은 장미(가제)",
+  "movieNmEn": ""
+}
+
+PUT movie_auto/_doc/6
+{
+  "movieCd": "20161181",
+        "movieNm": "컨트롤",
+        "movieNmEn": ""
+}
+
+PUT movie_auto/_doc/7
+{
+ "movieCd": "20178501",
+        "movieNm": "니 부모 얼굴이 보고 싶다",
+        "movieNmEn": ""
+
+}
+
+PUT movie_auto/_doc/8
+{
+ "movieCd": "20178401",
+        "movieNm": "검객",
+        "movieNmEn": ""
+}
+
+PUT movie_auto/_doc/9
+{
+   "movieCd": "20176442",
+        "movieNm": "자전차왕 엄복동",
+        "movieNmEn": ""
+}
+
+PUT movie_auto/_doc/10
+{
+ "movieCd": "20174169",
+        "movieNm": "기묘한 가족",
+        "movieNmEn": ""
+}

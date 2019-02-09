@@ -1,0 +1,13 @@
+PUT movie_text/_mapping/_doc
+{
+  "properties": {
+    "moiveComment": {
+      "type": "text",
+      "fields": {
+        "moiveComment_keyword" : {
+          "type" : "keyword"
+        }
+      }
+    }
+  }
+}

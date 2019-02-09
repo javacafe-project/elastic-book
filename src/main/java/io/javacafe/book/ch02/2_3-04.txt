@@ -1,0 +1,30 @@
+curl -XPOST http://localhost:9200/movie/_doc
+‘{
+  "movieCd": "1",
+  "movieNm": "살아남은 아이",
+  "movieNmEn": "Last Child",
+  "prdtYear": "2017",
+  "openDt": "2017-10-20",
+  "typeNm": "장편",
+  "prdtStatNm": "기타",
+  "nationAlt": "한국",
+  "genreAlt": "드라마,가족",
+  "repNationNm": "한국",
+  "repGenreNm": "드라마"
+}’
+
+
+{
+  "_index": "movie",
+  "_type": "_doc",
+  "_id": "HZuX6mEB06UMLL9exnak",
+  "_version": 1,
+  "result": "created",
+  "_shards": {
+    "total": 2,
+    "successful": 2,
+    "failed": 0
+  },
+  "_seq_no": 0,
+  "_primary_term": 1
+}

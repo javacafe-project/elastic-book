@@ -1,0 +1,8 @@
+#3_11-08.txt
+DELETE movie_dynamic
+{
+}
+#결과
+{
+  "acknowledged" : true
+}

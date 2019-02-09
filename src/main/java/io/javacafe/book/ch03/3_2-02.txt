@@ -1,0 +1,10 @@
+PUT movie_dynamic_date/_mapping/_doc
+{
+    "date_detection": false
+
+}
+
+PUT movie_dynamic_date/_doc/1
+{
+  "update_date": "2015/09/02"
+}

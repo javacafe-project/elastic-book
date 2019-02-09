@@ -1,0 +1,7 @@
+curl -XGET ‘http://localhost:9200/movie/_doc/_search?q=prdtYear:2017&pretty=true’ -d ‘{
+	"sort":{
+	    "movieCd":{
+	    "order":"asc"
+        }
+    }
+}’

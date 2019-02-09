@@ -1,0 +1,65 @@
+PUT movie_search_datatype/_mapping/_doc
+{
+  "properties": {
+    "companies_nested": {
+      "type": "nested"
+    }
+  }
+}
+
+PUT movie_search_datatype/_doc/7
+{
+  "title": "Harry potter and the philosopher's stone",
+  "filmLocation": {
+    "lat" : 55.4155828,
+    "lon" : -1.7081091
+  },
+  "companies_nested": [
+    {
+      "companyCd": "1",
+      "companyName": "Warner Bros"
+    },
+    {
+      "companyCd": "2",
+      "companyName": "Heyday Films"
+    }
+  ]
+}
+
+POST movie_search_datatype/_search
+{
+  "query": {
+    "nested": {
+      "path": "companies_nested",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match": { "companies_nested.companyName": "Warner Bros" }
+            },
+            {
+              "match": { "companies_nested.companyCd": "2" }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+
+
+{
+  "took" : 22,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 0,
+    "max_score" : null,
+    "hits" : [ ]
+  }
+}

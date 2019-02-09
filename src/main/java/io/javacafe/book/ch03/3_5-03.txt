@@ -1,0 +1,24 @@
+PUT moive_search_mapping
+{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "awards": {
+          "type": "text",
+          "fields": {
+            "name": {
+              "type":  "keyword"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "moive_search_mapping"
+}

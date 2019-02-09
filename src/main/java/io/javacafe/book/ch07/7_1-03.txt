@@ -1,0 +1,73 @@
+DELETE movie_term_suggest
+
+PUT movie_term_suggest
+{
+  "settings": {
+    "index": {
+      "analysis": {
+        "analyzer": {
+          "korean_spell_analyzer": {
+            "filter": [
+              "lowercase",
+              "pos_filter_speech",
+              "nori_readingform",
+              "korean_jaso_filter"
+            ],
+            "tokenizer": "nori_tokenizer"
+          }
+        },
+        "filter": {
+          "korean_jaso_filter": {
+            "type": "icu_transform",
+            "id": "NFD;"
+          },
+          "pos_filter_speech": {
+            "type": "nori_part_of_speech",
+            "stoptags": [
+              "E",
+              "IC",
+              "J",
+              "MAG",
+              "MAJ",
+              "MM",
+              "NA",
+              "NR",
+              "SC",
+              "SE",
+              "SF",
+              "SP",
+              "SSC",
+              "SSO",
+              "SY",
+              "UNA",
+              "UNKNOWN",
+              "VA",
+              "VCN",
+              "VCP",
+              "VSV",
+              "VV",
+              "VX",
+              "XPN",
+              "XR",
+              "XSA",
+              "XSN",
+              "XSV"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "mappings" : {
+        "_doc" : {
+            "properties" : {
+                "movieNm" : {
+                  "type" : "text" ,
+                  "analyzer":"korean_spell_analyzer"
+
+                }
+            }
+        }
+    }
+}
+

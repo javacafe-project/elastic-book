@@ -1,0 +1,17 @@
+POST movie_analyzer/_analyze
+{
+  "tokenizer": "keyword",
+   "text": "Harry Potter and the Chamber of Secrets"
+}
+
+{
+  "tokens" : [
+    {
+      "token" : "Harry Potter and the Chamber of Secrets",
+      "start_offset" : 0,
+      "end_offset" : 39,
+      "type" : "word",
+      "position" : 0
+    }
+  ]
+}

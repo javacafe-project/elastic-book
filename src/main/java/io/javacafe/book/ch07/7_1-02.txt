@@ -1,0 +1,48 @@
+POST moive_term_suggest/_search
+{
+ "suggest": {
+  "spell-suggestion": {
+   "text": "lave",
+   "term": {
+    "field": "movieNm"
+   }
+  }
+ }
+}
+
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 0,
+    "max_score" : 0.0,
+    "hits" : [ ]
+  },
+  "suggest" : {
+    "spell-suggestion" : [
+      {
+        "text" : "lave",
+        "offset" : 0,
+        "length" : 4,
+        "options" : [
+          {
+            "text" : "love",
+            "score" : 0.75,
+            "freq" : 1
+          },
+          {
+            "text" : "lover",
+            "score" : 0.5,
+            "freq" : 1
+          }
+        ]
+      }
+    ]
+  }
+}

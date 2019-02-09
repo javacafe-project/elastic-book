@@ -1,0 +1,53 @@
+POST movie_highlighting/_search
+{
+  "query": {
+    "match": {
+      "title": {
+        "query": "harry"
+      }
+    }
+  },
+  "highlight": {
+    "pre_tags": [
+      "<strong>"
+    ],
+    "post_tags": [
+      "</strong>"
+    ],
+    "fields": {
+      "title": {}
+    }
+  }
+}
+
+
+{
+  "took" : 2,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 0.2876821,
+    "hits" : [
+      {
+        "_index" : "movie_highlighting",
+        "_type" : "_doc",
+        "_id" : "1",
+        "_score" : 0.2876821,
+        "_source" : {
+          "title" : "Harry Potter and the Deathly Hallows"
+        },
+        "highlight" : {
+          "title" : [
+            "<strong>Harry</strong> Potter and the Deathly Hallows"
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+POST movie_auto/_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "term": {
+            "movieCd": "주차장"
+          }
+        },
+        {
+          "match": {
+            "movieNm": {
+              "query": "주차장",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmEn": {
+              "query": "주차장",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmKoAnal": {
+              "query": "주차장",
+              "operator": "and"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+
+
+
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 0.6879354,
+    "hits" : [
+      {
+        "_index" : "movie_auto",
+        "_type" : "_doc",
+        "_id" : "3",
+        "_score" : 0.6879354,
+        "_source" : {
+          "movieCd" : "20182501",
+          "movieNm" : "지하주차장",
+          "movieNmEn" : ""
+        }
+      }
+    ]
+  }
+}

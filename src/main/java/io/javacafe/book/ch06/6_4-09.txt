@@ -1,0 +1,74 @@
+PUT nori_full_analyzer
+{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "description": {
+          "type": "text",
+          "analyzer": "korean_analyzer"
+        }
+      }
+    }
+  },
+  "settings": {
+    "index": {
+      "analysis": {
+        "analyzer": {
+          "korean_analyzer": {
+            "filter": [
+              "pos_filter_speech",
+              "nori_readingform",
+              "lowercase"
+            ],
+            "tokenizer": "nori_tokenizer"
+          }
+        },
+        "filter": {
+          "pos_filter_speech": {
+            "type": "nori_part_of_speech",
+            "stoptags": [
+              "E",
+              "IC",
+              "J",
+              "MAG",
+              "MAJ",
+              "MM",
+              "NA",
+              "NR",
+              "SC",
+              "SE",
+              "SF",
+              "SH",
+              "SL",
+              "SN",
+              "SP",
+              "SSC",
+              "SSO",
+              "SY",
+              "UNA",
+              "UNKNOWN",
+              "VA",
+              "VCN",
+              "VCP",
+              "VSV",
+              "VV",
+              "VX",
+              "XPN",
+              "XR",
+              "XSA",
+              "XSN",
+              "XSV"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+
+
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "nori_full_analyzer"
+}

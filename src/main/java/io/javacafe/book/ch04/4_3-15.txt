@@ -1,0 +1,86 @@
+POST movie_search/_search
+{
+  "query" : {
+    "term": {
+      "genreAlt": "코미디"
+    }
+  }
+}
+
+
+{
+  "took" : 0,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 2,
+    "max_score" : 0.6931472,
+    "hits" : [
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "5",
+        "_score" : 0.6931472,
+        "_source" : {
+          "movieCd" : "20166602",
+          "movieNm" : "그대 이름은 장미(가제)",
+          "movieNmEn" : "",
+          "prdtYear" : "2016",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "코미디",
+          "repNationNm" : "한국",
+          "repGenreNm" : "코미디",
+          "directors" : [
+            {
+              "peopleNm" : "조석현"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20124237",
+              "companyNm" : "(주)엠씨엠씨"
+            }
+          ]
+        }
+      },
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "10",
+        "_score" : 0.6931472,
+        "_source" : {
+          "movieCd" : "20174169",
+          "movieNm" : "기묘한 가족",
+          "movieNmEn" : "",
+          "prdtYear" : "2018",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "코미디",
+          "repNationNm" : "한국",
+          "repGenreNm" : "코미디",
+          "directors" : [
+            {
+              "peopleNm" : "이민재"
+            }
+          ],
+          "companys" : [
+            {
+              "companyCd" : "20142551",
+              "companyNm" : "씨네주 유한회사"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

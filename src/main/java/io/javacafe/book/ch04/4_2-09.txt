@@ -1,0 +1,41 @@
+POST movie_search/_validate/query?rewrite=true
+{
+  "query" : {
+    "match": {
+      "prdtYear": "2017-10-10"
+    }
+  }
+}
+
+
+{
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "valid" : false,
+  "explanations" : [
+    {
+      "index" : "movie_search",
+      "valid" : false,
+      "error" : """
+[movie_search/molsU_KAQkGhVZWTbt2qZQ] QueryShardException[failed to create query: {
+  "match" : {
+    "prdtYear" : {
+      "query" : "2017-10-10",
+      "operator" : "OR",
+      "prefix_length" : 0,
+      "max_expansions" : 50,
+      "fuzzy_transpositions" : true,
+      "lenient" : false,
+      "zero_terms_query" : "NONE",
+      "auto_generate_synonyms_phrase_query" : true,
+      "boost" : 1.0
+    }
+  }
+}]; nested: NumberFormatException[For input string: "2017-10-10"];; java.lang.NumberFormatException: For input string: "2017-10-10"
+"""
+    }
+  ]
+}

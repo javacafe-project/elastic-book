@@ -1,0 +1,117 @@
+#요청
+POST movie_term_completion/_search
+{
+  "suggest": {
+    "movie_completion": {
+      "prefix": "l",
+      "completion": {
+        "field": "movieNmEnComple",
+        "size" : 5
+      }
+    }
+  }
+}
+
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 0,
+    "max_score" : 0.0,
+    "hits" : [ ]
+  },
+  "suggest" : {
+    "movie_completion" : [
+      {
+        "text" : "l",
+        "offset" : 0,
+        "length" : 1,
+        "options" : [
+          {
+            "text" : "Love",
+            "_index" : "movie_term_completion",
+            "_type" : "_doc",
+            "_id" : "1",
+            "_score" : 1.0,
+            "_source" : {
+              "movieNmEnComple" : {
+                "input" : [
+                  "After",
+                  "Love"
+                ]
+              }
+            }
+          },
+          {
+            "text" : "Love",
+            "_index" : "movie_term_completion",
+            "_type" : "_doc",
+            "_id" : "3",
+            "_score" : 1.0,
+            "_source" : {
+              "movieNmEnComple" : {
+                "input" : [
+                  "Love",
+                  "for",
+                  "a",
+                  "mother"
+                ]
+              }
+            }
+          },
+          {
+            "text" : "Lover",
+            "_index" : "movie_term_completion",
+            "_type" : "_doc",
+            "_id" : "2",
+            "_score" : 1.0,
+            "_source" : {
+              "movieNmEnComple" : {
+                "input" : [
+                  "Lover"
+                ]
+              }
+            }
+          },
+          {
+            "text" : "love",
+            "_index" : "movie_term_completion",
+            "_type" : "_doc",
+            "_id" : "4",
+            "_score" : 1.0,
+            "_source" : {
+              "movieNmEnComple" : {
+                "input" : [
+                  "Fall",
+                  "love"
+                ]
+              }
+            }
+          },
+          {
+            "text" : "lovely",
+            "_index" : "movie_term_completion",
+            "_type" : "_doc",
+            "_id" : "5",
+            "_score" : 1.0,
+            "_source" : {
+              "movieNmEnComple" : {
+                "input" : [
+                  "My",
+                  "lovely",
+                  "wife"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

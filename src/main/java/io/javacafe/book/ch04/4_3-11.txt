@@ -1,0 +1,50 @@
+POST movie_search/_search
+{
+  "query": {
+    "match": {
+      "movieNm": {
+        "query": "자전차왕 엄복동",
+        "minimum_should_match": 2
+      }
+    }
+  }
+}
+
+
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 2.52261,
+    "hits" : [
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "9",
+        "_score" : 2.52261,
+        "_source" : {
+          "movieCd" : "20176442",
+          "movieNm" : "자전차왕 엄복동",
+          "movieNmEn" : "",
+          "prdtYear" : "2017",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "후반작업",
+          "nationAlt" : "한국",
+          "genreAlt" : "드라마",
+          "repNationNm" : "한국",
+          "repGenreNm" : "드라마",
+          "directors" : [ ],
+          "companys" : [ ]
+        }
+      }
+    ]
+  }
+}

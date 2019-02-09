@@ -1,0 +1,144 @@
+POST movie_auto/_analyze
+{
+  "analyzer": "autocomplete_analyzer_prefix",
+  "text": "그대 이름은 장미"      
+}
+
+
+{
+  "tokens" : [
+    {
+      "token" : "ᄀ",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그ᄃ",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 ",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 ᄋ",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 이",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 이ᄅ",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 이르",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 이름",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 이름ᄋ",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 이름으",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 이름은",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 이름은 ",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 이름은 ᄌ",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 이름은 자",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 이름은 장",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 이름은 장ᄆ",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "그대 이름은 장미",
+      "start_offset" : 0,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 0
+    }
+  ]
+}

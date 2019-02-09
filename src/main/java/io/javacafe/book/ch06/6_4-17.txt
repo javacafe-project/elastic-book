@@ -1,0 +1,81 @@
+POST movie_search/_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "term": {
+            "movieCd": "지하주차장"
+          }
+        },
+        {
+          "match": {
+            "movieNm": {
+              "query": "지하주차장",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmKoAnal": {
+              "query": "지하주차장",
+              "operator": "and"
+            }
+          }
+        },
+        {
+          "match": {
+            "movieNmEn": {
+              "query": "지하주차장",
+              "operator": "and"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
+
+
+{
+  "took" : 4,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 1.3195852,
+    "hits" : [
+      {
+        "_index" : "movie_search",
+        "_type" : "_doc",
+        "_id" : "3",
+        "_score" : 1.3195852,
+        "_source" : {
+          "movieCd" : "20182501",
+          "movieNm" : "지하주차장",
+          "movieNmEn" : "",
+          "prdtYear" : "2018",
+          "openDt" : "",
+          "typeNm" : "장편",
+          "prdtStatNm" : "촬영진행",
+          "nationAlt" : "한국",
+          "genreAlt" : "공포(호러),스릴러",
+          "repNationNm" : "한국",
+          "repGenreNm" : "공포(호러)",
+          "directors" : [
+            {
+              "peopleNm" : "김성기"
+            }
+          ],
+          "companys" : [ ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+
+PUT movie_routing
+{
+}
+
+
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "movie_routing"
+}

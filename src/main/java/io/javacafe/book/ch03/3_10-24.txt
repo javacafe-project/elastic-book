@@ -1,0 +1,44 @@
+DELETE movie_analyzer
+PUT movie_analyzer
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "html_strip_analyzer": {
+          "tokenizer": "keyword",
+          "char_filter": [
+            "html_strip_char_filter"
+          ]
+        }
+      },
+      "char_filter": {
+        "html_strip_char_filter": {
+          "type": "html_strip",
+          "escaped_tags": [
+            "b"
+          ]
+        }
+      }
+    }
+  }
+}
+
+#분석기 테스트
+POST movie_analyzer/_analyze
+{
+  "analyzer": "html_strip_analyzer",
+   "text": "<span>Harry Potter</span> and the Chamber of Secrets"
+
+}
+
+{
+  "tokens" : [
+    {
+      "token" : "Harry Potter and the Chamber of Secrets",
+      "start_offset" : 6,
+      "end_offset" : 52,
+      "type" : "word",
+      "position" : 0
+    }
+  ]
+}

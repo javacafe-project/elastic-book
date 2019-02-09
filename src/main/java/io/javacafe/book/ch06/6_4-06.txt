@@ -1,0 +1,34 @@
+
+#요청
+POST nori_analyzer/_analyze
+{
+  "analyzer": "nori_stoptags_analyzer",
+  "text": "그대 이름은 장미"
+}
+
+
+{
+  "tokens" : [
+    {
+      "token" : "그대",
+      "start_offset" : 0,
+      "end_offset" : 2,
+      "type" : "word",
+      "position" : 0
+    },
+    {
+      "token" : "이름",
+      "start_offset" : 3,
+      "end_offset" : 5,
+      "type" : "word",
+      "position" : 1
+    },
+    {
+      "token" : "장미",
+      "start_offset" : 7,
+      "end_offset" : 9,
+      "type" : "word",
+      "position" : 3
+    }
+  ]
+}

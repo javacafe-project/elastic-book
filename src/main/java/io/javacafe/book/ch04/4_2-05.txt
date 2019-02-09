@@ -1,0 +1,88 @@
+POST movie_search/_search_shards
+
+
+{
+  "nodes" : {
+    "ZQWpb3B8QRupZSxFAogeXQ" : {
+      "name" : "ZQWpb3B",
+      "ephemeral_id" : "MOXpOjsBQjm8TyerpKYfdA",
+      "transport_address" : "127.0.0.1:9300",
+      "attributes" : {
+        "ml.machine_memory" : "17179869184",
+        "xpack.installed" : "true",
+        "ml.max_open_jobs" : "20",
+        "ml.enabled" : "true"
+      }
+    }
+  },
+  "indices" : {
+    "movie_search" : { }
+  },
+  "shards" : [
+    [
+      {
+        "state" : "STARTED",
+        "primary" : true,
+        "node" : "ZQWpb3B8QRupZSxFAogeXQ",
+        "relocating_node" : null,
+        "shard" : 0,
+        "index" : "movie_search",
+        "allocation_id" : {
+          "id" : "T66WyFakSTqrVNedsi1b_w"
+        }
+      }
+    ],
+    [
+      {
+        "state" : "STARTED",
+        "primary" : true,
+        "node" : "ZQWpb3B8QRupZSxFAogeXQ",
+        "relocating_node" : null,
+        "shard" : 1,
+        "index" : "movie_search",
+        "allocation_id" : {
+          "id" : "jjVOY8jEQyeUj_u45RJ_-g"
+        }
+      }
+    ],
+    [
+      {
+        "state" : "STARTED",
+        "primary" : true,
+        "node" : "ZQWpb3B8QRupZSxFAogeXQ",
+        "relocating_node" : null,
+        "shard" : 2,
+        "index" : "movie_search",
+        "allocation_id" : {
+          "id" : "xNHtQImiTcCawrsW93YSEw"
+        }
+      }
+    ],
+    [
+      {
+        "state" : "STARTED",
+        "primary" : true,
+        "node" : "ZQWpb3B8QRupZSxFAogeXQ",
+        "relocating_node" : null,
+        "shard" : 3,
+        "index" : "movie_search",
+        "allocation_id" : {
+          "id" : "ZKtNod5DQxaz7xLjnGVv5Q"
+        }
+      }
+    ],
+    [
+      {
+        "state" : "STARTED",
+        "primary" : true,
+        "node" : "ZQWpb3B8QRupZSxFAogeXQ",
+        "relocating_node" : null,
+        "shard" : 4,
+        "index" : "movie_search",
+        "allocation_id" : {
+          "id" : "s03YxfnSRKaOAZp0QbYNrQ"
+        }
+      }
+    ]
+  ]
+}

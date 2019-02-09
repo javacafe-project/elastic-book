@@ -1,0 +1,25 @@
+PUT movie_dynamic/_doc/1?version=2
+{
+  "nationAlt": "한국"
+}
+
+
+{
+  "error": {
+    "root_cause": [
+      {
+        "type": "version_conflict_engine_exception",
+        "reason": "[_doc][1]: version conflict, current version [-1] is different than the one provided [2]",
+        "index_uuid": "FBnpPpSlQSCj0QJUW8eF-Q",
+        "shard": "3",
+        "index": "movie_dynamic"
+      }
+    ],
+    "type": "version_conflict_engine_exception",
+    "reason": "[_doc][1]: version conflict, current version [-1] is different than the one provided [2]",
+    "index_uuid": "FBnpPpSlQSCj0QJUW8eF-Q",
+    "shard": "3",
+    "index": "movie_dynamic"
+  },
+  "status": 409
+}

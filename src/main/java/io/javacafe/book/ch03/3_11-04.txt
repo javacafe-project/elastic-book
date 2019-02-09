@@ -1,0 +1,24 @@
+#요청
+POST movie_dynamic/_doc/?pretty
+{
+  "movieCd": "20173732",
+  "movieNm": "살아남은 아이",
+  "movieNmEn": "Last Child",
+  "typeNm": "장편"
+}
+
+
+{
+  "_index" : "movie_dynamic",
+  "_type" : "_doc",
+  "_id" : "KnP982AB3p58iynujoto",
+  "_version" : 1,
+  "result" : "created",
+  "_shards" : {
+    "total" : 2,
+    "successful" : 2,
+    "failed" : 0
+  },
+  "_seq_no" : 0,
+  "_primary_term" : 1
+}

@@ -1,0 +1,17 @@
+PUT movie_search_datatype/_mapping/_doc
+{
+  "properties": {
+    "filmLocation": {
+      "type": "geo_point"
+    }
+  }
+}
+
+PUT movie_search_datatype/_doc/3
+{
+  "title" : "Harry Potter and the Philosopher's Stone",
+  "filmLocation": {
+    "lat" : 55.4155828,
+    "lon" : -1.7081091
+  }
+}

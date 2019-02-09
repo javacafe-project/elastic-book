@@ -1,0 +1,22 @@
+PUT nori_readingform
+{
+    "settings": {
+        "index":{
+            "analysis":{
+                "analyzer" : {
+                    "nori_readingform_analyzer" : {
+                        "tokenizer" : "nori_tokenizer",
+                        "filter" : ["nori_readingform"]
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "nori_readingform"
+}
