@@ -1,0 +1,3 @@
+http://elastic.javacafe.io:20010/_cat/health
+
+1526285071 17:04:31 javacafe-es green 4 3 120 60 0 0 0 0 - 100.0%

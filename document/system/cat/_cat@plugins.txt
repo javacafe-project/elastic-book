@@ -1,0 +1,10 @@
+http://elastic.javacafe.io:20010/_cat/plugins
+
+data-node-03   analysis-seunjeon    6.1.1.1
+data-node-03   hangul-jamo-analyzer 1.0-SNAPSHOT
+data-node-01   analysis-seunjeon    6.1.1.1
+data-node-01   hangul-jamo-analyzer 1.0-SNAPSHOT
+master-node-01 analysis-seunjeon    6.1.1.1
+master-node-01 hangul-jamo-analyzer 1.0-SNAPSHOT
+data-node-02   analysis-seunjeon    6.1.1.1
+data-node-02   hangul-jamo-analyzer 1.0-SNAPSHOT

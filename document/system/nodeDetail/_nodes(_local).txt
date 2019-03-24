@@ -1,0 +1,481 @@
+http://elastic.javacafe.io:20010/_nodes/_local
+
+{
+    "_nodes": {
+        "total": 1,
+        "successful": 1,
+        "failed": 0
+    },
+    "cluster_name": "javacafe-es",
+    "nodes": {
+        "T0eKC161SL6QFI3KtBFMog": {
+            "name": "master-node-01",
+            "transport_address": "10.0.0.4:20100",
+            "host": "10.0.0.4",
+            "ip": "10.0.0.4",
+            "version": "6.2.2",
+            "build_hash": "10b1edd",
+            "total_indexing_buffer": 105630924,
+            "roles": [
+                "master",
+                "ingest"
+            ],
+            "settings": {
+                "pidfile": "master.pid",
+                "cluster": {
+                    "name": "javacafe-es"
+                },
+                "node": {
+                    "data": "false",
+                    "name": "master-node-01",
+                    "master": "true"
+                },
+                "path": {
+                    "logs": "/home/es/elasticsearch-6.2.2/master/logs",
+                    "home": "/home/es/elasticsearch-6.2.2/master"
+                },
+                "discovery": {
+                    "zen": {
+                        "ping": {
+                            "unicast": {
+                                "hosts": [
+                                    "127.0.0.1:20100",
+                                    "127.0.0.1:20200",
+                                    "127.0.0.1:20300",
+                                    "127.0.0.1:20400"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "client": {
+                    "type": "node"
+                },
+                "http": {
+                    "type": {
+                        "default": "netty4"
+                    },
+                    "port": "20010",
+                    "cors": {
+                        "allow-origin": "*",
+                        "allow-headers": "X-Requested-With,X-Auth-Token,Content-Type, Content-Length, Authorization",
+                        "allow-methods": "OPTIONS, HEAD, GET, POST, PUT, DELETE",
+                        "enabled": "true"
+                    }
+                },
+                "transport": {
+                    "tcp": {
+                        "port": "20100"
+                    },
+                    "type": {
+                        "default": "netty4"
+                    }
+                },
+                "network": {
+                    "host": "0.0.0.0",
+                    "bind_host": "0.0.0.0"
+                }
+            },
+            "os": {
+                "refresh_interval_in_millis": 1000,
+                "name": "Linux",
+                "arch": "amd64",
+                "version": "4.13.0-1011-azure",
+                "available_processors": 2,
+                "allocated_processors": 2
+            },
+            "process": {
+                "refresh_interval_in_millis": 1000,
+                "id": 13727,
+                "mlockall": false
+            },
+            "jvm": {
+                "pid": 13727,
+                "version": "1.8.0_161",
+                "vm_name": "Java HotSpot(TM) 64-Bit Server VM",
+                "vm_version": "25.161-b12",
+                "vm_vendor": "Oracle Corporation",
+                "start_time_in_millis": 1520150489410,
+                "mem": {
+                    "heap_init_in_bytes": 1073741824,
+                    "heap_max_in_bytes": 1056309248,
+                    "non_heap_init_in_bytes": 2555904,
+                    "non_heap_max_in_bytes": 0,
+                    "direct_max_in_bytes": 1056309248
+                },
+                "gc_collectors": [
+                    "ParNew",
+                    "ConcurrentMarkSweep"
+                ],
+                "memory_pools": [
+                    "Code Cache",
+                    "Metaspace",
+                    "Compressed Class Space",
+                    "Par Eden Space",
+                    "Par Survivor Space",
+                    "CMS Old Gen"
+                ],
+                "using_compressed_ordinary_object_pointers": "true",
+                "input_arguments": [
+                    "-Xms1g",
+                    "-Xmx1g",
+                    "-XX:+UseConcMarkSweepGC",
+                    "-XX:CMSInitiatingOccupancyFraction=75",
+                    "-XX:+UseCMSInitiatingOccupancyOnly",
+                    "-XX:+AlwaysPreTouch",
+                    "-Xss1m",
+                    "-Djava.awt.headless=true",
+                    "-Dfile.encoding=UTF-8",
+                    "-Djna.nosys=true",
+                    "-XX:-OmitStackTraceInFastThrow",
+                    "-Dio.netty.noUnsafe=true",
+                    "-Dio.netty.noKeySetOptimization=true",
+                    "-Dio.netty.recycler.maxCapacityPerThread=0",
+                    "-Dlog4j.shutdownHookEnabled=false",
+                    "-Dlog4j2.disable.jmx=true",
+                    "-Djava.io.tmpdir=/tmp/elasticsearch.YFkY7P7l",
+                    "-XX:+HeapDumpOnOutOfMemoryError",
+                    "-XX:+PrintGCDetails",
+                    "-XX:+PrintGCDateStamps",
+                    "-XX:+PrintTenuringDistribution",
+                    "-XX:+PrintGCApplicationStoppedTime",
+                    "-Xloggc:logs/gc.log",
+                    "-XX:+UseGCLogFileRotation",
+                    "-XX:NumberOfGCLogFiles=32",
+                    "-XX:GCLogFileSize=64m",
+                    "-Des.path.home=/home/es/elasticsearch-6.2.2/master",
+                    "-Des.path.conf=/home/es/elasticsearch-6.2.2/master/config"
+                ]
+            },
+            "thread_pool": {
+                "force_merge": {
+                    "type": "fixed",
+                    "min": 1,
+                    "max": 1,
+                    "queue_size": -1
+                },
+                "fetch_shard_started": {
+                    "type": "scaling",
+                    "min": 1,
+                    "max": 4,
+                    "keep_alive": "5m",
+                    "queue_size": -1
+                },
+                "listener": {
+                    "type": "fixed",
+                    "min": 1,
+                    "max": 1,
+                    "queue_size": -1
+                },
+                "index": {
+                    "type": "fixed",
+                    "min": 2,
+                    "max": 2,
+                    "queue_size": 200
+                },
+                "refresh": {
+                    "type": "scaling",
+                    "min": 1,
+                    "max": 1,
+                    "keep_alive": "5m",
+                    "queue_size": -1
+                },
+                "generic": {
+                    "type": "scaling",
+                    "min": 4,
+                    "max": 128,
+                    "keep_alive": "30s",
+                    "queue_size": -1
+                },
+                "warmer": {
+                    "type": "scaling",
+                    "min": 1,
+                    "max": 1,
+                    "keep_alive": "5m",
+                    "queue_size": -1
+                },
+                "search": {
+                    "type": "fixed_auto_queue_size",
+                    "min": 4,
+                    "max": 4,
+                    "queue_size": 1000
+                },
+                "flush": {
+                    "type": "scaling",
+                    "min": 1,
+                    "max": 1,
+                    "keep_alive": "5m",
+                    "queue_size": -1
+                },
+                "fetch_shard_store": {
+                    "type": "scaling",
+                    "min": 1,
+                    "max": 4,
+                    "keep_alive": "5m",
+                    "queue_size": -1
+                },
+                "management": {
+                    "type": "scaling",
+                    "min": 1,
+                    "max": 5,
+                    "keep_alive": "5m",
+                    "queue_size": -1
+                },
+                "get": {
+                    "type": "fixed",
+                    "min": 2,
+                    "max": 2,
+                    "queue_size": 1000
+                },
+                "bulk": {
+                    "type": "fixed",
+                    "min": 2,
+                    "max": 2,
+                    "queue_size": 200
+                },
+                "snapshot": {
+                    "type": "scaling",
+                    "min": 1,
+                    "max": 1,
+                    "keep_alive": "5m",
+                    "queue_size": -1
+                }
+            },
+            "transport": {
+                "bound_address": [
+                    "[::]:20100"
+                ],
+                "publish_address": "10.0.0.4:20100",
+                "profiles": {}
+            },
+            "http": {
+                "bound_address": [
+                    "[::]:20010"
+                ],
+                "publish_address": "10.0.0.4:20010",
+                "max_content_length_in_bytes": 104857600
+            },
+            "plugins": [
+                {
+                    "name": "analysis-seunjeon",
+                    "version": "6.1.1.1",
+                    "description": "The Korean(seunjeon) analysis plugin.",
+                    "classname": "org.bitbucket.eunjeon.seunjeon.elasticsearch.plugin.analysis.AnalysisSeunjeonPlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "hangul-jamo-analyzer",
+                    "version": "1.0-SNAPSHOT",
+                    "description": "${project.description}.",
+                    "classname": "org.elasticsearch.plugin.analysis.hangul.HangulJamoPlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                }
+            ],
+            "modules": [
+                {
+                    "name": "aggs-matrix-stats",
+                    "version": "6.2.2",
+                    "description": "Adds aggregations whose input are a list of numeric fields and output includes a matrix.",
+                    "classname": "org.elasticsearch.search.aggregations.matrix.MatrixAggregationPlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "analysis-common",
+                    "version": "6.2.2",
+                    "description": "Adds \"built in\" analyzers to Elasticsearch.",
+                    "classname": "org.elasticsearch.analysis.common.CommonAnalysisPlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "ingest-common",
+                    "version": "6.2.2",
+                    "description": "Module for ingest processors that do not require additional security permissions or have large dependencies and resources",
+                    "classname": "org.elasticsearch.ingest.common.IngestCommonPlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "lang-expression",
+                    "version": "6.2.2",
+                    "description": "Lucene expressions integration for Elasticsearch",
+                    "classname": "org.elasticsearch.script.expression.ExpressionPlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "lang-mustache",
+                    "version": "6.2.2",
+                    "description": "Mustache scripting integration for Elasticsearch",
+                    "classname": "org.elasticsearch.script.mustache.MustachePlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "lang-painless",
+                    "version": "6.2.2",
+                    "description": "An easy, safe and fast scripting language for Elasticsearch",
+                    "classname": "org.elasticsearch.painless.PainlessPlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "mapper-extras",
+                    "version": "6.2.2",
+                    "description": "Adds advanced field mappers",
+                    "classname": "org.elasticsearch.index.mapper.MapperExtrasPlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "parent-join",
+                    "version": "6.2.2",
+                    "description": "This module adds the support parent-child queries and aggregations",
+                    "classname": "org.elasticsearch.join.ParentJoinPlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "percolator",
+                    "version": "6.2.2",
+                    "description": "Percolator module adds capability to index queries and query these queries by specifying documents",
+                    "classname": "org.elasticsearch.percolator.PercolatorPlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "rank-eval",
+                    "version": "6.2.2",
+                    "description": "The Rank Eval module adds APIs to evaluate ranking quality.",
+                    "classname": "org.elasticsearch.index.rankeval.RankEvalPlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "reindex",
+                    "version": "6.2.2",
+                    "description": "The Reindex module adds APIs to reindex from one index to another or update documents in place.",
+                    "classname": "org.elasticsearch.index.reindex.ReindexPlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "repository-url",
+                    "version": "6.2.2",
+                    "description": "Module for URL repository",
+                    "classname": "org.elasticsearch.plugin.repository.url.URLRepositoryPlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "transport-netty4",
+                    "version": "6.2.2",
+                    "description": "Netty 4 based transport implementation",
+                    "classname": "org.elasticsearch.transport.Netty4Plugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                },
+                {
+                    "name": "tribe",
+                    "version": "6.2.2",
+                    "description": "Tribe module",
+                    "classname": "org.elasticsearch.tribe.TribePlugin",
+                    "extended_plugins": [],
+                    "has_native_controller": false,
+                    "requires_keystore": false
+                }
+            ],
+            "ingest": {
+                "processors": [
+                    {
+                        "type": "append"
+                    },
+                    {
+                        "type": "convert"
+                    },
+                    {
+                        "type": "date"
+                    },
+                    {
+                        "type": "date_index_name"
+                    },
+                    {
+                        "type": "dot_expander"
+                    },
+                    {
+                        "type": "fail"
+                    },
+                    {
+                        "type": "foreach"
+                    },
+                    {
+                        "type": "grok"
+                    },
+                    {
+                        "type": "gsub"
+                    },
+                    {
+                        "type": "join"
+                    },
+                    {
+                        "type": "json"
+                    },
+                    {
+                        "type": "kv"
+                    },
+                    {
+                        "type": "lowercase"
+                    },
+                    {
+                        "type": "remove"
+                    },
+                    {
+                        "type": "rename"
+                    },
+                    {
+                        "type": "script"
+                    },
+                    {
+                        "type": "set"
+                    },
+                    {
+                        "type": "sort"
+                    },
+                    {
+                        "type": "split"
+                    },
+                    {
+                        "type": "trim"
+                    },
+                    {
+                        "type": "uppercase"
+                    },
+                    {
+                        "type": "urldecode"
+                    }
+                ]
+            }
+        }
+    }
+}
+
+
+

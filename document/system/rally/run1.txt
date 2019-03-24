@@ -1,0 +1,56 @@
+[javacafe ~]$  esrally --distribution-version=6.2.0
+
+    ____        ____
+   / __ \____ _/ / /_  __
+  / /_/ / __ `/ / / / / /
+ / _, _/ /_/ / / / /_/ /
+/_/ |_|\__,_/_/_/\__, /
+                /____/
+
+[INFO] Writing logs to /home1/irteam/.rally/logs/rally_out_20180515T103831Z.log
+Cloning into '/home1/irteam/.rally/benchmarks/tracks/default'...
+remote: Counting objects: 2753, done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 2753 (delta 2), reused 10 (delta 1), pack-reused 2737
+Receiving objects: 100% (2753/2753), 991.23 KiB | 1.46 MiB/s, done.
+Resolving deltas: 100% (1908/1908), done.
+Cloning into '/home1/irteam/.rally/benchmarks/teams/default'...
+remote: Counting objects: 579, done.
+remote: Compressing objects: 100% (112/112), done.
+remote: Total 579 (delta 114), reused 188 (delta 87), pack-reused 354
+Receiving objects: 100% (579/579), 63.52 KiB | 384.00 KiB/s, done.
+Resolving deltas: 100% (273/273), done.
+
+[INFO] Preparing for race ...
+[INFO] Downloading Elasticsearch 6.2.0 (27.7 MB total size)
+[INFO] Rally will delete the benchmark candidate after the benchmark
+[INFO] Racing on track [geonames], challenge [append-no-conflicts] and car ['de
+
+[INFO] Downloading data for track geonames (252.4 MB total size)
+[INFO] Downloading data for track geonames (252.4 MB total size)              
+[INFO] Downloading data for track geonames (252.4 MB total size)                  [100.0%]
+[INFO] Decompressing track data from [/home1/irteam/.rally/benchmarks/data/geonames/documents-2.json.bz2] to [/home1/irteam/.rally/benchmarks/data/geonames/documents-2.json] (resulting size: 3.30 GB) ... [OK]
+[INFO] Preparing file offset table for [/home1/irteam/.rally/benchmarks/data/geonames/documents-2.json] ... [OK]
+
+Running delete-index                                                           [100% done]
+Running create-index                                                           [100% done]
+Running check-cluster-health                                                   [100% done]
+Running index-append                                                           [100% done]
+Running refresh-after-index                                                    [100% done]
+Running force-merge                                                            [100% done]
+Running refresh-after-force-merge                                              [100% done]
+Running index-stats                                                            [100% done]
+Running node-stats                                                             [100% done]
+Running default                                                                [100% done]
+Running term                                                                   [100% done]
+Running phrase                                                                 [100% done]
+Running country_agg_uncached                                                   [100% done]
+Running country_agg_cached                                                     [100% done]
+Running scroll                                                                 [100% done]
+Running expression                                                             [100% done]
+Running painless_static                                                        [100% done]
+Running painless_dynamic                                                       [  6% done]
+
+
+
+

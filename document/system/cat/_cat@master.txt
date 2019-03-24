@@ -1,0 +1,3 @@
+http://elastic.javacafe.io:20010/_cat/master
+
+T0eKC161SL6QFI3KtBFMog 10.0.0.4 10.0.0.4 master-node-01

@@ -1,0 +1,7 @@
+http://elastic.javacafe.io:20010/_cat/tasks
+
+cluster:monitor/tasks/lists    T0eKC161SL6QFI3KtBFMog:33158642 -                               transport 1526284734645 16:58:54 14.9ms 10.0.0.4 master-node-01
+cluster:monitor/tasks/lists[n] dYYuWMd9Sz-YDaMBKZaGFw:9219143  T0eKC161SL6QFI3KtBFMog:33158642 netty     1526284734647 16:58:54 4.3ms  10.0.0.4 data-node-01
+cluster:monitor/tasks/lists[n] e6YYBK_6Su2qugjR0IfPZw:9056957  T0eKC161SL6QFI3KtBFMog:33158642 netty     1526284734647 16:58:54 4.3ms  10.0.0.4 data-node-03
+cluster:monitor/tasks/lists[n] T0eKC161SL6QFI3KtBFMog:33158643 T0eKC161SL6QFI3KtBFMog:33158642 direct    1526284734654 16:58:54 5.5ms  10.0.0.4 master-node-01
+cluster:monitor/tasks/lists[n] edrJa0eQR7-NJ10saIpgFg:9063114  T0eKC161SL6QFI3KtBFMog:33158642 netty     1526284734655 16:58:54 4.2ms  10.0.0.4 data-node-02

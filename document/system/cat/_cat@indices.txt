@@ -1,0 +1,14 @@
+http://elastic.javacafe.io:20010/_cat/indices
+
+green open movie              ZlrDB-TOR4GDKDe-C7yxPQ 5 1 30000 0 20.4mb  10.1mb
+green open test_analy         Cm74TcGkRGSTnWsvM5-PzA 5 1     0 0  2.2kb   1.1kb
+green open my_index           rNJ0NvbkTCmwIJhn9E-HFQ 5 1     1 0  8.4kb   4.2kb
+green open news               a03YTpNtQUyMJAC-j1l2iA 5 1 20000 0  193mb  97.1mb
+green open animals            fcUrX4NdRH2GlP-HvxPqZw 5 1   279 0  1.5mb 785.8kb
+green open movie_suggest      8FX3qb2ISJqmfK_u9pMaSQ 5 1    12 0 88.3kb  41.5kb
+green open stocks             FaFBDtIGTvSsywwx0gmpvw 5 1 37286 0 48.5mb    24mb
+green open test_analzyer      ZbMQ_Ov5TNy8NYYdSkbRaw 5 1     2 0 15.6kb   7.8kb
+green open testindex3         wUW_KdjdSxaV7MIFo_FVHg 5 1     1 0 17.8kb   8.9kb
+green open tweet              qsZg67IdRGegGRIOY_ywMg 5 1 29507 0   46mb  22.9mb
+green open movie_autocomplete sIgm3NDLQdCfWlafue7Fuw 5 1 63069 0 88.8mb  45.3mb
+green open test_analyzer      _dKASK5kRES91RkZ_38PPw 5 1     0 0  2.2kb   1.1kb

@@ -1,0 +1,5 @@
+http://elastic.javacafe.io:20010/_cat/allocation
+
+40 128.2mb 5.4gb 23.5gb 29gb 18 10.0.0.4 10.0.0.4 data-node-02
+40 131.8mb 5.4gb 23.5gb 29gb 18 10.0.0.4 10.0.0.4 data-node-01
+40 138.4mb 5.4gb 23.5gb 29gb 18 10.0.0.4 10.0.0.4 data-node-03

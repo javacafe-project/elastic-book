@@ -1,0 +1,76 @@
+http://elastic.javacafe.io:20010/_nodes/usage
+
+{
+    "_nodes": {
+        "total": 4,
+        "successful": 4,
+        "failed": 0
+    },
+    "cluster_name": "javacafe-es",
+    "nodes": {
+        "e6YYBK_6Su2qugjR0IfPZw": {
+            "timestamp": 1526281633716,
+            "since": 1520148759805,
+            "rest_actions": {}
+        },
+        "dYYuWMd9Sz-YDaMBKZaGFw": {
+            "timestamp": 1526281633716,
+            "since": 1520148729723,
+            "rest_actions": {
+                "cluster_state_action": 30201,
+                "cluster_get_settings_action": 15101,
+                "nodes_info_action": 30201,
+                "get_indices_action": 1,
+                "cluster_health_action": 30204,
+                "nodes_stats_action": 15101,
+                "get_all_aliases_action": 30201,
+                "indices_stats_action": 15101
+            }
+        },
+        "T0eKC161SL6QFI3KtBFMog": {
+            "timestamp": 1526281633716,
+            "since": 1520150496441,
+            "rest_actions": {
+                "nodes_usage_action": 5,
+                "cat_action": 1,
+                "nodes_info_action": 4561158,
+                "get_index_template_action": 5,
+                "get_mapping_action": 2201293,
+                "get_indices_action": 25,
+                "create_index_action": 46,
+                "nodes_stats_action": 30993,
+                "get_all_aliases_action": 168679,
+                "delete_index_action": 33,
+                "indices_segments_action": 1,
+                "document_get_action": 42,
+                "document_term_vectors_action": 17,
+                "delete_by_query_action": 2,
+                "cluster_health_action": 191509,
+                "main_action": 2201240,
+                "get_all_settings_action": 2,
+                "cluster_get_settings_action": 30474,
+                "analyze_action": 48,
+                "put_mapping_action": 11,
+                "get_settings_action": 15,
+                "document_index_action": 80,
+                "cat_indices_action": 81,
+                "indices_stats_action": 30489,
+                "get_all_mappings_action": 10477,
+                "cluster_state_action": 158255,
+                "cluster_stats_action": 2,
+                "put_index_template_action": 1,
+                "search_action": 842,
+                "recovery_action": 1,
+                "cat_master_action": 467,
+                "bulk_action": 3342,
+                "search_scroll_action": 21
+            }
+        },
+        "edrJa0eQR7-NJ10saIpgFg": {
+            "timestamp": 1526281633717,
+            "since": 1520148747238,
+            "rest_actions": {}
+        }
+    }
+}
+

@@ -1,0 +1,6 @@
+http://elastic.javacafe.io:20010/_cat/nodes
+
+10.0.0.4 32 84 2 0.01 0.02 0.00 di - data-node-03
+10.0.0.4 33 84 2 0.01 0.02 0.00 di - data-node-01
+10.0.0.4 68 84 2 0.01 0.02 0.00 mi * master-node-01
+10.0.0.4 27 84 2 0.01 0.02 0.00 di - data-node-02

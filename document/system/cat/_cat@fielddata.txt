@@ -1,0 +1,8 @@
+http://elastic.javacafe.io:20010/_cat/fielddata
+
+edrJa0eQR7-NJ10saIpgFg 10.0.0.4 10.0.0.4 data-node-02 genreAlt            2kb
+edrJa0eQR7-NJ10saIpgFg 10.0.0.4 10.0.0.4 data-node-02 nationAlt.keyword 7.5kb
+dYYuWMd9Sz-YDaMBKZaGFw 10.0.0.4 10.0.0.4 data-node-01 genreAlt          2.3kb
+dYYuWMd9Sz-YDaMBKZaGFw 10.0.0.4 10.0.0.4 data-node-01 nationAlt.keyword 9.9kb
+e6YYBK_6Su2qugjR0IfPZw 10.0.0.4 10.0.0.4 data-node-03 nationAlt.keyword 4.8kb
+e6YYBK_6Su2qugjR0IfPZw 10.0.0.4 10.0.0.4 data-node-03 genreAlt          1.1kb

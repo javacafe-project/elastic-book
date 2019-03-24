@@ -1,0 +1,3 @@
+http://elastic.javacafe.io:20010/_cat/templates
+
+logstash [logstash-*] 0 60001

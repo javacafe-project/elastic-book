@@ -1,0 +1,165 @@
+http://elastic.javacafe.io:20010/_cluster/stats
+
+{
+    "_nodes": {
+        "total": 4,
+        "successful": 4,
+        "failed": 0
+    },
+    "cluster_name": "javacafe-es",
+    "timestamp": 1526048245200,
+    "status": "green",
+    "indices": {
+        "count": 11,
+        "shards": {
+            "total": 110,
+            "primaries": 55,
+            "replication": 1,
+            "index": {
+                "shards": {
+                    "min": 10,
+                    "max": 10,
+                    "avg": 10
+                },
+                "primaries": {
+                    "min": 5,
+                    "max": 5,
+                    "avg": 5
+                },
+                "replication": {
+                    "min": 1,
+                    "max": 1,
+                    "avg": 1
+                }
+            }
+        },
+        "docs": {
+            "count": 160157,
+            "deleted": 0
+        },
+        "store": {
+            "size_in_bytes": 215472818
+        },
+        "fielddata": {
+            "memory_size_in_bytes": 28520,
+            "evictions": 0
+        },
+        "query_cache": {
+            "memory_size_in_bytes": 53368,
+            "total_count": 14762,
+            "hit_count": 6282,
+            "miss_count": 8480,
+            "cache_size": 50,
+            "cache_count": 50,
+            "evictions": 0
+        },
+        "completion": {
+            "size_in_bytes": 4689
+        },
+        "segments": {
+            "count": 303,
+            "memory_in_bytes": 4147160,
+            "terms_memory_in_bytes": 3150336,
+            "stored_fields_memory_in_bytes": 114784,
+            "term_vectors_memory_in_bytes": 624,
+            "norms_memory_in_bytes": 168512,
+            "points_memory_in_bytes": 14212,
+            "doc_values_memory_in_bytes": 698692,
+            "index_writer_memory_in_bytes": 0,
+            "version_map_memory_in_bytes": 0,
+            "fixed_bit_set_memory_in_bytes": 0,
+            "max_unsafe_auto_id_timestamp": -1,
+            "file_sizes": {}
+        }
+    },
+    "nodes": {
+        "count": {
+            "total": 4,
+            "data": 3,
+            "coordinating_only": 0,
+            "master": 1,
+            "ingest": 4
+        },
+        "versions": [
+            "6.2.2"
+        ],
+        "os": {
+            "available_processors": 8,
+            "allocated_processors": 8,
+            "names": [
+                {
+                    "name": "Linux",
+                    "count": 4
+                }
+            ],
+            "mem": {
+                "total_in_bytes": 67190882304,
+                "free_in_bytes": 11657887744,
+                "used_in_bytes": 55532994560,
+                "free_percent": 17,
+                "used_percent": 83
+            }
+        },
+        "process": {
+            "cpu": {
+                "percent": 2
+            },
+            "open_file_descriptors": {
+                "min": 218,
+                "max": 285,
+                "avg": 267
+            }
+        },
+        "jvm": {
+            "max_uptime_in_millis": 5899521725,
+            "versions": [
+                {
+                    "version": "1.8.0_161",
+                    "vm_name": "Java HotSpot(TM) 64-Bit Server VM",
+                    "vm_version": "25.161-b12",
+                    "vm_vendor": "Oracle Corporation",
+                    "count": 4
+                }
+            ],
+            "mem": {
+                "heap_used_in_bytes": 4760907624,
+                "heap_max_in_bytes": 7446462464
+            },
+            "threads": 173
+        },
+        "fs": {
+            "total_in_bytes": 31158935552,
+            "free_in_bytes": 25510014976,
+            "available_in_bytes": 25493237760
+        },
+        "plugins": [
+            {
+                "name": "analysis-seunjeon",
+                "version": "6.1.1.1",
+                "description": "The Korean(seunjeon) analysis plugin.",
+                "classname": "org.bitbucket.eunjeon.seunjeon.elasticsearch.plugin.analysis.AnalysisSeunjeonPlugin",
+                "extended_plugins": [],
+                "has_native_controller": false,
+                "requires_keystore": false
+            },
+            {
+                "name": "hangul-jamo-analyzer",
+                "version": "1.0-SNAPSHOT",
+                "description": "${project.description}.",
+                "classname": "org.elasticsearch.plugin.analysis.hangul.HangulJamoPlugin",
+                "extended_plugins": [],
+                "has_native_controller": false,
+                "requires_keystore": false
+            }
+        ],
+        "network_types": {
+            "transport_types": {
+                "netty4": 4
+            },
+            "http_types": {
+                "netty4": 4
+            }
+        }
+    }
+}
+
