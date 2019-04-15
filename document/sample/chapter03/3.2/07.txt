@@ -1,13 +1,14 @@
+# 요청
 POST reindex_movie/_search
 {
   "query": {
     "term": {
-      "movieCd": "201737321"
+      "movieCd": "20173732"
     }
   }
 }
 
-
+# 결과
 {
     "took": 1,
     "timed_out": false,
@@ -26,27 +27,27 @@ POST reindex_movie/_search
                 "_type": "_doc",
                 "_id": "bzzJqmkBjjM-ebDb8PsR",
                 "_score": 0.2876821,
-                "_source": {
+                "_source": {                                       
+                    "movieCd": "20173732",
+                    "movieNm": "살아남은 아이",
+                    "movieNmEn": "Last Child",
+                    "prdtYear": "20171",
+                    "openDt": "",
+                    "typeNm": "장편",                
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",                                       
+                    "genreAlt": [
+                        "드라마",
+                        "가족"
+                    ],
                     "repNationNm": "한국",
+                    "repGenreNm": "드라마",
                     "directors": [
                         {
                             "peopleNm": "신동석"
                         }
                     ],
-                    "nationAlt": "한국",
-                    "repGenreNm": "드라마",
-                    "movieNm": "살아남은 아이",
-                    "movieCd": "20173732",
-                    "prdtStatNm": "기타",
-                    "prdtYear": "20171",
-                    "typeNm": "장편",
-                    "companys": [],
-                    "openDt": "",
-                    "movieNmEn": "Last Child",
-                    "genreAlt": [
-                        "드라마",
-                        "가족"
-                    ]
+                    "companys": []
                 }
             }
         ]

@@ -1,14 +1,15 @@
+# 요청
 PUT movie_search_mapping/_mapping/_doc
 {
   "properties": {
     "nationAltEn": {
-      "type":     "text",
+      "type": "text",
       "fielddata": true
     }
   }
 }
 
-
+# 결과
 {
   "acknowledged" : true
 }

@@ -1,8 +1,8 @@
+# 요청
 PUT reindex_movie
 {}
 
-
-#결과
+# 결과
 {
   "acknowledged": true,
   "shards_acknowledged": true,
@@ -11,6 +11,9 @@ PUT reindex_movie
 
 
 
+
+
+# 요청
 POST _reindex
 {
   "source": {
@@ -29,6 +32,7 @@ POST _reindex
   }
 }
 
+# 결과
 {
     "took": 224,
     "timed_out": false,

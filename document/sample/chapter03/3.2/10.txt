@@ -1,7 +1,8 @@
+# 요청
 POST movie_routing/_doc/_search
 {}
 
-
+# 결과
 {
     "took": 1,
     "timed_out": false,
@@ -43,10 +44,13 @@ POST movie_routing/_doc/_search
 
 
 
+
+
+# 요청
 POST movie_routing/_doc/_search?routing=ko
 {}
 
-
+# 결과
 {
     "took": 0,
     "timed_out": false,
@@ -77,10 +81,13 @@ POST movie_routing/_doc/_search?routing=ko
 
 
 
+
+
+# 요청
 POST movie_routing/_doc/_search?routing=jp
 {}
 
-
+# 결과
 {
     "took": 0,
     "timed_out": false,

@@ -1,3 +1,4 @@
+# 요청
 GET movie_search/_mapping
 {
   "movie_search" : {
@@ -63,6 +64,10 @@ GET movie_search/_mapping
 }
 
 
+
+
+
+# 요청
 PUT movie_search/_doc/1
 {
   "movieCd": "20173732",
