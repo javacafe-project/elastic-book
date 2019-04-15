@@ -1,7 +1,8 @@
+# 요청
 POST movie_search/_search?q=movieNmEn:Family
+{}
 
-
-
+# 결과
 {
     "took": 2,
     "timed_out": false,

@@ -1,6 +1,8 @@
+# 요청
 POST movie_search/_search?q=movieNmEn:* AND prdtYear:2017&analyze_wildcard=true&from=0&size=5&sort=_score:desc,movieCd:asc&_source_includes=movieCd, movieNm,mvoieNmEn,typeNm&pretty
+{}
 
-
+# 결과
 {
     "took": 4,
     "timed_out": false,

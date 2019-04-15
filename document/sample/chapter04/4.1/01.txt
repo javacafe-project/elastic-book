@@ -1,6 +1,7 @@
+# 요청
 GET movie_search/_search?q=prdtYear:2018
 
-
+# 결과
 {
     "took": 9,
     "timed_out": false,
