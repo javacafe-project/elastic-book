@@ -1,6 +1,7 @@
+# 요청
 GET /ac_test3/_search
 
-
+# 결과
 {
     "took": 2,
     "timed_out": false,

@@ -1,3 +1,4 @@
+# 요청
 PUT /ac_test4
 {
     "settings" : {
@@ -55,6 +56,7 @@ PUT /ac_test4
 	}
 }
 
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,
@@ -64,6 +66,10 @@ PUT /ac_test4
 
 
 
+
+
+
+# 요청
 PUT /ac_test4/_mapping/ac_test4
 {
 	"properties": {
@@ -80,6 +86,7 @@ PUT /ac_test4/_mapping/ac_test4
 	}
 }
 
+# 결과
 {
     "acknowledged": true
 }
@@ -87,6 +94,10 @@ PUT /ac_test4/_mapping/ac_test4
 
 
 
+
+
+
+# 요청
 POST /ac_test4/_bulk
 
 {"index" : { "_index" : "ac_test4", "_type" : "ac_test4", "_id" : "1" }}
@@ -98,11 +109,7 @@ POST /ac_test4/_bulk
 {"index" : { "_index" : "ac_test4", "_type" : "ac_test4", "_id" : "3" }}
 {"item" : "신혼가전특별전", "itemJamo" : "신혼가전특별전"}
 
-
-
-
-
-
+# 결과
 {
     "took": 24,
     "errors": false,
