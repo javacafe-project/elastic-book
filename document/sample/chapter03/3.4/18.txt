@@ -1,3 +1,4 @@
+# 요청
 PUT movie_upper_analyzer
 {
   "settings": {
@@ -14,7 +15,7 @@ PUT movie_upper_analyzer
   }
 }
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,
@@ -23,13 +24,17 @@ PUT movie_upper_analyzer
 
 
 
+
+
+
+# 요청
 POST movie_upper_analyzer/_analyze
 {
    "analyzer": "uppercase_analyzer",
    "text": "Harry Potter and the Chamber of Secrets"
 }
 
-
+# 결과
 {
     "tokens": [
         {

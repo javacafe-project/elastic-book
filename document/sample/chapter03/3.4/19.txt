@@ -1,3 +1,4 @@
+# 요청
 PUT movie_stop_analyzer
 {
   "settings": {
@@ -25,7 +26,7 @@ PUT movie_stop_analyzer
   }
 }
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,
@@ -34,13 +35,18 @@ PUT movie_stop_analyzer
 
 
 
+
+
+
+
+# 요청
 POST movie_stop_analyzer/_analyze
 {
    "analyzer": "stop_filter_analyzer",
    "text": "Harry Potter and the Chamber of Secrets"
 }
 
-
+# 결과
 {
     "tokens": [
         {

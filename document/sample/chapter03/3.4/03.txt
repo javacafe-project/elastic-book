@@ -1,10 +1,11 @@
+# 요청
 POST _analyze
 {
 	"analyzer": "standard",
 	"text": "캐리비안의 해적 "
 }
 
-
+# 결과
 {
     "tokens": [
         {
@@ -26,13 +27,18 @@ POST _analyze
 
 
 
+
+
+
+
+# 요청
 POST movie_analyzer/_analyze
 {
 	"analyzer": "standard",
 	"text": "캐리비안의 해적 "
 }
 
-
+# 결과
 {
     "tokens": [
         {

@@ -1,3 +1,4 @@
+# 요청
 PUT movie_analyzer
 {
   "settings": {
@@ -24,7 +25,7 @@ PUT movie_analyzer
   }  
 }
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,
@@ -33,13 +34,17 @@ PUT movie_analyzer
 
 
 
+
+
+
+# 요청
 POST movie_analyzer/_analyze
 {
    "analyzer": "synonym_analyzer",
    "text": "Elasticsearch Harry Potter"
 }
 
-
+# 결과
 {
     "tokens": [
         {
@@ -74,20 +79,28 @@ POST movie_analyzer/_analyze
 }
 
 
+
+
+
+# 요청
 POST movie_analyzer/_close
 {}
 
-
+# 결과
 {
     "acknowledged": true
 }
 
 
 
+
+
+
+# 요청
 POST movie_analyzer/_close
 {}
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true
@@ -95,13 +108,17 @@ POST movie_analyzer/_close
 
 
 
+
+
+
+# 요청
 POST movie_analyzer/_analyze
 {
    "analyzer": "synonym_analyzer",
    "text": "Elasticsearch Harry Potter"
 }
 
-
+# 결과
 {
     "tokens": [
         {

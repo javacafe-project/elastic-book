@@ -1,10 +1,11 @@
+# 요청
 POST movie_analyzer/_analyze
 {
-  "analyzer": "keyword",
+   "analyzer": "keyword",
    "text": "Harry Potter and the Chamber of Secrets"
 }
 
-
+# 결과
 {
   "tokens" : [
     {

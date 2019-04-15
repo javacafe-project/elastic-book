@@ -1,16 +1,22 @@
+# 요청
 PUT movie_analyzer/_doc/1
 {
   "title": "Harry Potter and the Chamber of Secrets"
 }
 
 
+
+
+
+
+# 요청
 POST movie_analyzer/_analyze
 {
   "field": "title",
   "text": "Harry Potter and the Chamber of Secrets"
 }
 
-
+# 결과
 {
   "tokens" : [
     {

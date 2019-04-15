@@ -1,3 +1,4 @@
+# 요청
 PUT movie_lower_analyzer
 {
   "settings": {
@@ -14,7 +15,7 @@ PUT movie_lower_analyzer
   }
 }
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,
@@ -23,13 +24,17 @@ PUT movie_lower_analyzer
 
 
 
+
+
+
+# 요청
 POST movie_lower_analyzer/_analyze
 {
    "analyzer": "lowercase_analyzer",
    "text": "Harry Potter and the Chamber of Secrets"
 }
 
-
+# 결과
 {
     "tokens": [
         {

@@ -1,3 +1,4 @@
+# 요청
 PUT movie_analyzer
 {
    "settings":{
@@ -45,6 +46,12 @@ PUT movie_analyzer
 }
 
 
+
+
+
+
+
+# 요청
 PUT movie_analyzer/_doc/1
 {
   "title": "Harry Potter and the Chamber of Secrets"
@@ -52,6 +59,11 @@ PUT movie_analyzer/_doc/1
 
 
 
+
+
+
+
+# 요청
 POST movie_analyzer/_search
 {
   "query": {
@@ -62,7 +74,7 @@ POST movie_analyzer/_search
   }
 }
 
-
+# 결과
 {
     "took": 1,
     "timed_out": false,
