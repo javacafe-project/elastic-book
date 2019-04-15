@@ -1,5 +1,6 @@
-curl -XPOST http://localhost:9200/movie/_doc
-‘{
+# 요청
+POST http://localhost:9200/movie/_doc
+{
   "movieCd": "1",
   "movieNm": "살아남은 아이",
   "movieNmEn": "Last Child",
@@ -11,9 +12,11 @@ curl -XPOST http://localhost:9200/movie/_doc
   "genreAlt": "드라마,가족",
   "repNationNm": "한국",
   "repGenreNm": "드라마"
-}’
+}
 
 
+
+# 결과
 {
   "_index": "movie",
   "_type": "_doc",

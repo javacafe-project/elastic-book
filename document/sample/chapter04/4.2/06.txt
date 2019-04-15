@@ -1,0 +1,351 @@
+POST movie_search/_search
+{
+   "query": {
+     "term": {
+       "repNationNm" : "한국"
+     }
+   },
+   "sort" :{
+     "_score": {
+        "order": "desc"
+      }
+   }
+}
+
+
+
+{
+    "took": 2,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 17604,
+        "max_score": 1.2852814,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "izzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20177473",
+                    "movieNm": "비밥바룰라",
+                    "movieNmEn": "",
+                    "prdtYear": "2018",
+                    "openDt": "20180124",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "이성재"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20142433",
+                            "companyNm": "영화사김치(주)"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "kDzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20180044",
+                    "movieNm": "사촌여동생 무삭제판",
+                    "movieNmEn": "",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": "",
+                    "repNationNm": "한국",
+                    "repGenreNm": "",
+                    "directors": [
+                        {
+                            "peopleNm": "양호열"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "lTzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20178443",
+                    "movieNm": "어린 엄마",
+                    "movieNmEn": "",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "계장혁"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "nTzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20020240",
+                    "movieNm": "성냥팔이 소녀의 재림",
+                    "movieNmEn": "Resurrection Of The Little Match Girl",
+                    "prdtYear": "2002",
+                    "openDt": "20020912",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "SF"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "SF",
+                    "directors": [
+                        {
+                            "peopleNm": "장선우"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100167",
+                            "companyNm": "기획시대(주)"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "nzzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20020061",
+                    "movieNm": "집으로...",
+                    "movieNmEn": "The Way Home",
+                    "prdtYear": "2002",
+                    "openDt": "20020404",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "이정향"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100420",
+                            "companyNm": "튜브픽쳐스(주)"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "rTzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20166083",
+                    "movieNm": "천화",
+                    "movieNmEn": "A Living Being",
+                    "prdtYear": "2017",
+                    "openDt": "20180125",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "민병국"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20138515",
+                            "companyNm": "(주)맑은시네마"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "sDzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20180782",
+                    "movieNm": "착한 형수 3",
+                    "movieNmEn": "",
+                    "prdtYear": "2018",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "이리단"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20161021",
+                            "companyNm": "(주)영화사가을"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "tDzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20179039",
+                    "movieNm": "퍼즐",
+                    "movieNmEn": "Puzzle",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "미스터리",
+                        "스릴러"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "미스터리",
+                    "directors": [
+                        {
+                            "peopleNm": "임진승"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20143068",
+                            "companyNm": "컨텐츠쇼크(주)"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "yzzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20178781",
+                    "movieNm": "사라진 밤",
+                    "movieNmEn": "",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉준비",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "스릴러"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "스릴러",
+                    "directors": [
+                        {
+                            "peopleNm": "이창희"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100123",
+                            "companyNm": "(주)싸이더스"
+                        },
+                        {
+                            "companyCd": "20124237",
+                            "companyNm": "(주)엠씨엠씨"
+                        },
+                        {
+                            "companyCd": "20062469",
+                            "companyNm": "(주)더블앤조이픽쳐스"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "0zzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20170590",
+                    "movieNm": "1987",
+                    "movieNmEn": "1987: When the Day Comes",
+                    "prdtYear": "2017",
+                    "openDt": "20171227",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "장준환"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20160263",
+                            "companyNm": "(주)우정필름"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

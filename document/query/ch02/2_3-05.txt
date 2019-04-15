@@ -1,7 +1,9 @@
-curl -XGET ‘http://localhost:9200/movie/_doc/_search?q=prdtYear:2017&pretty=true’ -d ‘{
+# 요청
+POST http://localhost:9200/movie/_doc/_search?q=prdtYear:2017&pretty=true
+{
 	"sort":{
 	    "movieCd":{
 	    "order":"asc"
         }
     }
-}’
+}

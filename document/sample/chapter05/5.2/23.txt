@@ -1,0 +1,1 @@
+GET /apache-web-log-applied-mapping/_mapping/field/geoip.location

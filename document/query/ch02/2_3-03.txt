@@ -1,4 +1,5 @@
-curl -XPUT http://localhost:9200/movie
+# 요청
+PUT http://localhost:9200/movie
 {
   "settings": {
     "number_of_shards": 3,
@@ -24,6 +25,8 @@ curl -XPUT http://localhost:9200/movie
 }
 
 
+
+# 결과
 {
   "acknowledged": true,
   "shards_acknowledged": true,

@@ -1,0 +1,40 @@
+다음과 같은 문서를 분석한다면
+----------------------------------------------------
+<B>Elasticsearch</B> is cool
+----------------------------------------------------
+
+
+PUT movie_analyzer
+{
+   "settings":{
+      "index": {
+        "number_of_shards": 5,
+        "number_of_replicas": 1
+      },
+      "analysis":{
+         "analyzer":{
+            "movie_lower_test_analyzer":{
+               "type":"custom",
+               "tokenizer":"standard",
+               "filter":[
+                  "lowercase"
+               ]
+            },
+            "movie_stop_test_analyzer":{
+               "type":"custom",
+               "tokenizer":"standard",
+               "filter":[
+                  "lowercase",
+                  "english_stop"
+               ]
+            }
+         },
+         "filter":{
+            "english_stop":{
+               "type":"stop",
+               "stopwords":"_english_"
+            }
+         }
+      }
+   }
+}

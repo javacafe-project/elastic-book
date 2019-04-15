@@ -1,0 +1,29 @@
+POST movie_search/_search
+{
+  "query" : {
+    "query_string": {
+      "default_field": "movieNm",
+      "query": "(가정) AND (어린이 날)"
+    }
+  }
+}
+
+
+
+{
+    "took": 1,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 0,
+        "max_score": null,
+        "hits": []
+    }
+}
+
+

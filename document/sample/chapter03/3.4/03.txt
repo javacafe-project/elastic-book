@@ -1,0 +1,54 @@
+POST _analyze
+{
+	"analyzer": "standard",
+	"text": "캐리비안의 해적 "
+}
+
+
+{
+    "tokens": [
+        {
+            "token": "캐리비안의",
+            "start_offset": 0,
+            "end_offset": 5,
+            "type": "<HANGUL>",
+            "position": 0
+        },
+        {
+            "token": "해적",
+            "start_offset": 6,
+            "end_offset": 8,
+            "type": "<HANGUL>",
+            "position": 1
+        }
+    ]
+}
+
+
+
+POST movie_analyzer/_analyze
+{
+	"analyzer": "standard",
+	"text": "캐리비안의 해적 "
+}
+
+
+{
+    "tokens": [
+        {
+            "token": "캐리비안의",
+            "start_offset": 0,
+            "end_offset": 5,
+            "type": "<HANGUL>",
+            "position": 0
+        },
+        {
+            "token": "해적",
+            "start_offset": 6,
+            "end_offset": 8,
+            "type": "<HANGUL>",
+            "position": 1
+        }
+    ]
+}
+

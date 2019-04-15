@@ -1,0 +1,360 @@
+POST movie_search/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term": {
+            "repGenreNm": "코미디"
+          }
+        },
+        {
+          "match": {
+            "repNationNm": "한국"
+          }
+        }
+      ],
+      "must_not": [
+        {
+          "match": {
+            "typeNm": "단편"
+          }
+        }
+      ]
+    }
+  }
+}
+
+
+
+{
+    "took": 13,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 459,
+        "max_score": 4.009591,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "izzJqmkBjjM-ebDb8PsR",
+                "_score": 4.009591,
+                "_source": {
+                    "movieCd": "20177473",
+                    "movieNm": "비밥바룰라",
+                    "movieNmEn": "",
+                    "prdtYear": "2018",
+                    "openDt": "20180124",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "이성재"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20142433",
+                            "companyNm": "영화사김치(주)"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "mDzJqmkBjjM-ebDb8P4R",
+                "_score": 4.009591,
+                "_source": {
+                    "movieCd": "20160465",
+                    "movieNm": "메리 크리스마스 미스터 모",
+                    "movieNmEn": "Merry Christmas Mr. Mo",
+                    "prdtYear": "2017",
+                    "openDt": "20171214",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "임대형"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20139335",
+                            "companyNm": "영화사 달리기"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "3j3JqmkBjjM-ebDb8AwS",
+                "_score": 4.009591,
+                "_source": {
+                    "movieCd": "20177526",
+                    "movieNm": "MSFF2017 희극지왕 2",
+                    "movieNmEn": "The King of Comedy 2",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "옴니버스",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "gj3JqmkBjjM-ebDb8A8S",
+                "_score": 4.009591,
+                "_source": {
+                    "movieCd": "20174881",
+                    "movieNm": "엄마를 부탁해요!",
+                    "movieNmEn": "Mom I love you",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "노홍식"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Tj3JqmkBjjM-ebDb8BAS",
+                "_score": 4.009591,
+                "_source": {
+                    "movieCd": "19580072",
+                    "movieNm": "공처가",
+                    "movieNmEn": "A Henpecked Husband",
+                    "prdtYear": "1958",
+                    "openDt": "19580206",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "김수용"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "bj3JqmkBjjM-ebDb8BAS",
+                "_score": 4.009591,
+                "_source": {
+                    "movieCd": "20147129",
+                    "movieNm": "패션왕",
+                    "movieNmEn": "Fashion King",
+                    "prdtYear": "2014",
+                    "openDt": "20141106",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디",
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "오기환"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20142728",
+                            "companyNm": "주식회사 와이랩"
+                        },
+                        {
+                            "companyCd": "20111584",
+                            "companyNm": "(주)노마드필름"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "kj3JqmkBjjM-ebDb8BAS",
+                "_score": 4.009591,
+                "_source": {
+                    "movieCd": "20173832",
+                    "movieNm": "미스터 좀비(감독판)",
+                    "movieNmEn": "",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디",
+                        "공포",
+                        "호러",
+                        ""
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "이수성"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "SD3JqmkBjjM-ebDb8BIS",
+                "_score": 4.009591,
+                "_source": {
+                    "movieCd": "20124082",
+                    "movieNm": "미스터 고",
+                    "movieNmEn": "Mr. Go ",
+                    "prdtYear": "2013",
+                    "openDt": "20130717",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국,중국",
+                    "genreAlt": [
+                        "코미디",
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "김용화"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20123564",
+                            "companyNm": "(주)덱스터필름"
+                        },
+                        {
+                            "companyCd": "20138015",
+                            "companyNm": "(주)광대무변"
+                        },
+                        {
+                            "companyCd": "20062672",
+                            "companyNm": "(주)컨텐츠아이"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "ZT3JqmkBjjM-ebDb8BMS",
+                "_score": 4.009591,
+                "_source": {
+                    "movieCd": "20157064",
+                    "movieNm": "커튼콜",
+                    "movieNmEn": "Curtain Call",
+                    "prdtYear": "2016",
+                    "openDt": "20161208",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "류훈"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20158008",
+                            "companyNm": "(주)모멘텀엔터테인먼트"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "kj3JqmkBjjM-ebDb8BUT",
+                "_score": 4.009591,
+                "_source": {
+                    "movieCd": "20145486",
+                    "movieNm": "소시민",
+                    "movieNmEn": "Ordinary People",
+                    "prdtYear": "2015",
+                    "openDt": "20170112",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "김병준"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20137917",
+                            "companyNm": "영화사 새삶"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+
+

@@ -1,0 +1,10 @@
+GET /apache-web-log/_search?size=0
+{
+  "aggs" : {
+    "request count by country" : {
+      "terms" : {
+        "field" : "geoip.country_name.keyword"
+      }
+    }
+  }
+}

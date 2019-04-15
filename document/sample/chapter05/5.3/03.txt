@@ -1,0 +1,26 @@
+GET /apache-web-log/_search?size=0
+{
+    "aggs" : {
+        "bytes_range" : {
+            "range": {
+              "field": "bytes",
+              "ranges": [
+                {
+                  "key": "small",
+                  "to": 1000
+                },
+                {
+                  "key": "medium",
+                  "from": 1000,
+                  "to": 2000
+                },
+                {
+                  "key": "large",
+                  "from": 2000,
+                  "to": 3000
+                }
+              ]
+            }
+        }
+    }
+}

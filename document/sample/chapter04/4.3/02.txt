@@ -1,0 +1,319 @@
+POST movie_search/_search
+{
+  "query": {
+    "match": {
+      "movieNm": "그대 장미"
+    }
+  }
+}
+
+
+{
+    "took": 7,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 50,
+        "max_score": 11.7566185,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "JD3JqmkBjjM-ebDb8AAR",
+                "_score": 11.7566185,
+                "_source": {
+                    "movieCd": "20166602",
+                    "movieNm": "그대 이름은 장미(가제)",
+                    "movieNmEn": "",
+                    "prdtYear": "2016",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "후반작업",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "조석현"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20124237",
+                            "companyNm": "(주)엠씨엠씨"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "cz3KqmkBjjM-ebDbBcoO",
+                "_score": 10.243236,
+                "_source": {
+                    "movieCd": "2009A438",
+                    "movieNm": "장미",
+                    "movieNmEn": "",
+                    "prdtYear": "",
+                    "openDt": "",
+                    "typeNm": "",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "",
+                    "genreAlt": "",
+                    "repNationNm": "",
+                    "repGenreNm": "",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "oj3JqmkBjjM-ebDb9DnI",
+                "_score": 9.611531,
+                "_source": {
+                    "movieCd": "20152086",
+                    "movieNm": "그대",
+                    "movieNmEn": "The Man Who Wanted Her Attention",
+                    "prdtYear": "2015",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스",
+                        "액션"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "조성균"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100574",
+                            "companyNm": "한국예술종합학교 미디어콘텐츠센터"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Gj3JqmkBjjM-ebDb_ZSW",
+                "_score": 8.303724,
+                "_source": {
+                    "movieCd": "20134946",
+                    "movieNm": "바그다드의 장미",
+                    "movieNmEn": "The Singing Princess",
+                    "prdtYear": "1949",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "이탈리아",
+                    "genreAlt": [
+                        "애니메이션",
+                        "판타지"
+                    ],
+                    "repNationNm": "이탈리아",
+                    "repGenreNm": "애니메이션",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "ET3KqmkBjjM-ebDbAbp2",
+                "_score": 8.303724,
+                "_source": {
+                    "movieCd": "20060027",
+                    "movieNm": "달려라 장미",
+                    "movieNmEn": "Way To Go, Rose",
+                    "prdtYear": "2005",
+                    "openDt": "20060210",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스",
+                        "드라마",
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "김응수"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100327",
+                            "companyNm": "김응수필름"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "wj3KqmkBjjM-ebDbAaJ0",
+                "_score": 8.283283,
+                "_source": {
+                    "movieCd": "20129691",
+                    "movieNm": "추억의 장미",
+                    "movieNmEn": "The Rose Tattoo",
+                    "prdtYear": "1955",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스",
+                        "드라마"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "다니엘 만"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20104469",
+                            "companyNm": "파라마운트 픽쳐스"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "9j3JqmkBjjM-ebDb_YaV",
+                "_score": 8.08982,
+                "_source": {
+                    "movieCd": "20119244",
+                    "movieNm": "환상의 그대",
+                    "movieNmEn": "You Will Meet a Tall Dark Stranger",
+                    "prdtYear": "2010",
+                    "openDt": "20110127",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스",
+                        "코미디"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "우디 알렌"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "1T3JqmkBjjM-ebDb-ViP",
+                "_score": 7.915258,
+                "_source": {
+                    "movieCd": "20148681",
+                    "movieNm": "차가운 장미",
+                    "movieNmEn": "Before the Winter Chill ",
+                    "prdtYear": "2013",
+                    "openDt": "20140529",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "프랑스",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "프랑스",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "필립 클로델"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Lj3JqmkBjjM-ebDb-VmP",
+                "_score": 7.915258,
+                "_source": {
+                    "movieCd": "20090714",
+                    "movieNm": "불륜 장미",
+                    "movieNmEn": "Yariman",
+                    "prdtYear": "2008",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "일본",
+                    "genreAlt": [
+                        "성인물",
+                        "에로",
+                        ""
+                    ],
+                    "repNationNm": "일본",
+                    "repGenreNm": "성인물(에로)",
+                    "directors": [
+                        {
+                            "peopleNm": "사카모토 레이"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "nz3JqmkBjjM-ebDb9DrI",
+                "_score": 7.8908,
+                "_source": {
+                    "movieCd": "20020137",
+                    "movieNm": "빵과 장미",
+                    "movieNmEn": "Bread And Roses",
+                    "prdtYear": "2000",
+                    "openDt": "20020524",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "영국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "영국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "켄 로치"
+                        }
+                    ],
+                    "companys": []
+                }
+            }
+        ]
+    }
+}
+

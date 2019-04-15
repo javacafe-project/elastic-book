@@ -1,4 +1,5 @@
-POST movie/_search
+# 요청
+POST http://localhost:9200/movie/_search
 {
      "query" : {
          "term" : { "typeNm": "장편" }
@@ -6,7 +7,9 @@ POST movie/_search
  }
 
 
- {
+
+# 결과
+{
    "took" : 0,
    "timed_out" : false,
    "_shards" : {

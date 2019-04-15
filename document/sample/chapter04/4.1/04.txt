@@ -1,0 +1,91 @@
+POST movie_search/_search?q=movieNmEn:* AND prdtYear:2017&analyze_wildcard=true&from=0&size=5&sort=_score:desc,movieCd:asc&_source_includes=movieCd, movieNm,mvoieNmEn,typeNm&pretty
+
+
+{
+    "took": 4,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 2114,
+        "max_score": null,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "ej3JqmkBjjM-ebDb8BkT",
+                "_score": 2,
+                "_source": {
+                    "movieCd": "20148854",
+                    "typeNm": "장편"
+                },
+                "sort": [
+                    2,
+                    "20148854"
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "sT3JqmkBjjM-ebDb9DvI",
+                "_score": 2,
+                "_source": {
+                    "movieCd": "20149932",
+                    "typeNm": "장편"
+                },
+                "sort": [
+                    2,
+                    "20149932"
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "oj3JqmkBjjM-ebDb8BES",
+                "_score": 2,
+                "_source": {
+                    "movieCd": "20150971",
+                    "typeNm": "장편"
+                },
+                "sort": [
+                    2,
+                    "20150971"
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "ez3JqmkBjjM-ebDb8BkT",
+                "_score": 2,
+                "_source": {
+                    "movieCd": "20150974",
+                    "typeNm": "장편"
+                },
+                "sort": [
+                    2,
+                    "20150974"
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "CjzJqmkBjjM-ebDb8P0R",
+                "_score": 2,
+                "_source": {
+                    "movieCd": "20150976",
+                    "typeNm": "장편"
+                },
+                "sort": [
+                    2,
+                    "20150976"
+                ]
+            }
+        ]
+    }
+}
+
+

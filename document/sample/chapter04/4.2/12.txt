@@ -1,0 +1,308 @@
+POST movie_search/_search
+{
+  "query" : {
+    "multi_match": {
+      "query": "Fly",
+      "fields": ["movieNm^3","movieNmEn"]
+    }
+  }
+}
+
+
+{
+    "took": 11,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 60,
+        "max_score": 13.151667,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "dD3KqmkBjjM-ebDbBb8N",
+                "_score": 13.151667,
+                "_source": {
+                    "movieCd": "20113107",
+                    "movieNm": "플라이 투 더 드림(Fly 2 the Dream)",
+                    "movieNmEn": "Fly 2 the Dream",
+                    "prdtYear": "2002",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "애니메이션"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "애니메이션",
+                    "directors": [
+                        {
+                            "peopleNm": "류경진"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "OD3JqmkBjjM-ebDb8BAS",
+                "_score": 9.647094,
+                "_source": {
+                    "movieCd": "20163008",
+                    "movieNm": "플라이",
+                    "movieNmEn": "Fly",
+                    "prdtYear": "2016",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "임연정"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "kD3JqmkBjjM-ebDb8BcT",
+                "_score": 9.627422,
+                "_source": {
+                    "movieCd": "20060191",
+                    "movieNm": "플라이 대디",
+                    "movieNmEn": "Fly. Daddy, Fly",
+                    "prdtYear": "2006",
+                    "openDt": "20060803",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "최종태"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20060617",
+                            "companyNm": "(주)다인필름"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "DD3JqmkBjjM-ebDb-W2Q",
+                "_score": 8.900567,
+                "_source": {
+                    "movieCd": "20058915",
+                    "movieNm": "플라이, 대디, 플라이",
+                    "movieNmEn": "Fly, Daddy, Fly",
+                    "prdtYear": "2005",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "일본",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "일본",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "나루시마 이즈루"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "uj3JqmkBjjM-ebDb-U2P",
+                "_score": 8.41069,
+                "_source": {
+                    "movieCd": "20141752",
+                    "movieNm": "가볍게, 더 높이",
+                    "movieNmEn": "Light Fly, Fly High",
+                    "prdtYear": "2013",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "노르웨이,인도",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "노르웨이",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "3j3JqmkBjjM-ebDb-V6P",
+                "_score": 8.101216,
+                "_source": {
+                    "movieCd": "20011626",
+                    "movieNm": "황심가기",
+                    "movieNmEn": "Midnight Fly",
+                    "prdtYear": "2001",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "홍콩",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "홍콩",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "장지량"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "gT3KqmkBjjM-ebDbCOlq",
+                "_score": 8.101216,
+                "_source": {
+                    "movieCd": "19880175",
+                    "movieNm": "더 플라이",
+                    "movieNmEn": "The Fly",
+                    "prdtYear": "1986",
+                    "openDt": "19880813",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "SF",
+                        "공포",
+                        "호러",
+                        ""
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "SF",
+                    "directors": [
+                        {
+                            "peopleNm": "데이빗 크로넨버그"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20103779",
+                            "companyNm": "브룩스필름즈"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Yj3KqmkBjjM-ebDbBcEN",
+                "_score": 7.9555216,
+                "_source": {
+                    "movieCd": "19868170",
+                    "movieNm": "플라이",
+                    "movieNmEn": "The Fly",
+                    "prdtYear": "1986",
+                    "openDt": "19880813",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "공포",
+                        "호러",
+                        "",
+                        "SF"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "공포(호러)",
+                    "directors": [
+                        {
+                            "peopleNm": "데이빗 크로넨버그"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "zT3JqmkBjjM-ebDb-W6Q",
+                "_score": 7.8127623,
+                "_source": {
+                    "movieCd": "20136357",
+                    "movieNm": "플라이 밀",
+                    "movieNmEn": "Fly Mill",
+                    "prdtYear": "2012",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "에스토니아",
+                    "genreAlt": [
+                        "애니메이션"
+                    ],
+                    "repNationNm": "에스토니아",
+                    "repGenreNm": "애니메이션",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Aj3JqmkBjjM-ebDb_YyV",
+                "_score": 7.8127623,
+                "_source": {
+                    "movieCd": "20136582",
+                    "movieNm": "플라이페이퍼",
+                    "movieNmEn": "FLY PAPER",
+                    "prdtYear": "2011",
+                    "openDt": "20130320",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "범죄",
+                        "코미디"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "범죄",
+                    "directors": [
+                        {
+                            "peopleNm": "롭 민코프"
+                        }
+                    ],
+                    "companys": []
+                }
+            }
+        ]
+    }
+}
+
+

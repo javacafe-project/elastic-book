@@ -1,9 +1,9 @@
-curl -XGET 'http://localhost:9200/movie/_doc/HZuX6mEB06UMLL9exnak?pretty=true'
-{
-}
+# 요청
+GET http://localhost:9200/movie/_doc/HZuX6mEB06UMLL9exnak?pretty=true
 
 
 
+# 결과
 {
   "_index": "movie",
   "_type": "_doc",
@@ -22,4 +22,4 @@ curl -XGET 'http://localhost:9200/movie/_doc/HZuX6mEB06UMLL9exnak?pretty=true'
     "genreAlt": "드라마,가족",
     "repNationNm": "한국",
     "repGenreNm": "드라마"
-  }
+}

@@ -1,0 +1,188 @@
+POST movie_search/_search
+{
+   "from": 0,
+   "size": 5,
+   "query": {
+     "term": {
+     "repNationNm": "한국"
+     }
+   }
+ }
+
+
+
+{
+    "took": 7,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 17604,
+        "max_score": 1.2852814,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "izzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20177473",
+                    "movieNm": "비밥바룰라",
+                    "movieNmEn": "",
+                    "prdtYear": "2018",
+                    "openDt": "20180124",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "이성재"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20142433",
+                            "companyNm": "영화사김치(주)"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "kDzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20180044",
+                    "movieNm": "사촌여동생 무삭제판",
+                    "movieNmEn": "",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": "",
+                    "repNationNm": "한국",
+                    "repGenreNm": "",
+                    "directors": [
+                        {
+                            "peopleNm": "양호열"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "lTzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20178443",
+                    "movieNm": "어린 엄마",
+                    "movieNmEn": "",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "계장혁"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "nTzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20020240",
+                    "movieNm": "성냥팔이 소녀의 재림",
+                    "movieNmEn": "Resurrection Of The Little Match Girl",
+                    "prdtYear": "2002",
+                    "openDt": "20020912",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "SF"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "SF",
+                    "directors": [
+                        {
+                            "peopleNm": "장선우"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100167",
+                            "companyNm": "기획시대(주)"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "nzzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieCd": "20020061",
+                    "movieNm": "집으로...",
+                    "movieNmEn": "The Way Home",
+                    "prdtYear": "2002",
+                    "openDt": "20020404",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "이정향"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100420",
+                            "companyNm": "튜브픽쳐스(주)"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+
+
+
+
+
+ 
+ 
+ 
+
+

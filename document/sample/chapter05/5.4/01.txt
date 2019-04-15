@@ -1,0 +1,23 @@
+GET /apache-web-log/_search?size=0
+{
+  "aggs": {
+    "histo": {
+      "date_histogram": {
+        "field": "timestamp",
+        "interval": "minute"
+      },
+      "aggs": {
+        "bytes_sum": {
+          "sum": {
+            "field": "bytes"
+          }
+        }
+      }
+    },
+    "max_bytes": {
+      "max_bucket": {
+        "buckets_path": "histo>bytes_sum"
+      }
+    }
+  }
+}

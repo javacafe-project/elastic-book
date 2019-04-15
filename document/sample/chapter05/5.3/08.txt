@@ -1,0 +1,12 @@
+GET /apache-web-log/_search?size=0
+{
+    "aggs" : {
+        "daily_request_count" : {
+            "date_histogram": {
+              "field": "timestamp",
+              "interval": "day",
+              "format": "yyyy-MM-dd"
+            }
+        }
+    }
+}

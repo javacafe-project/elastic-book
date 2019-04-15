@@ -1,0 +1,17 @@
+GET /apache-web-log/_search?size=0
+{
+  "query" : {
+    "constant_score" : {
+      "filter" : {
+          "match" : { "geoip.city_name" : "Paris" }
+      }
+    }
+  },
+  "aggs": {
+    "min_bytes": {
+      "min": {
+        "field": "bytes"
+      }
+    }
+  }
+}

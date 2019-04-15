@@ -1,5 +1,6 @@
 DELETE movie_analyzer
 
+
 PUT movie_analyzer
 {
    "settings":{
@@ -39,13 +40,13 @@ PUT movie_analyzer
             "title": {
                "type":"text",
                "analyzer":"movie_lower_test_analyzer",
-               "search_analyzer":"movie_stop_test_analyzer",
-               "search_quote_analyzer":"movie_lower_test_analyzer"
+               "search_analyzer":"movie_stop_test_analyzer"
             }
          }
       }
    }
 }
+
 
 PUT movie_analyzer/_doc/1
 {
@@ -53,40 +54,46 @@ PUT movie_analyzer/_doc/1
 }
 
 
+
 POST movie_analyzer/_search
 {
   "query": {
     "query_string": {
       "default_operator": "AND",
-      "query": "Harry Potter"
+      "query": "Chamber of Secrets"
     }
   }
 }
 
 
 {
-  "took" : 2,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 5,
-    "successful" : 5,
-    "skipped" : 0,
-    "failed" : 0
-  },
-  "hits" : {
-    "total" : 1,
-    "max_score" : 0.5753642,
-    "hits" : [
-      {
-        "_index" : "movie_analyzer",
-        "_type" : "_doc",
-        "_id" : "1",
-        "_score" : 0.5753642,
-        "_source" : {
-          "title" : "Harry Potter and the Chamber of Secrets"
-        }
-      }
-    ]
-  }
+    "took": 1,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 1,
+        "max_score": 0.5753642,
+        "hits": [
+            {
+                "_index": "movie_analyzer",
+                "_type": "_doc",
+                "_id": "1",
+                "_score": 0.5753642,
+                "_source": {
+                    "title": "Harry Potter and the Chamber of Secrets"
+                }
+            }
+        ]
+    }
 }
+
+
+
+
+
 

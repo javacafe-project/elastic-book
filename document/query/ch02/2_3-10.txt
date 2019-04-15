@@ -1,4 +1,5 @@
-POST /movie/_search?size=0
+# 요청
+POST http://localhost:9200/movie/_search?size=0
 {
     "aggs":{
         "genre":{
@@ -10,6 +11,8 @@ POST /movie/_search?size=0
 }
 
 
+
+# 결과
 {
   "took" : 6,
   "timed_out" : false,

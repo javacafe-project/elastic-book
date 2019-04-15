@@ -1,5 +1,9 @@
-curl -XDELETE http:///localhost:9200/movie
+# 요청
+DELETE http://localhost:9200/movie
 
+
+
+# 결과
 {
   "acknowledged": false
 }

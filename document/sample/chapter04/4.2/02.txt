@@ -1,0 +1,333 @@
+POST movie_search/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match_all": {}
+        }
+      ],
+      "filter": {
+        "term": {
+          "repGenreNm": "다큐멘터리"
+        }
+      }
+    }
+  }
+}
+
+
+{
+    "took": 11,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 4500,
+        "max_score": 1,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "hDzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20141708",
+                    "movieNm": "우리는 썰매를 탄다",
+                    "movieNmEn": "Parallel",
+                    "prdtYear": "2014",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [
+                        {
+                            "peopleNm": "김경만"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100475",
+                            "companyNm": "태흥영화(주)"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "LTzJqmkBjjM-ebDb8PwR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20189525",
+                    "movieNm": "젝스키스 에이틴",
+                    "movieNmEn": "SECHSKIES Eighteen",
+                    "prdtYear": "2017",
+                    "openDt": "20180118",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [],
+                    "companys": [
+                        {
+                            "companyCd": "20063229",
+                            "companyNm": "(주)와이지엔터테인먼트"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "RDzJqmkBjjM-ebDb8PwR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20169443",
+                    "movieNm": "공동정범",
+                    "movieNmEn": "The Remnants",
+                    "prdtYear": "2017",
+                    "openDt": "20180125",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [
+                        {
+                            "peopleNm": "김일란"
+                        },
+                        {
+                            "peopleNm": "이혁상"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20101123",
+                            "companyNm": "성소수문화환경을 위한 모임 '연분홍치마'"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "fDzJqmkBjjM-ebDb8PwR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180224",
+                    "movieNm": "우리는 가족입니다",
+                    "movieNmEn": "",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [
+                        {
+                            "peopleNm": "한수진"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "fTzJqmkBjjM-ebDb8PwR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180223",
+                    "movieNm": "습관의 그림자",
+                    "movieNmEn": "",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [
+                        {
+                            "peopleNm": "송아름"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "0zzJqmkBjjM-ebDb8P0R",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20178647",
+                    "movieNm": "땐뽀걸즈",
+                    "movieNmEn": "Dance sports Girls",
+                    "prdtYear": "2017",
+                    "openDt": "20170927",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [
+                        {
+                            "peopleNm": "이승문"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20114875",
+                            "companyNm": "KBS"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "hTzJqmkBjjM-ebDb8P4R",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20178143",
+                    "movieNm": "애국청년 변희재",
+                    "movieNmEn": "",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [
+                        {
+                            "peopleNm": "강의석"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "iTzJqmkBjjM-ebDb8P4R",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20175217",
+                    "movieNm": "레터스",
+                    "movieNmEn": "Letters",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "",
+                    "nationAlt": "한국,노르웨이",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [
+                        {
+                            "peopleNm": "윤재호"
+                        },
+                        {
+                            "peopleNm": "마르테 볼"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "tDzJqmkBjjM-ebDb8P4R",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20173742",
+                    "movieNm": "부에나 비스타 소셜 클럽 2: 아디오스",
+                    "movieNmEn": "Buena Vista Social Club: Adios ",
+                    "prdtYear": "2017",
+                    "openDt": "20171026",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "미국,쿠바",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [
+                        {
+                            "peopleNm": "루시 워커"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "YDzJqmkBjjM-ebDb8P8R",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20174643",
+                    "movieNm": "국정교과서 516일 : 끝나지 않은 역사전쟁",
+                    "movieNmEn": "State-authorized Textbook",
+                    "prdtYear": "2017",
+                    "openDt": "20171123",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [
+                        {
+                            "peopleNm": "백승우"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20062550",
+                            "companyNm": "(주)아우라픽처스"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+

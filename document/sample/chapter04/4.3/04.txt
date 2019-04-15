@@ -1,0 +1,339 @@
+POST movie_search/_search
+{
+  "query" : {
+    "term": {
+      "genreAlt": "코미디"
+    }
+  }
+}
+
+
+
+{
+    "took": 7,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 6590,
+        "max_score": 2.2890944,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "dDzJqmkBjjM-ebDb8PsR",
+                "_score": 2.2890944,
+                "_source": {
+                    "movieCd": "20179163",
+                    "movieNm": "반도에 살어리랏다",
+                    "movieNmEn": "I'll Just Live in Bando",
+                    "prdtYear": "2017",
+                    "openDt": "20180125",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "애니메이션",
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "애니메이션",
+                    "directors": [
+                        {
+                            "peopleNm": "이용선"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "mTzJqmkBjjM-ebDb8PsR",
+                "_score": 2.2890944,
+                "_source": {
+                    "movieCd": "20040472",
+                    "movieNm": "귀여워",
+                    "movieNmEn": "So Cute",
+                    "prdtYear": "2004",
+                    "openDt": "20041126",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마",
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "김수현"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100420",
+                            "companyNm": "튜브픽쳐스(주)"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "qzzJqmkBjjM-ebDb8PsR",
+                "_score": 2.2890944,
+                "_source": {
+                    "movieCd": "20168323",
+                    "movieNm": "염력",
+                    "movieNmEn": "Psychokinesis",
+                    "prdtYear": "2017",
+                    "openDt": "20180131",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마",
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "연상호"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20140808",
+                            "companyNm": "(주)영화사레드피터"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "ujzJqmkBjjM-ebDb8PsR",
+                "_score": 2.2890944,
+                "_source": {
+                    "movieCd": "20189842",
+                    "movieNm": "언프리티 소셜 스타 ",
+                    "movieNmEn": "Ingrid Goes West",
+                    "prdtYear": "2017",
+                    "openDt": "20180222",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "코미디",
+                        "드라마"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "코미디",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "3jzJqmkBjjM-ebDb8PsR",
+                "_score": 2.2890944,
+                "_source": {
+                    "movieCd": "20150969",
+                    "movieNm": "궁합",
+                    "movieNmEn": "",
+                    "prdtYear": "2018",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디",
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "홍창표"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100128",
+                            "companyNm": "(주)주피터필름"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "6zzJqmkBjjM-ebDb8PsR",
+                "_score": 2.2890944,
+                "_source": {
+                    "movieCd": "20174169",
+                    "movieNm": "기묘한 가족",
+                    "movieNmEn": "",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "후반작업",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "이민재"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20142551",
+                            "companyNm": "씨네주 유한회사"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "EDzJqmkBjjM-ebDb8PwR",
+                "_score": 2.2890944,
+                "_source": {
+                    "movieCd": "20176104",
+                    "movieNm": "그것만이 내 세상",
+                    "movieNmEn": "Keys to the Heart",
+                    "prdtYear": "2017",
+                    "openDt": "20180117",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디",
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "최성현"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100278",
+                            "companyNm": "(주)제이케이필름"
+                        },
+                        {
+                            "companyCd": "20110854",
+                            "companyNm": "씨제이이앤엠(주)"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "JTzJqmkBjjM-ebDb8PwR",
+                "_score": 2.2890944,
+                "_source": {
+                    "movieCd": "20180082",
+                    "movieNm": "로건 럭키",
+                    "movieNmEn": "Logan Lucky",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "코미디",
+                        "범죄",
+                        "드라마",
+                        "액션"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "스티븐 소더버그"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "UDzJqmkBjjM-ebDb8PwR",
+                "_score": 2.2890944,
+                "_source": {
+                    "movieCd": "20180362",
+                    "movieNm": "레지던트 이블 좀비",
+                    "movieNmEn": "Dead 7",
+                    "prdtYear": "2016",
+                    "openDt": "20180125",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "공포",
+                        "호러",
+                        "",
+                        "서부극",
+                        "웨스턴",
+                        "",
+                        "코미디"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "공포(호러)",
+                    "directors": [
+                        {
+                            "peopleNm": "대니 로우"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "xDzJqmkBjjM-ebDb8PwR",
+                "_score": 2.2890944,
+                "_source": {
+                    "movieCd": "20179251",
+                    "movieNm": "전설의 고향",
+                    "movieNmEn": "",
+                    "prdtYear": "2015",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "원일구"
+                        }
+                    ],
+                    "companys": []
+                }
+            }
+        ]
+    }
+}
+
+

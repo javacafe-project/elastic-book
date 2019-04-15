@@ -1,0 +1,124 @@
+POST movie_search/_search
+{
+  "query": {
+    "query_string": {
+      "default_field": "movieNmEn",
+      "query": "movieNmEn:* OR prdtYear:2017"
+    }
+  },
+  "from": 0,
+  "size": 5,
+  "sort": [
+    {
+      "_score": {
+        "order": "desc"
+      },
+      "movieCd": {
+        "order": "asc"
+      }
+    }
+  ],
+  "_source": [
+    "movieCd",
+    "movieNm",
+    "mvoieNmEn",
+    "typeNm"
+  ]
+}
+
+
+
+{
+    "took": 20,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 63069,
+        "max_score": null,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "ej3JqmkBjjM-ebDb8BkT",
+                "_score": 2,
+                "_source": {
+                    "movieCd": "20148854",
+                    "typeNm": "장편",
+                    "movieNm": "증거불충분"
+                },
+                "sort": [
+                    2,
+                    "20148854"
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "sT3JqmkBjjM-ebDb9DvI",
+                "_score": 2,
+                "_source": {
+                    "movieCd": "20149932",
+                    "typeNm": "장편",
+                    "movieNm": "도깨비"
+                },
+                "sort": [
+                    2,
+                    "20149932"
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "oj3JqmkBjjM-ebDb8BES",
+                "_score": 2,
+                "_source": {
+                    "movieCd": "20150971",
+                    "typeNm": "장편",
+                    "movieNm": "해빙"
+                },
+                "sort": [
+                    2,
+                    "20150971"
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "ez3JqmkBjjM-ebDb8BkT",
+                "_score": 2,
+                "_source": {
+                    "movieCd": "20150974",
+                    "typeNm": "장편",
+                    "movieNm": "독고"
+                },
+                "sort": [
+                    2,
+                    "20150974"
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "CjzJqmkBjjM-ebDb8P0R",
+                "_score": 2,
+                "_source": {
+                    "movieCd": "20150976",
+                    "typeNm": "장편",
+                    "movieNm": "신과함께-죄와 벌"
+                },
+                "sort": [
+                    2,
+                    "20150976"
+                ]
+            }
+        ]
+    }
+}
+
+
+

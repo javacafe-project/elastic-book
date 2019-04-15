@@ -1,0 +1,121 @@
+POST movie_search/_search
+{
+   "_source": [
+     "movieNm"
+   ],
+   "query": {
+     "term": {
+       "repNationNm" : "한국"
+     }
+   }
+}
+
+
+
+{
+    "took": 3,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 17604,
+        "max_score": 1.2852814,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "izzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieNm": "비밥바룰라"
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "kDzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieNm": "사촌여동생 무삭제판"
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "lTzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieNm": "어린 엄마"
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "nTzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieNm": "성냥팔이 소녀의 재림"
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "nzzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieNm": "집으로..."
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "rTzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieNm": "천화"
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "sDzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieNm": "착한 형수 3"
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "tDzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieNm": "퍼즐"
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "yzzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieNm": "사라진 밤"
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "0zzJqmkBjjM-ebDb8PsR",
+                "_score": 1.2852814,
+                "_source": {
+                    "movieNm": "1987"
+                }
+            }
+        ]
+    }
+}
+

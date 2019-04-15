@@ -1,0 +1,10 @@
+GET /apache-web-log/_search?size=0
+{
+  "aggs": {
+    "min_bytes": {
+      "min": {
+        "field": "bytes"
+      }
+    }
+  }
+}

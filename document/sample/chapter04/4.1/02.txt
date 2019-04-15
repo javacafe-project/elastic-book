@@ -1,0 +1,304 @@
+POST movie_search/_search
+{
+ 	"query" : {
+ 		"term" : { "prdtYear": "2018" }
+ 	}
+}
+
+
+
+
+{
+    "took": 2,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 45,
+        "max_score": 1,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "hzzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20178395",
+                    "movieNm": "12 솔져스",
+                    "movieNmEn": "12 Strong",
+                    "prdtYear": "2018",
+                    "openDt": "20180131",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "액션",
+                        "드라마",
+                        "전쟁"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "액션",
+                    "directors": [
+                        {
+                            "peopleNm": "니콜라이 퓰시"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "qjzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180501",
+                    "movieNm": "관계의 의미",
+                    "movieNmEn": "",
+                    "prdtYear": "2018",
+                    "openDt": "",
+                    "typeNm": "옴니버스",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "기타"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "기타",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "ATzJqmkBjjM-ebDb8PwR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180566",
+                    "movieNm": "2월 수요단편극장- 김태용 감독 특별전",
+                    "movieNmEn": "",
+                    "prdtYear": "2018",
+                    "openDt": "",
+                    "typeNm": "옴니버스",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "기타"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "기타",
+                    "directors": [
+                        {
+                            "peopleNm": "김태용"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "HzzJqmkBjjM-ebDb8PwR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180482",
+                    "movieNm": "잊혀진 이야기\t",
+                    "movieNmEn": "Forgotten Saga",
+                    "prdtYear": "2018",
+                    "openDt": "",
+                    "typeNm": "옴니버스",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "기타"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "기타",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "gTzJqmkBjjM-ebDb8P0R",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20189661",
+                    "movieNm": "2018 한국영화아카데미 34기 졸업영화제 섹션A",
+                    "movieNmEn": "",
+                    "prdtYear": "2018",
+                    "openDt": "",
+                    "typeNm": "옴니버스",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "기타"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "기타",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "ZDzJqmkBjjM-ebDb8P4R",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20176848",
+                    "movieNm": "데드풀2",
+                    "movieNmEn": "DEADPOOL2",
+                    "prdtYear": "2018",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "액션",
+                        "어드벤처",
+                        "코미디",
+                        "SF"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "액션",
+                    "directors": [
+                        {
+                            "peopleNm": "데이빗 레이치"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Ej3JqmkBjjM-ebDb8AER",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20177478",
+                    "movieNm": "어벤져스: 인피니티 워",
+                    "movieNmEn": "Avengers: Infinity War",
+                    "prdtYear": "2018",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "액션",
+                        "어드벤처",
+                        "판타지",
+                        "SF"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "액션",
+                    "directors": [
+                        {
+                            "peopleNm": "안소니 루소"
+                        },
+                        {
+                            "peopleNm": "조 루소"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "ljzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180789",
+                    "movieNm": "한 솔로: 스타워즈 스토리",
+                    "movieNmEn": "Solo: A Star Wars Story",
+                    "prdtYear": "2018",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "미국",
+                    "genreAlt": "",
+                    "repNationNm": "미국",
+                    "repGenreNm": "",
+                    "directors": [
+                        {
+                            "peopleNm": "론 하워드"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "rzzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180783",
+                    "movieNm": "착한 형수 3 무삭제",
+                    "movieNmEn": "",
+                    "prdtYear": "2018",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "이리단"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20161021",
+                            "companyNm": "(주)영화사가을"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "yTzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180701",
+                    "movieNm": "내 여자가 된 형수",
+                    "movieNmEn": "",
+                    "prdtYear": "2018",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "기타"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "기타",
+                    "directors": [
+                        {
+                            "peopleNm": "최석원"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100142",
+                            "companyNm": "(주)씨맥스커뮤니케이션즈"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

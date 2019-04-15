@@ -1,0 +1,320 @@
+POST movie_search/_search
+{
+  "query" : {
+    "multi_match": {
+      "query": "가족",
+      "fields": ["movieNm","movieNmEn"]
+    }
+  }
+}
+
+
+
+{
+    "took": 7,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 102,
+        "max_score": 8.583573,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Jz3JqmkBjjM-ebDb9DDH",
+                "_score": 8.583573,
+                "_source": {
+                    "movieCd": "20155408",
+                    "movieNm": "가족",
+                    "movieNmEn": "Family",
+                    "prdtYear": "2015",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "정승현"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "oT3JqmkBjjM-ebDb9DXI",
+                "_score": 8.224714,
+                "_source": {
+                    "movieCd": "20127686",
+                    "movieNm": "가족",
+                    "movieNmEn": "Family",
+                    "prdtYear": "1976",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "이혁수"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20101024",
+                            "companyNm": "대영영화주식회사"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "KD3KqmkBjjM-ebDbAal0",
+                "_score": 8.224714,
+                "_source": {
+                    "movieCd": "20126886",
+                    "movieNm": "가족",
+                    "movieNmEn": "Family",
+                    "prdtYear": "1986",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "김승훈"
+                        },
+                        {
+                            "peopleNm": "박기용"
+                        },
+                        {
+                            "peopleNm": "신동창"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100572",
+                            "companyNm": "한국영화아카데미"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "2zzJqmkBjjM-ebDb8P4R",
+                "_score": 8.1566105,
+                "_source": {
+                    "movieCd": "20177853",
+                    "movieNm": "가족",
+                    "movieNmEn": "A Family",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "이탈리아",
+                    "genreAlt": [
+                        "기타"
+                    ],
+                    "repNationNm": "이탈리아",
+                    "repGenreNm": "기타",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "jj3JqmkBjjM-ebDb_YWV",
+                "_score": 8.1566105,
+                "_source": {
+                    "movieCd": "20138745",
+                    "movieNm": "가족",
+                    "movieNmEn": "",
+                    "prdtYear": "2007",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "성인물",
+                        "에로",
+                        ""
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "성인물(에로)",
+                    "directors": [
+                        {
+                            "peopleNm": "이필립"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "az3JqmkBjjM-ebDb9CPG",
+                "_score": 8.136698,
+                "_source": {
+                    "movieCd": "20040554",
+                    "movieNm": "가족",
+                    "movieNmEn": "A Family",
+                    "prdtYear": "2004",
+                    "openDt": "20040903",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "이정철"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100420",
+                            "companyNm": "튜브픽쳐스(주)"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "AT3KqmkBjjM-ebDbAZ50",
+                "_score": 8.136698,
+                "_source": {
+                    "movieCd": "20121972",
+                    "movieNm": "가족",
+                    "movieNmEn": "",
+                    "prdtYear": "2012",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "jz3JqmkBjjM-ebDb8AcS",
+                "_score": 6.9418287,
+                "_source": {
+                    "movieCd": "20172974",
+                    "movieNm": "가족 사진",
+                    "movieNmEn": "Quadrilaterals",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "필리핀",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "필리핀",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "sT3JqmkBjjM-ebDb-VqP",
+                "_score": 6.9418287,
+                "_source": {
+                    "movieCd": "20135405",
+                    "movieNm": "붉은 가족",
+                    "movieNmEn": "Red Family",
+                    "prdtYear": "2013",
+                    "openDt": "20131106",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마",
+                        "액션"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "이주형"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100078",
+                            "companyNm": "(주)김기덕 필름"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "CD3JqmkBjjM-ebDb_XmU",
+                "_score": 6.9418287,
+                "_source": {
+                    "movieCd": "20130329",
+                    "movieNm": "수상한 가족",
+                    "movieNmEn": "The Joneses",
+                    "prdtYear": "2009",
+                    "openDt": "20130828",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "코미디",
+                        "드라마"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "데릭 보트"
+                        }
+                    ],
+                    "companys": []
+                }
+            }
+        ]
+    }
+}
+
+
+

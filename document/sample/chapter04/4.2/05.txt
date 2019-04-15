@@ -1,0 +1,321 @@
+POST movie_search/_search
+{
+   "query": {
+     "term": {
+       "repNationNm" : "한국"
+     }
+   },
+   "sort" :{
+     "prdtYear": {
+        "order": "asc"
+      }
+   }
+}
+
+
+{
+    "took": 20,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 17604,
+        "max_score": null,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "6D3JqmkBjjM-ebDb9CXG",
+                "_score": null,
+                "_source": {
+                    "movieCd": "20163446",
+                    "movieNm": "요리사",
+                    "movieNmEn": "The Cook",
+                    "prdtYear": "1918",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": "",
+                    "repNationNm": "한국",
+                    "repGenreNm": "",
+                    "directors": [],
+                    "companys": []
+                },
+                "sort": [
+                    1918
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Lz3JqmkBjjM-ebDb_YmV",
+                "_score": null,
+                "_source": {
+                    "movieCd": "19198008",
+                    "movieNm": "경성전시의 경",
+                    "movieNmEn": "The Panoramic view of the whole city of Kyeongsung",
+                    "prdtYear": "1919",
+                    "openDt": "",
+                    "typeNm": "기타",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [],
+                    "companys": []
+                },
+                "sort": [
+                    1919
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "eD3KqmkBjjM-ebDbCOxq",
+                "_score": null,
+                "_source": {
+                    "movieCd": "19190007",
+                    "movieNm": "의리적 구토",
+                    "movieNmEn": "Fight For Justice",
+                    "prdtYear": "1919",
+                    "openDt": "19191027",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마",
+                        "사극",
+                        "액션"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "김도산"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20061158",
+                            "companyNm": "㈜단성시네마"
+                        }
+                    ]
+                },
+                "sort": [
+                    1919
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Qj3JqmkBjjM-ebDb_YqV",
+                "_score": null,
+                "_source": {
+                    "movieCd": "19190005",
+                    "movieNm": "금강산 대활동",
+                    "movieNmEn": "Great Scenic Spots of Mt. Geumgang",
+                    "prdtYear": "1919",
+                    "openDt": "19191128",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [],
+                    "companys": []
+                },
+                "sort": [
+                    1919
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "MD3JqmkBjjM-ebDb_YmV",
+                "_score": null,
+                "_source": {
+                    "movieCd": "19198004",
+                    "movieNm": "고종인산실경",
+                    "movieNmEn": "The Real Scenes of the National Funeral of Gojong ",
+                    "prdtYear": "1919",
+                    "openDt": "",
+                    "typeNm": "기타",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [],
+                    "companys": []
+                },
+                "sort": [
+                    1919
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "2j3KqmkBjjM-ebDbCOxq",
+                "_score": null,
+                "_source": {
+                    "movieCd": "19200003",
+                    "movieNm": "지기",
+                    "movieNmEn": "A Truly Good Friend",
+                    "prdtYear": "1920",
+                    "openDt": "19200424",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "이기세"
+                        }
+                    ],
+                    "companys": []
+                },
+                "sort": [
+                    1920
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "pz3KqmkBjjM-ebDbCOxq",
+                "_score": null,
+                "_source": {
+                    "movieCd": "19200001",
+                    "movieNm": "장한몽",
+                    "movieNmEn": "Eternal Love Of Su-Il And Sun-Ae",
+                    "prdtYear": "1920",
+                    "openDt": "19200429",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "이기세"
+                        }
+                    ],
+                    "companys": []
+                },
+                "sort": [
+                    1920
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "ez3KqmkBjjM-ebDbCOxq",
+                "_score": null,
+                "_source": {
+                    "movieCd": "19200004",
+                    "movieNm": "의적",
+                    "movieNmEn": "The Chivalrous Robber",
+                    "prdtYear": "1920",
+                    "openDt": "19200405",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마",
+                        "사극",
+                        "액션"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "김도산"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20061158",
+                            "companyNm": "㈜단성시네마"
+                        }
+                    ]
+                },
+                "sort": [
+                    1920
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "xD3KqmkBjjM-ebDbCOxq",
+                "_score": null,
+                "_source": {
+                    "movieCd": "19200002",
+                    "movieNm": "조선사정",
+                    "movieNmEn": "The State Of Affairs In Joseon",
+                    "prdtYear": "1920",
+                    "openDt": "19200424",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [],
+                    "companys": []
+                },
+                "sort": [
+                    1920
+                ]
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "yT3KqmkBjjM-ebDbCO1q",
+                "_score": null,
+                "_source": {
+                    "movieCd": "19200005",
+                    "movieNm": "호열자",
+                    "movieNmEn": "The Cholera",
+                    "prdtYear": "1920",
+                    "openDt": "19200317",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [],
+                    "companys": []
+                },
+                "sort": [
+                    1920
+                ]
+            }
+        ]
+    }
+}

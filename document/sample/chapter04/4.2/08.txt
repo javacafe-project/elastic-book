@@ -1,0 +1,319 @@
+POST movie_search/_search
+{
+  "query": {
+    "range": {
+      "prdtYear": {
+        "gte": "2016",
+        "lte": "2017"
+      }
+    }
+  }
+}
+
+
+
+{
+    "took": 10,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 5410,
+        "max_score": 1,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "djzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180804",
+                    "movieNm": "곤지암",
+                    "movieNmEn": "",
+                    "prdtYear": "2016",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "공포",
+                        "호러",
+                        "",
+                        "스릴러"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "공포(호러)",
+                    "directors": [
+                        {
+                            "peopleNm": "정범식"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "2016841",
+                            "companyNm": "(주)하이브미디어코프"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "eDzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180803",
+                    "movieNm": "행복의 나라",
+                    "movieNmEn": "Land of Happiness",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마",
+                        "가족"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "정민규"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "ejzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20174647",
+                    "movieNm": "튼튼이의 모험",
+                    "movieNmEn": "Loser’s Adventure",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "고봉수"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "fzzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20189901",
+                    "movieNm": "더 포리너",
+                    "movieNmEn": "The Foreigner",
+                    "prdtYear": "2017",
+                    "openDt": "20180207",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "영국,중국",
+                    "genreAlt": [
+                        "액션",
+                        "스릴러"
+                    ],
+                    "repNationNm": "영국",
+                    "repGenreNm": "액션",
+                    "directors": [
+                        {
+                            "peopleNm": "마틴 캠벨"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "jTzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20168161",
+                    "movieNm": "1급기밀",
+                    "movieNmEn": "The Discloser",
+                    "prdtYear": "2016",
+                    "openDt": "20180124",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "홍기선"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20126335",
+                            "companyNm": "(주)미인픽쳐스"
+                        },
+                        {
+                            "companyCd": "20154688",
+                            "companyNm": "(주)미디어모굴"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "jjzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20172963",
+                    "movieNm": "착한 형수 2 무삭제",
+                    "movieNmEn": "",
+                    "prdtYear": "2017",
+                    "openDt": "20180123",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "곽영근"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20154628",
+                            "companyNm": "(주)영화사 사계절"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "mzzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180766",
+                    "movieNm": "호두까기 인형 ",
+                    "movieNmEn": "THE NUTCRACKER",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "영국",
+                    "genreAlt": [
+                        "공연"
+                    ],
+                    "repNationNm": "영국",
+                    "repGenreNm": "공연",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "pTzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180764",
+                    "movieNm": "토스카 ",
+                    "movieNmEn": "TOSCA",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "영국",
+                    "genreAlt": [
+                        "공연"
+                    ],
+                    "repNationNm": "영국",
+                    "repGenreNm": "공연",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "rjzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180784",
+                    "movieNm": "마술피리 ",
+                    "movieNmEn": "THE MAGIC FLUTE",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "",
+                    "genreAlt": "",
+                    "repNationNm": "영국",
+                    "repGenreNm": "공연",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "sjzJqmkBjjM-ebDb8PsR",
+                "_score": 1,
+                "_source": {
+                    "movieCd": "20180761",
+                    "movieNm": "내 친구 엄마",
+                    "movieNmEn": "",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉예정",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "이리단"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20161021",
+                            "companyNm": "(주)영화사가을"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+
+

@@ -1,0 +1,345 @@
+POST movie_search/_search
+{
+  "query": {
+    "match": {
+      "movieNmEn": {
+        "query": "Fli High",
+        "fuzziness": 1
+      }
+    }
+  }
+}
+
+
+
+{
+    "took": 35,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 207,
+        "max_score": 11.895299,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Iz3JqmkBjjM-ebDb8AAR",
+                "_score": 11.895299,
+                "_source": {
+                    "movieCd": "20143501",
+                    "movieNm": "플라이 하이",
+                    "movieNmEn": "Fly High",
+                    "prdtYear": "2016",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "후반작업",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "한경탁"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20138416",
+                            "companyNm": "(주)분홍돌고래"
+                        },
+                        {
+                            "companyCd": "20100385",
+                            "companyNm": "(주)다세포클럽"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "1j3JqmkBjjM-ebDb9CfG",
+                "_score": 11.895299,
+                "_source": {
+                    "movieCd": "20090823",
+                    "movieNm": "비상",
+                    "movieNmEn": "Fly High",
+                    "prdtYear": "2009",
+                    "openDt": "20091203",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "액션",
+                        "드라마",
+                        "멜로",
+                        "로맨스"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "액션",
+                    "directors": [
+                        {
+                            "peopleNm": "박정훈"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20101125",
+                            "companyNm": "(주)디디오엘필름 "
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "rj3JqmkBjjM-ebDb_ZKV",
+                "_score": 11.895299,
+                "_source": {
+                    "movieCd": "20060220",
+                    "movieNm": "사랑하니까, 괜찮아",
+                    "movieNmEn": "Fly High",
+                    "prdtYear": "2006",
+                    "openDt": "20060817",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "멜로",
+                        "로맨스",
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "멜로/로맨스",
+                    "directors": [
+                        {
+                            "peopleNm": "곽지균"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20101680",
+                            "companyNm": "유비다임"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "uj3JqmkBjjM-ebDb-U2P",
+                "_score": 10.802035,
+                "_source": {
+                    "movieCd": "20141752",
+                    "movieNm": "가볍게, 더 높이",
+                    "movieNmEn": "Light Fly, Fly High",
+                    "prdtYear": "2013",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "노르웨이,인도",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "노르웨이",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "YD3JqmkBjjM-ebDb_YKV",
+                "_score": 10.364727,
+                "_source": {
+                    "movieCd": "20120601",
+                    "movieNm": "우리는 하늘을 날았다",
+                    "movieNmEn": "We Fly High",
+                    "prdtYear": "2011",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디",
+                        "멜로",
+                        "로맨스"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "김수영"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "6D3JqmkBjjM-ebDb_XeU",
+                "_score": 9.287273,
+                "_source": {
+                    "movieCd": "19910051",
+                    "movieNm": "개벽",
+                    "movieNmEn": "Fly High, Run Far",
+                    "prdtYear": "1991",
+                    "openDt": "19910921",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마",
+                        "사극"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "임권택"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20100979",
+                            "companyNm": "춘우영화주식회사"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Cz3JqmkBjjM-ebDb9EbJ",
+                "_score": 8.132888,
+                "_source": {
+                    "movieCd": "19980081",
+                    "movieNm": "굿모닝 스쿨",
+                    "movieNmEn": "High School High",
+                    "prdtYear": "1997",
+                    "openDt": "19980214",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "하트 보크너"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20101356",
+                            "companyNm": "트라이스타 픽쳐스"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "6D3JqmkBjjM-ebDb8AsS",
+                "_score": 7.334801,
+                "_source": {
+                    "movieCd": "20176366",
+                    "movieNm": "하이 소사이어티",
+                    "movieNmEn": "High Society",
+                    "prdtYear": "2014",
+                    "openDt": "20170622",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "프랑스",
+                    "genreAlt": [
+                        "드라마",
+                        "코미디",
+                        "멜로",
+                        "로맨스"
+                    ],
+                    "repNationNm": "프랑스",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "쥘리 로페스 퀴발"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Lj3JqmkBjjM-ebDb9DTI",
+                "_score": 7.334801,
+                "_source": {
+                    "movieCd": "20155353",
+                    "movieNm": "하이파이브",
+                    "movieNmEn": "High five",
+                    "prdtYear": "2015",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "다큐멘터리"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "다큐멘터리",
+                    "directors": [
+                        {
+                            "peopleNm": "최진관"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "8T3KqmkBjjM-ebDbAaJ0",
+                "_score": 7.334801,
+                "_source": {
+                    "movieCd": "20129633",
+                    "movieNm": "상류사회 ",
+                    "movieNmEn": "High Society",
+                    "prdtYear": "1956",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "미국",
+                    "genreAlt": [
+                        "코미디",
+                        "멜로",
+                        "로맨스",
+                        "뮤지컬"
+                    ],
+                    "repNationNm": "미국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "찰스 월터스"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20104352",
+                            "companyNm": "메트로-골드윈-마이어"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+

@@ -1,0 +1,315 @@
+POST  movie_search/_search
+{
+  "query": {
+    "match": {
+      "movieNm": "기묘한 가족"
+    }
+  }
+}
+
+
+
+{
+    "took": 12,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 115,
+        "max_score": 14.881828,
+        "hits": [
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "6zzJqmkBjjM-ebDb8PsR",
+                "_score": 14.881828,
+                "_source": {
+                    "movieCd": "20174169",
+                    "movieNm": "기묘한 가족",
+                    "movieNmEn": "",
+                    "prdtYear": "2017",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "후반작업",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "코미디"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "코미디",
+                    "directors": [
+                        {
+                            "peopleNm": "이민재"
+                        }
+                    ],
+                    "companys": [
+                        {
+                            "companyCd": "20142551",
+                            "companyNm": "씨네주 유한회사"
+                        }
+                    ]
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "vz3JqmkBjjM-ebDb9EXJ",
+                "_score": 8.897339,
+                "_source": {
+                    "movieCd": "20060221",
+                    "movieNm": "기묘한 서커스",
+                    "movieNmEn": "Strange Circus",
+                    "prdtYear": "2005",
+                    "openDt": "20061019",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "일본",
+                    "genreAlt": [
+                        "미스터리"
+                    ],
+                    "repNationNm": "일본",
+                    "repGenreNm": "미스터리",
+                    "directors": [
+                        {
+                            "peopleNm": "소노 시온"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "uT3JqmkBjjM-ebDb9CTG",
+                "_score": 8.888408,
+                "_source": {
+                    "movieCd": "20152722",
+                    "movieNm": "기묘한 사랑",
+                    "movieNmEn": "Henge",
+                    "prdtYear": "2012",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "일본",
+                    "genreAlt": [
+                        "공포",
+                        "호러",
+                        ""
+                    ],
+                    "repNationNm": "일본",
+                    "repGenreNm": "공포(호러)",
+                    "directors": [
+                        {
+                            "peopleNm": "오하타 하지메"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "1j3JqmkBjjM-ebDb_XyU",
+                "_score": 8.888408,
+                "_source": {
+                    "movieCd": "20010001",
+                    "movieNm": "기묘한 이야기",
+                    "movieNmEn": "Tales of the Unusual",
+                    "prdtYear": "2000",
+                    "openDt": "20030221",
+                    "typeNm": "장편",
+                    "prdtStatNm": "개봉",
+                    "nationAlt": "일본",
+                    "genreAlt": [
+                        "공포",
+                        "호러",
+                        "",
+                        "드라마",
+                        "판타지"
+                    ],
+                    "repNationNm": "일본",
+                    "repGenreNm": "공포(호러)",
+                    "directors": [
+                        {
+                            "peopleNm": "호시 마모루"
+                        },
+                        {
+                            "peopleNm": "오치아이 마사유키"
+                        },
+                        {
+                            "peopleNm": "오구라 히사오"
+                        },
+                        {
+                            "peopleNm": "스즈키 마사유키"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Jz3JqmkBjjM-ebDb9DDH",
+                "_score": 8.583573,
+                "_source": {
+                    "movieCd": "20155408",
+                    "movieNm": "가족",
+                    "movieNmEn": "Family",
+                    "prdtYear": "2015",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "한국",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "한국",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "정승현"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "pT3JqmkBjjM-ebDb_XuU",
+                "_score": 8.56212,
+                "_source": {
+                    "movieCd": "20088786",
+                    "movieNm": "기묘한 피크닉",
+                    "movieNmEn": "Hooked",
+                    "prdtYear": "2008",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "루마니아,프랑스",
+                    "genreAlt": [
+                        "드라마"
+                    ],
+                    "repNationNm": "루마니아",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "아드리안 시타루"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Gj3JqmkBjjM-ebDb_XiU",
+                "_score": 8.534983,
+                "_source": {
+                    "movieCd": "20070075",
+                    "movieNm": "기묘한 아파트",
+                    "movieNmEn": "OLDK",
+                    "prdtYear": "2004",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "일본",
+                    "genreAlt": [
+                        "드라마",
+                        "코미디"
+                    ],
+                    "repNationNm": "일본",
+                    "repGenreNm": "드라마",
+                    "directors": [
+                        {
+                            "peopleNm": "하라 마사히로"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Qj3JqmkBjjM-ebDb-VSP",
+                "_score": 8.303724,
+                "_source": {
+                    "movieCd": "20149891",
+                    "movieNm": "기묘한 동거인",
+                    "movieNmEn": "A Small Time/Space Discontinuum",
+                    "prdtYear": "2013",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "기타",
+                    "genreAlt": [
+                        "미스터리",
+                        "멜로",
+                        "로맨스"
+                    ],
+                    "repNationNm": "기타",
+                    "repGenreNm": "미스터리",
+                    "directors": [
+                        {
+                            "peopleNm": "고스 스베타노브스키"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "RD3JqmkBjjM-ebDb-V2P",
+                "_score": 8.303724,
+                "_source": {
+                    "movieCd": "20028629",
+                    "movieNm": "기묘한 동거",
+                    "movieNmEn": "1/2 the Rent",
+                    "prdtYear": "2002",
+                    "openDt": "",
+                    "typeNm": "장편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "독일",
+                    "genreAlt": [
+                        "범죄"
+                    ],
+                    "repNationNm": "독일",
+                    "repGenreNm": "범죄",
+                    "directors": [
+                        {
+                            "peopleNm": "마크 오티커"
+                        }
+                    ],
+                    "companys": []
+                }
+            },
+            {
+                "_index": "movie_search",
+                "_type": "_doc",
+                "_id": "Aj3KqmkBjjM-ebDbAap0",
+                "_score": 8.303724,
+                "_source": {
+                    "movieCd": "20126195",
+                    "movieNm": "기묘한 슈퍼마켓",
+                    "movieNmEn": "Shopping Tour",
+                    "prdtYear": "2011",
+                    "openDt": "",
+                    "typeNm": "단편",
+                    "prdtStatNm": "기타",
+                    "nationAlt": "독일",
+                    "genreAlt": "",
+                    "repNationNm": "독일",
+                    "repGenreNm": "",
+                    "directors": [],
+                    "companys": []
+                }
+            }
+        ]
+    }
+}
+

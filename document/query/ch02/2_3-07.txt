@@ -1,7 +1,9 @@
-POST movie/_search?q=장편
+# 요청
+POST http://localhost:9200/movie/_search?q=장편
 
 
 
+# 결과
 {
   "took": 1403,
   "timed_out": false,

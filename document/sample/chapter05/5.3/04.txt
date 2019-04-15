@@ -1,0 +1,16 @@
+GET /apache-web-log/_search?size=0
+{
+    "aggs" : {
+        "request count with date range" : {
+            "date_range": {
+              "field": "timestamp",
+              "ranges": [
+                {
+                  "from": "2015-01-04T05:14:00.000Z",
+                  "to": "2015-01-04T05:16:00.000Z"
+                }
+              ]
+            }
+        }
+    }
+}
