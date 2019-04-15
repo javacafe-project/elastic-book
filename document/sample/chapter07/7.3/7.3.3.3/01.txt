@@ -1,0 +1,161 @@
+PUT /ac_test3
+{
+    "settings" : {
+        "index" : {
+            "number_of_shards" : 5, 
+            "number_of_replicas" : 1 
+        },
+		"analysis": {
+			"analyzer": {
+				"chosung_index_analyzer": {
+					"type": "custom",
+					"tokenizer": "keyword",
+					"filter": [
+						"javacafe_chosung_filter",
+						"lowercase",
+						"trim",
+						"edge_ngram_filter_front"
+					]
+				},
+				"chosung_search_analyzer": {
+					"type": "custom",
+					"tokenizer": "keyword",
+					"filter": [
+						"javacafe_chosung_filter",
+						"lowercase",
+						"trim"
+					]
+				}			
+			},
+			"tokenizer" : {
+				"edge_ngram_tokenizer" : {
+					"type" : "edgeNGram",
+					"min_gram" : "1",
+					"max_gram" : "50",
+					"token_chars" : [
+						"letter",
+						"digit",
+						"punctuation",
+						"symbol"
+					]
+				}
+			},			
+			"filter": {
+				"edge_ngram_filter_front" : {
+					"type" : "edgeNGram",
+					"min_gram" : "1",
+					"max_gram" : "50",
+					"side" : "front"
+				},
+				"javacafe_chosung_filter": {
+					"type": "javacafe_chosung"
+				}			
+			}			
+		}		
+	}
+}
+
+{
+    "acknowledged": true,
+    "shards_acknowledged": true,
+    "index": "ac_test3"
+}
+
+
+
+
+
+PUT /ac_test3/_mapping/ac_test3
+{
+	"properties": {
+		"item": {
+			"type": "keyword",
+			"boost": 30
+		},
+		"itemChosung": {
+			"type": "text",
+			"analyzer": "chosung_index_analyzer",
+			"search_analyzer": "chosung_search_analyzer",
+			"boost": 10
+		}
+	}
+}
+
+{
+    "acknowledged": true
+}
+
+
+
+
+POST /ac_test3/_bulk
+
+{"index" : { "_index" : "ac_test3", "_type" : "ac_test3", "_id" : "1" }}
+{"item" : "신혼", "itemChosung" : "신혼"}
+
+{"index" : { "_index" : "ac_test3", "_type" : "ac_test3", "_id" : "2" }}
+{"item" : "신혼가전", "itemChosung" : "신혼가전"}
+
+{"index" : { "_index" : "ac_test3", "_type" : "ac_test3", "_id" : "3" }}
+{"item" : "신혼가전특별전", "itemChosung" : "신혼가전특별전"}
+
+
+
+{
+    "took": 23,
+    "errors": false,
+    "items": [
+        {
+            "index": {
+                "_index": "ac_test3",
+                "_type": "ac_test3",
+                "_id": "1",
+                "_version": 1,
+                "result": "created",
+                "_shards": {
+                    "total": 2,
+                    "successful": 1,
+                    "failed": 0
+                },
+                "_seq_no": 0,
+                "_primary_term": 1,
+                "status": 201
+            }
+        },
+        {
+            "index": {
+                "_index": "ac_test3",
+                "_type": "ac_test3",
+                "_id": "2",
+                "_version": 1,
+                "result": "created",
+                "_shards": {
+                    "total": 2,
+                    "successful": 1,
+                    "failed": 0
+                },
+                "_seq_no": 0,
+                "_primary_term": 1,
+                "status": 201
+            }
+        },
+        {
+            "index": {
+                "_index": "ac_test3",
+                "_type": "ac_test3",
+                "_id": "3",
+                "_version": 1,
+                "result": "created",
+                "_shards": {
+                    "total": 2,
+                    "successful": 1,
+                    "failed": 0
+                },
+                "_seq_no": 0,
+                "_primary_term": 1,
+                "status": 201
+            }
+        }
+    ]
+}
+

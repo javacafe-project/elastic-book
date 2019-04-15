@@ -1,0 +1,53 @@
+POST /ac_test3/_search 
+{
+	"query" : {
+		"bool" : {
+			"should" : [{
+				"term" : {
+					"itemChosung" : "ㅅㅎㄱㅈ"
+				}
+			}],
+			"minimum_should_match" : 1
+		}
+	}
+}
+
+
+{
+    "took": 1,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 2,
+        "max_score": 4.430304,
+        "hits": [
+            {
+                "_index": "ac_test3",
+                "_type": "ac_test3",
+                "_id": "3",
+                "_score": 4.430304,
+                "_source": {
+                    "item": "신혼가전특별전",
+                    "itemChosung": "신혼가전특별전"
+                }
+            },
+            {
+                "_index": "ac_test3",
+                "_type": "ac_test3",
+                "_id": "2",
+                "_score": 4.1501675,
+                "_source": {
+                    "item": "신혼가전",
+                    "itemChosung": "신혼가전"
+                }
+            }
+        ]
+    }
+}
+
+

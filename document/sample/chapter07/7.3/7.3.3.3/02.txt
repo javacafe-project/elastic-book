@@ -1,4 +1,4 @@
-GET /ac_test2/_search
+GET /ac_test3/_search
 
 
 {
@@ -15,43 +15,39 @@ GET /ac_test2/_search
         "max_score": 1,
         "hits": [
             {
-                "_index": "ac_test2",
-                "_type": "ac_test2",
+                "_index": "ac_test3",
+                "_type": "ac_test3",
                 "_id": "2",
                 "_score": 1,
                 "_source": {
                     "item": "신혼가전",
-                    "itemNgram": "신혼가전",
-                    "itemNgramEdge": "신혼가전",
-                    "itemNgramEdgeBack": "신혼가전"
+                    "itemChosung": "신혼가전"
                 }
             },
             {
-                "_index": "ac_test2",
-                "_type": "ac_test2",
+                "_index": "ac_test3",
+                "_type": "ac_test3",
                 "_id": "1",
                 "_score": 1,
                 "_source": {
                     "item": "신혼",
-                    "itemNgram": "신혼",
-                    "itemNgramEdge": "신혼",
-                    "itemNgramEdgeBack": "신혼"
+                    "itemChosung": "신혼"
                 }
             },
             {
-                "_index": "ac_test2",
-                "_type": "ac_test2",
+                "_index": "ac_test3",
+                "_type": "ac_test3",
                 "_id": "3",
                 "_score": 1,
                 "_source": {
                     "item": "신혼가전특별전",
-                    "itemNgram": "신혼가전특별전",
-                    "itemNgramEdge": "신혼가전특별전",
-                    "itemNgramEdgeBack": "신혼가전특별전"
+                    "itemChosung": "신혼가전특별전"
                 }
             }
         ]
     }
 }
+
+
 
 
