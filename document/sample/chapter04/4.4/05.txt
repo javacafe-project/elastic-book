@@ -1,6 +1,8 @@
+# 요청
 POST movie_search/_count?q=prdtYear:2017
+{}
 
-
+# 결과
 {
     "count": 2114,
     "_shards": {
@@ -13,6 +15,12 @@ POST movie_search/_count?q=prdtYear:2017
 
 
 
+
+
+
+
+
+# 요청
 POST movie_search/_count
 {
   "query": {
@@ -23,7 +31,7 @@ POST movie_search/_count
   }
 }
 
-
+# 결과
 {
     "count": 2114,
     "_shards": {

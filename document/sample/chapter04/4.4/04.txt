@@ -1,3 +1,4 @@
+# 요청
 POST _msearch
 {"index" : "movie_auto"}
 {"query" : {"match_all" : {}}, "from" : 0, "size": 10}
@@ -5,7 +6,7 @@ POST _msearch
 {"query" : {"match_all" : {}}, "from" : 0, "size" : 10}
 
 
-
+# 결과
 {
   "responses" : [
     {

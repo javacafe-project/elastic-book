@@ -1,3 +1,4 @@
+# 요청
 POST  movie_search/_doc/fzzJqmkBjjM-ebDb8PsR/_explain
 {
   "query" : {
@@ -7,7 +8,7 @@ POST  movie_search/_doc/fzzJqmkBjjM-ebDb8PsR/_explain
   }
 }
 
-
+# 결과
 {
   "_index" : "movie_search",
   "_type" : "_doc",
@@ -23,6 +24,10 @@ POST  movie_search/_doc/fzzJqmkBjjM-ebDb8PsR/_explain
 
 
 
+
+
+
+# 요청
 POST  movie_search/_doc/fzzJqmkBjjM-ebDb8PsR/_explain
 {
   "query" : {
@@ -32,7 +37,7 @@ POST  movie_search/_doc/fzzJqmkBjjM-ebDb8PsR/_explain
   }
 }
 
-
+# 결과
 {
     "_index": "movie_search",
     "_type": "_doc",

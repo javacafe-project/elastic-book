@@ -1,6 +1,8 @@
+# 요청
 POST movie_search/_validate/query?q=prdtYear:2017
+{}
 
-
+# 결과
 {
   "_shards" : {
     "total" : 1,
@@ -13,6 +15,8 @@ POST movie_search/_validate/query?q=prdtYear:2017
 
 
 
+
+# 요청
 POST movie_search/_validate/query
 {
   "query" : {
@@ -22,7 +26,7 @@ POST movie_search/_validate/query
   }
 }
 
-
+# 결과
 {
   "_shards" : {
     "total" : 1,

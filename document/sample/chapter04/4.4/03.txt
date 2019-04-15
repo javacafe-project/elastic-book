@@ -1,7 +1,8 @@
+# 요청
 POST movie_search/_search_shards
+{}
 
-
-
+# 결과
 {
     "nodes": {
         "Q1IZi4Z_RIinnD2OdtmOJA": {
