@@ -1,3 +1,4 @@
+# 요청
 POST /ac_test2/_search
 {
 	"query" : {
@@ -24,7 +25,7 @@ POST /ac_test2/_search
 	}
 }
 
-
+# 결과
 {
     "took": 2,
     "timed_out": false,
