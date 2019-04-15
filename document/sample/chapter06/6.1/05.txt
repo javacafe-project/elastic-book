@@ -1,10 +1,11 @@
+# 요청
 POST nori_analyzer/_analyze
 {
   "analyzer": "nori_token_analyzer",
   "text": "잠실역"
 }
 
-
+# 결과
 {
     "tokens": [
         {
@@ -34,13 +35,16 @@ POST nori_analyzer/_analyze
 
 
 
+
+
+# 요청
 POST nori_analyzer/_analyze
 {
   "analyzer": "nori_token_analyzer",
   "text": "삼성전자"
 }
 
-
+# 결과
 {
     "tokens": [
         {
@@ -71,13 +75,16 @@ POST nori_analyzer/_analyze
 
 
 
+
+
+# 요청
 POST nori_analyzer/_analyze
 {
   "analyzer": "nori_token_analyzer",
   "text": "엘지전자"
 }
 
-
+# 결과
 {
     "tokens": [
         {
@@ -100,13 +107,17 @@ POST nori_analyzer/_analyze
 
 
 
+
+
+
+# 요청
 POST nori_analyzer/_analyze
 {
   "analyzer": "nori_token_analyzer",
   "text": "그대 이름은 장미"
 }
 
-
+# 결과
 {
     "tokens": [
         {

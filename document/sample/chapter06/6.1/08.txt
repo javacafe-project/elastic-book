@@ -1,10 +1,11 @@
+# 요청
 POST  nori_readingform/_analyze
 {
   "analyzer": "nori_readingform_analyzer",
   "text": "中國"      
 }
 
-
+# 결과
 {
     "tokens": [
         {

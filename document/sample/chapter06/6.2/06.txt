@@ -1,9 +1,10 @@
+# 요청
 POST movie_script/_doc/1/_update
 {
 	"script": "ctx._source.movieList.remove(\"Suits\")"
 }
 
-
+# 결과
 {
     "_index": "movie_script",
     "_type": "_doc",
@@ -21,10 +22,12 @@ POST movie_script/_doc/1/_update
 
 
 
+
+
+# 요청
 GET movie_script/_doc/_search
 
-
-
+# 결과
 {
     "took": 1,
     "timed_out": false,

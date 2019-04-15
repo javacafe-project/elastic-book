@@ -1,9 +1,10 @@
+# 요청
 PUT movie_highlighting/_doc/1
 {
   "title": "Harry Potter and the Deathly Hallows"
 }
 
-
+# 결과
 {
     "_index": "movie_highlighting",
     "_type": "_doc",

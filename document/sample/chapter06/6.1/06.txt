@@ -1,13 +1,18 @@
+# 요청
 POST nori_analyzer/_close
 {}
 
-
+# 결과
 {
     "acknowledged": true
 }
 
 
 
+
+
+
+# 요청
 PUT nori_analyzer/_settings
 {
   "index": {
@@ -62,15 +67,21 @@ PUT nori_analyzer/_settings
   }
 }
 
-
+# 결과
 {
     "acknowledged": true
 }
 
 
 
-POST nori_analyzer/_open
 
+
+
+# 요청
+POST nori_analyzer/_open
+{}
+
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true
@@ -79,13 +90,17 @@ POST nori_analyzer/_open
 
 
 
+
+
+
+# 요청
 POST nori_analyzer/_analyze
 {
   "analyzer": "nori_token_analyzer",
   "text": "그대 이름은 장미"
 }
 
-
+# 결과
 {
     "tokens": [
         {

@@ -1,3 +1,4 @@
+# 요청
 POST movie_highlighting/_search
 {
   "query": {
@@ -20,7 +21,7 @@ POST movie_highlighting/_search
   }
 }
 
-
+# 결과
 {
     "took": 8,
     "timed_out": false,

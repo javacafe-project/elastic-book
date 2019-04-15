@@ -1,8 +1,7 @@
-
+# 요청
 GET _scripts/movie_search_example_teamplate
 
-
-
+# 결과
 {
     "_id": "movie_search_example_teamplate",
     "found": true,

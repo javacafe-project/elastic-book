@@ -1,3 +1,4 @@
+# 요청
 PUT nori_full_analyzer
 {
   "mappings": {
@@ -66,7 +67,7 @@ PUT nori_full_analyzer
   }
 }
 
-
+# 결과
 {
   "acknowledged" : true,
   "shards_acknowledged" : true,

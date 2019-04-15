@@ -1,10 +1,11 @@
+# 요청
 POST seunjeon_default_analyzer/_analyze
 {
   "analyzer": "korean",
   "text": "잠실역"
 }
 
-
+# 결과
 {
     "tokens": [
         {
@@ -26,13 +27,16 @@ POST seunjeon_default_analyzer/_analyze
 
 
 
+
+
+# 요청
 POST seunjeon_default_analyzer/_analyze
 {
   "analyzer": "korean",
   "text": "삼성전자"
 }
 
-
+# 결과
 {
     "tokens": [
         {
@@ -54,13 +58,17 @@ POST seunjeon_default_analyzer/_analyze
 
 
 
+
+
+
+# 요청
 POST seunjeon_default_analyzer/_analyze
 {
   "analyzer": "korean",
   "text": "엘지전자"
 }
 
-
+# 결과
 {
     "tokens": [
         {
@@ -82,13 +90,17 @@ POST seunjeon_default_analyzer/_analyze
 
 
 
+
+
+
+# 요청
 POST seunjeon_default_analyzer/_analyze
 {
   "analyzer": "korean",
   "text": "그대 이름은 장미"
 }
 
-
+# 결과
 {
     "tokens": [
         {

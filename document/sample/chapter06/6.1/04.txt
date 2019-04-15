@@ -1,3 +1,4 @@
+# 요청
 PUT nori_analyzer
 {
   "settings": {
@@ -21,7 +22,7 @@ PUT nori_analyzer
   }
 }
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,

@@ -1,3 +1,4 @@
+# 요청
 POST _alias
 {
 	 "actions" : [
@@ -6,16 +7,20 @@ POST _alias
 	 ]
 }
 
-
+# 결과
 {
     "acknowledged": true
 }
 
 
+
+
+
+
+# 요청
 GET movie/_search
 
-
-
+# 결과
 {
     "took": 11,
     "timed_out": false,

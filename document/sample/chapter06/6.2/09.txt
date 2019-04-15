@@ -1,9 +1,10 @@
+# 요청
 PUT movie_template_test/_doc/1
 {
    "movieNm": "titanic"
 }
 
-
+# 결과
 {
     "_index": "movie_template_test",
     "_type": "_doc",
@@ -22,6 +23,9 @@ PUT movie_template_test/_doc/1
 
 
 
+
+
+# 요청
 POST movie_template_test/_doc/_search/template
 {
   "id": "movie_search_example_teamplate",
@@ -30,7 +34,7 @@ POST movie_template_test/_doc/_search/template
   }
 }
 
-
+# 결과
 {
     "took": 1,
     "timed_out": false,
