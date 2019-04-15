@@ -1,3 +1,4 @@
+# 요청
 PUT movie_nested
 {
   "settings": {
@@ -23,7 +24,7 @@ PUT movie_nested
   }
 }
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,
@@ -32,6 +33,9 @@ PUT movie_nested
 
 
 
+
+
+# 요청
 PUT movie_nested/_doc/1
 {
   "movieCd": "20184623",
@@ -53,7 +57,7 @@ PUT movie_nested/_doc/1
   ]
 }
 
-
+# 결과
 {
     "_index": "movie_nested",
     "_type": "_doc",
@@ -72,6 +76,9 @@ PUT movie_nested/_doc/1
 
 
 
+
+
+# 요청
 POST movie_nested/_search
 {
   "query": {
@@ -103,7 +110,7 @@ POST movie_nested/_search
   }
 }
 
-
+# 결과
 {
     "took": 8,
     "timed_out": false,
