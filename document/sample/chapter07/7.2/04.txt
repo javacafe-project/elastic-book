@@ -1,8 +1,10 @@
+# 요청
 PUT /company/_doc/1 
 { 
 	"name" : "삼성전자" 
 }
 
+# 요청
 PUT /company/_doc/2
 { 
 	"name" : "iphone" 
@@ -10,9 +12,14 @@ PUT /company/_doc/2
 
 
 
+
+
+
+
+# 요청
 GET /company/_search
 
-
+# 결과
 {
     "took": 1,
     "timed_out": false,

@@ -1,18 +1,22 @@
+# 요청
 PUT movie_term_suggest/_doc/1
 {
   "movieNm": "lover"
 }
 
+# 요청
 PUT movie_term_suggest/_doc/2
 {
   "movieNm": "Fall love"
 }
 
+# 요청
 PUT movie_term_suggest/_doc/3
 {
   "movieNm": "lovely"
 }
 
+# 요청
 PUT movie_term_suggest/_doc/4
 {
   "movieNm": "lovestory"
@@ -20,9 +24,12 @@ PUT movie_term_suggest/_doc/4
 
 
 
+
+
+# 요청
 GET movie_term_suggest/_search
 
-
+# 결과
 {
     "took": 53,
     "timed_out": false,

@@ -1,3 +1,4 @@
+# 요청
 POST movie_term_completion/_search
 {
 	"suggest": {
@@ -11,8 +12,7 @@ POST movie_term_completion/_search
 	}
 }
 
-
-
+# 결과
 {
     "took": 12,
     "timed_out": false,

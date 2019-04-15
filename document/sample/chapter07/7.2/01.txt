@@ -1,7 +1,13 @@
+# 플러그인 설치
 elasticsearch-plugin install https://github.com/javacafe-project/elastic-book-etc/raw/master/plugin/javacafe-analyzer-6.4.3.zip
 
 
 
+
+
+
+
+# 요청
 PUT /company_spellchecker
 {
   "settings": {
@@ -23,7 +29,7 @@ PUT /company_spellchecker
   }
 }
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,
@@ -33,6 +39,9 @@ PUT /company_spellchecker
 
 
 
+
+
+# 요청
 PUT /company_spellchecker/_doc/_mappings
 {
     "properties": {
@@ -47,19 +56,24 @@ PUT /company_spellchecker/_doc/_mappings
     }
 }
 
-
+# 결과
 {
     "acknowledged": true
 }
 
 
 
+
+
+
+
+# 요청
 PUT /company_spellchecker/_doc/1
 {
      "name" : "삼성전자"
 }
 
-
+# 결과
 {
     "_index": "company_spellchecker",
     "_type": "_doc",
@@ -77,10 +91,13 @@ PUT /company_spellchecker/_doc/1
 
 
 
+
+
+
+# 요청
 GET /company_spellchecker/_search
 
-
-
+# 결과
 {
     "took": 0,
     "timed_out": false,

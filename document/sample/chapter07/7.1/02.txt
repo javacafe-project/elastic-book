@@ -1,3 +1,4 @@
+# 요청
 POST moive_term_suggest/_search
 {
 	"suggest": {
@@ -10,9 +11,7 @@ POST moive_term_suggest/_search
 	}
 }
 
-
-
-
+# 결과
 {
     "took": 35,
     "timed_out": false,

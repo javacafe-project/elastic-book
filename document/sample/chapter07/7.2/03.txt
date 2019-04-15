@@ -1,3 +1,4 @@
+# 요청
 PUT /company
 {
 	"settings": {
@@ -18,7 +19,7 @@ PUT /company
 	}
 }
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,
@@ -27,6 +28,11 @@ PUT /company
 
 
 
+
+
+
+
+# 요청
 PUT /company/_doc/_mappings
 {
 	"properties": {
@@ -36,7 +42,7 @@ PUT /company/_doc/_mappings
 	}
 }
 
-
+# 결과
 {
     "acknowledged": true
 }
@@ -45,6 +51,9 @@ PUT /company/_doc/_mappings
 
 
 
+
+
+# 요청
 PUT /search_keyword
 {
 	"settings": {
@@ -75,7 +84,7 @@ PUT /search_keyword
 	}
 }
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,
@@ -85,6 +94,11 @@ PUT /search_keyword
 
 
 
+
+
+
+
+# 요청
 PUT search_keyword/_doc/_mapping
 {
 	"properties": {
@@ -105,7 +119,7 @@ PUT search_keyword/_doc/_mapping
 	}
 }
 
-
+# 결과
 {
     "acknowledged": true
 }

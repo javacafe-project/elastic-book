@@ -1,3 +1,4 @@
+# 요청
 POST /search_keyword/_search
 {
 	"query": {
@@ -9,8 +10,7 @@ POST /search_keyword/_search
 	}
 }
 
-
-
+# 결과
 {
     "took": 1,
     "timed_out": false,
@@ -40,6 +40,11 @@ POST /search_keyword/_search
 
 
 
+
+
+
+
+# 요청
 POST /search_keyword/_search
 {
 	"query": {
@@ -52,7 +57,7 @@ POST /search_keyword/_search
 }
 
 
-
+# 결과
 {
     "took": 2,
     "timed_out": false,

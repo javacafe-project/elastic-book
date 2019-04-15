@@ -1,3 +1,4 @@
+# 요청
 PUT movie_term_completion
 {
 	"mappings": {
@@ -11,7 +12,7 @@ PUT movie_term_completion
 	}
 }
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,
@@ -21,6 +22,10 @@ PUT movie_term_completion
 
 
 
+
+
+
+# 요청
 PUT movie_term_completion/_doc/1
 {
 	"movieNmEnComple": {
@@ -28,6 +33,7 @@ PUT movie_term_completion/_doc/1
 	}
 }
 
+# 요청
 PUT movie_term_completion/_doc/2
 {
 	"movieNmEnComple": {
@@ -35,6 +41,7 @@ PUT movie_term_completion/_doc/2
 	}
 }
 
+# 요청
 PUT movie_term_completion/_doc/3
 {
 	"movieNmEnComple": {
@@ -42,6 +49,7 @@ PUT movie_term_completion/_doc/3
 	}
 }
 
+# 요청
 PUT movie_term_completion/_doc/4
 {
 	"movieNmEnComple": {
@@ -49,6 +57,7 @@ PUT movie_term_completion/_doc/4
 	}
 }
 
+# 요청
 PUT movie_term_completion/_doc/5
 {
 	"movieNmEnComple": {
@@ -58,10 +67,14 @@ PUT movie_term_completion/_doc/5
 
 
 
+
+
+
+
+# 요청
 GET movie_term_completion/_search
 
-
-
+# 결과
 {
     "took": 2,
     "timed_out": false,
