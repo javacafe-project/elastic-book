@@ -1,3 +1,4 @@
+# 요청
 POST movie_search/_search
 {
   "query" : {
@@ -8,7 +9,7 @@ POST movie_search/_search
   }
 }
 
-
+# 결과
 {
     "took": 11,
     "timed_out": false,

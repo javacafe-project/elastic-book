@@ -1,3 +1,4 @@
+# 요청
 POST movie_search/_search
 {
    "_source": [
@@ -10,8 +11,7 @@ POST movie_search/_search
    }
 }
 
-
-
+# 결과
 {
     "took": 3,
     "timed_out": false,
