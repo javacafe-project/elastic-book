@@ -1,7 +1,12 @@
+# 요청
 PUT movie_text
 {}
 
 
+
+
+
+# 요청
 PUT movie_text/_mapping/_doc
 {
   "properties": {
@@ -12,6 +17,11 @@ PUT movie_text/_mapping/_doc
 }
 
 
+
+
+
+
+# 요청
 PUT movie_text/_mapping/_doc
 {
   "properties": {

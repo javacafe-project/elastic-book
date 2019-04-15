@@ -1,10 +1,11 @@
+# 요청
 PUT movie_search_datatype/_doc/1
 {
   "title" : "해리포터와 마법사의 돌",
   "subtitleLang" : ["ko","en"]
 }
 
-
+# 결과
 {
   "_index" : "movie_search_datatype",
   "_type" : "_doc",

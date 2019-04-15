@@ -1,7 +1,8 @@
+# 요청
 PUT movie_text
 {}
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,
@@ -10,6 +11,11 @@ PUT movie_text
 
 
 
+
+
+
+
+# 요청
 PUT movie_text/_mapping/_doc
 {
   "properties": {
@@ -19,7 +25,7 @@ PUT movie_text/_mapping/_doc
   }
 }
 
-
+# 결과
 {
     "acknowledged": true
 }

@@ -1,7 +1,8 @@
+# 요청
 PUT movie_search_datatype
 {}
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,
@@ -10,6 +11,10 @@ PUT movie_search_datatype
 
 
 
+
+
+
+# 요청
 PUT movie_search_datatype/_mapping/_doc
 {
   "properties": {
@@ -19,13 +24,18 @@ PUT movie_search_datatype/_mapping/_doc
   }
 }
 
-
+# 결과
 {
     "acknowledged": true
 }
 
 
 
+
+
+
+
+# 요청
 PUT movie_search_datatype/_doc/1
 {
   "title": "해리포터와 마법사의 돌",
@@ -41,7 +51,7 @@ PUT movie_search_datatype/_doc/1
   ]
 }
 
-
+# 결과
 {
     "_index": "movie_search_datatype",
     "_type": "_doc",
@@ -59,6 +69,11 @@ PUT movie_search_datatype/_doc/1
 
 
 
+
+
+
+
+# 요청
 POST movie_search_datatype/_search
 {
   "query": {
@@ -80,7 +95,7 @@ POST movie_search_datatype/_search
   }
 }
 
-
+# 결과
 {
     "took": 1,
     "timed_out": false,
@@ -119,6 +134,11 @@ POST movie_search_datatype/_search
 
 
 
+
+
+
+
+# 요청
 POST movie_search_datatype/_search
 {
   "query": {
@@ -140,7 +160,7 @@ POST movie_search_datatype/_search
   }
 }
 
-
+# 결과
 {
     "took": 1,
     "timed_out": false,

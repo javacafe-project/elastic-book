@@ -1,7 +1,13 @@
+# 요청
 PUT movie_search_datatype
 {}
 
 
+
+
+
+
+# 요청
 PUT movie_search_datatype/_mapping/_doc
 {
   "properties": {
