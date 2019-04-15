@@ -1,3 +1,4 @@
+# 요청
 POST _reindex
 {
   "source": {
@@ -9,7 +10,7 @@ POST _reindex
   }
 }
 
-
+# 결과
 {
     "took": 259,
     "timed_out": false,
@@ -32,9 +33,13 @@ POST _reindex
 
 
 
+
+
+
+# 요청
 GET movie_dynamic_new/_search
 
-
+# 결과
 {
     "took": 1,
     "timed_out": false,

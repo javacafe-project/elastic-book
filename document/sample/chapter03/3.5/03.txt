@@ -1,3 +1,4 @@
+# 요청
 PUT movie_dynamic/_doc/1?op_type=create
 {
   "movieCd": "20173732",
@@ -6,6 +7,7 @@ PUT movie_dynamic/_doc/1?op_type=create
   "typeNm": "단편"
 }
 
+# 결과
 {
   "_index" : "movie_dynamic",
   "_type" : "_doc",
@@ -24,6 +26,9 @@ PUT movie_dynamic/_doc/1?op_type=create
 
 
 
+
+
+# 요청
 PUT movie_dynamic/_doc/1?op_type=create
 {
   "movieCd": "20173732",
@@ -32,6 +37,7 @@ PUT movie_dynamic/_doc/1?op_type=create
   "typeNm": "단편"
 }
 
+# 결과
 {
   "error": {
     "root_cause": [

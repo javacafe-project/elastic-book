@@ -1,3 +1,4 @@
+# 요청
 PUT movie_dynamic/_doc/1
 {
   "movieCd": "20173732",
@@ -5,7 +6,7 @@ PUT movie_dynamic/_doc/1
   "movieNmEn": "Last Child"
 }
 
-
+# 결과
 {
     "_index": "movie_dynamic",
     "_type": "_doc",
@@ -23,6 +24,10 @@ PUT movie_dynamic/_doc/1
 
 
 
+
+
+
+# 요청
 POST movie_dynamic/_delete_by_query
 {
   "query": {
@@ -32,7 +37,7 @@ POST movie_dynamic/_delete_by_query
   }
 }
 
-
+# 결과
 {
     "took": 42,
     "timed_out": false,

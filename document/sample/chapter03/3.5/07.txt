@@ -1,7 +1,7 @@
+# 요청
 DELETE movie_dynamic/_doc/1
 
-
-
+# 결과
 {
   "_index" : "movie_dynamic",
   "_type" : "_doc",
@@ -19,9 +19,13 @@ DELETE movie_dynamic/_doc/1
 
 
 
+
+
+
+# 요청
 DELETE movie_dynamic
 
-
+# 결과
 {
   "acknowledged" : true
 }

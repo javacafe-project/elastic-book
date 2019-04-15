@@ -1,3 +1,4 @@
+# 요청
 POST _bulk
 { "index" : { "_index" : "movie_dynamic", "_type" : "_doc", "_id" : "1" } }
 { "title" : "살아남은 아이" }
@@ -11,7 +12,7 @@ POST _bulk
 { "doc" : {"movieNmEn" : "Last Child"} }
 
 
-
+# 결과
 {
     "took": 311,
     "errors": false,
@@ -89,9 +90,14 @@ POST _bulk
 
 
 
+
+
+
+
+# 요청
 GET movie_dynamic/_search
 
-
+# 결과
 {
     "took": 2,
     "timed_out": false,

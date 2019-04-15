@@ -1,3 +1,4 @@
+# 요청
 PUT movie_dynamic
 {
   "mappings": {
@@ -19,7 +20,7 @@ PUT movie_dynamic
   }
 }
 
-
+# 결과
 {
     "acknowledged": true,
     "shards_acknowledged": true,
@@ -28,6 +29,11 @@ PUT movie_dynamic
 
 
 
+
+
+
+
+# 요청
 PUT movie_dynamic/_doc/1
 {
   "movieCd": "20173732",
@@ -35,6 +41,7 @@ PUT movie_dynamic/_doc/1
   "movieNmEn": "Last Child"
 }
 
+# 결과
 {
   "_index" : "movie_dynamic",
   "_type" : "_doc",
@@ -51,9 +58,13 @@ PUT movie_dynamic/_doc/1
 }
 
 
+
+
+
+# 요청
 GET movie_dynamic/_doc/1
 
-
+# 결과
 {
     "_index": "movie_dynamic",
     "_type": "_doc",
@@ -69,9 +80,13 @@ GET movie_dynamic/_doc/1
 
 
 
+
+
+
+# 요청
 GET movie_dynamic/_doc/1?_source_exclude=movieNm
 
-
+# 결과
 {
     "_index": "movie_dynamic",
     "_type": "_doc",

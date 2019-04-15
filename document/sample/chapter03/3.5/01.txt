@@ -1,3 +1,4 @@
+# 요청
 POST moive_dynamic/_doc
 {
   "movieCd": "20173732",
@@ -6,7 +7,7 @@ POST moive_dynamic/_doc
   "typeNm": "장편"
 }
 
-
+# 결과
 {
     "_index": "moive_dynamic",
     "_type": "_doc",

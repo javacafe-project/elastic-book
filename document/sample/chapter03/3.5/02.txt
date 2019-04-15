@@ -1,9 +1,10 @@
+# 요청
 PUT movie_dynamic/_doc/1
 {
   "nationAlt": "한국"
 }
 
-
+# 결과
 {
     "_index": "moive_dynamic",
     "_type": "_doc",
@@ -21,12 +22,16 @@ PUT movie_dynamic/_doc/1
 
 
 
+
+
+
+# 요청
 PUT movie_dynamic/_doc/1
 {
   "nationAlt": "한국"
 }
 
-
+# 결과
 {
     "_index": "moive_dynamic",
     "_type": "_doc",
@@ -46,12 +51,14 @@ PUT movie_dynamic/_doc/1
 
 
 
+
+# 요청
 PUT movie_dynamic/_doc/1?version=2
 {
   "nationAlt": "한국"
 }
 
-
+# 결과
 {
     "error": {
         "root_cause": [
